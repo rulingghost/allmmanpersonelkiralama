@@ -1287,7 +1287,7 @@ a {
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   z-index: 2000;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   opacity: 0;
@@ -1298,6 +1298,7 @@ a {
 }
 
 .modal-overlay.active {
+  display: flex;
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -2118,10 +2119,16 @@ textarea.form-control {
   /* Header */
   .main-header {
     padding: 12px 0;
+    height: auto;
+    overflow: visible;
   }
 
   .main-header.scrolled {
     padding: 10px 0;
+  }
+
+  .main-header .container {
+    position: relative;
   }
 
   .logo-container {
@@ -2170,10 +2177,11 @@ textarea.form-control {
     color: #ffffff;
   }
 
-  /* Mobile navigation — fixed panel below header (not inside header flow) */
+  /* Mobile navigation — only fixed when open */
   .nav-container {
     flex-wrap: nowrap;
     align-items: center;
+    position: relative;
   }
 
   .logo-container {
@@ -2182,14 +2190,26 @@ textarea.form-control {
   }
 
   .nav-menu {
-    display: none;
-    position: fixed;
-    top: 76px;
-    left: 16px;
-    right: 16px;
-    width: auto;
-    order: unset;
-    flex-basis: auto;
+    display: none !important;
+    position: static;
+    width: 100%;
+    max-height: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    overflow: visible;
+  }
+
+  .nav-menu.active {
+    display: flex !important;
+    position: absolute;
+    top: calc(100% + 10px);
+    left: -16px;
+    right: -16px;
+    width: calc(100% + 32px);
+    z-index: 1001;
     background: #ffffff;
     border: 1px solid var(--border-color);
     border-radius: 16px;
@@ -2198,15 +2218,9 @@ textarea.form-control {
     padding: 10px;
     gap: 4px;
     box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
-    max-height: calc(100dvh - 96px);
+    max-height: min(70dvh, 520px);
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
-    margin-top: 0;
-    z-index: 9999;
-  }
-
-  .nav-menu.active {
-    display: flex;
     animation: menuSlideIn 0.28s ease;
   }
 
@@ -2250,8 +2264,19 @@ textarea.form-control {
   }
 
   /* Video Hero */
-  .hero-section { min-height: 100svh; }
-  .hero-center-container { min-height: 100svh; padding: 0 16px; }
+  .hero,
+  .hero-section,
+  .hero-center-container {
+    min-height: auto !important;
+  }
+
+  .hero-section {
+    padding: 96px 0 64px;
+  }
+
+  .hero-center-container {
+    padding: 0 16px;
+  }
   .hero-video { transform: none; }
   .hero-logo-img { height: 72px !important; }
   .hero-logo-text-img { height: 34px !important; max-width: 90vw; }
@@ -2573,6 +2598,10 @@ textarea.form-control {
     left: 16px;
     right: 16px;
     bottom: 16px;
+  }
+
+  .scroll-progress {
+    display: none;
   }
 
   .toast {

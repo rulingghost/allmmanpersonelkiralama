@@ -927,17 +927,19 @@ if (employerForm) {
 // ============================================================
 
 (function initScrollAnimations() {
-  // Create scroll progress bar
-  const progressBar = document.createElement('div');
-  progressBar.className = 'scroll-progress';
-  document.body.prepend(progressBar);
+  const isMobile = window.innerWidth <= 768;
 
-  // Update progress bar on scroll
-  window.addEventListener('scroll', () => {
-    const scrolled = window.scrollY;
-    const total = document.documentElement.scrollHeight - window.innerHeight;
-    progressBar.style.width = Math.min(100, (scrolled / total) * 100) + '%';
-  }, { passive: true });
+  if (!isMobile) {
+    const progressBar = document.createElement('div');
+    progressBar.className = 'scroll-progress';
+    document.body.prepend(progressBar);
+
+    window.addEventListener('scroll', () => {
+      const scrolled = window.scrollY;
+      const total = document.documentElement.scrollHeight - window.innerHeight;
+      progressBar.style.width = Math.min(100, (scrolled / total) * 100) + '%';
+    }, { passive: true });
+  }
 
   // Add floating dots to hero section
   const heroSection = document.querySelector('.hero-section');
