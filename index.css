@@ -74,7 +74,6 @@ body {
   font-family: var(--font-family);
   line-height: 1.65;
   overflow-x: hidden;
-  overscroll-behavior-y: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -480,14 +479,6 @@ a {
   flex-shrink: 0;
   align-items: center;
   justify-content: center;
-}
-
-.mobile-menu-overlay {
-  display: none;
-}
-
-body.menu-open {
-  overflow: hidden;
 }
 
 /* ============================================================
@@ -2157,55 +2148,38 @@ textarea.form-control {
     display: inline-flex;
   }
 
-  /* Mobile drawer overlay */
-  .mobile-menu-overlay {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.55);
-    z-index: 9997;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
-    border: none;
-    padding: 0;
-    cursor: pointer;
+  /* Mobile navigation — dropdown inside header, full width */
+  .nav-container {
+    flex-wrap: wrap;
+    align-items: center;
   }
 
-  .mobile-menu-overlay.active {
-    display: block;
-    opacity: 1;
-    visibility: visible;
+  .logo-container {
+    flex: 1;
   }
 
-  /* Mobile navigation drawer */
   .nav-menu {
     display: none;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    width: min(320px, 88vw);
-    height: auto;
-    background: #0d1310;
-    border-left: 1px solid rgba(255, 255, 255, 0.08);
+    order: 3;
+    flex-basis: 100%;
+    width: 100%;
+    position: static;
+    background: rgba(13, 19, 16, 0.98);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
     flex-direction: column;
     align-items: stretch;
-    padding: 88px 0 calc(32px + env(safe-area-inset-bottom, 0px));
+    padding: 8px 0;
     gap: 0;
-    box-shadow: -12px 0 40px rgba(0, 0, 0, 0.35);
-    z-index: 9998;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+    max-height: 70dvh;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
-    transform: translateX(100%);
-    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-    visibility: hidden;
+    margin-top: 8px;
   }
 
   .nav-menu.active {
     display: flex;
-    transform: translateX(0);
-    visibility: visible;
   }
 
   .nav-menu > li {
