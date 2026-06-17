@@ -513,52 +513,104 @@ highlightActiveLink();
 
 
 // 5. Responsive mobile menu
+const MOBILE_BREAKPOINT = 768;
+let mobileMenuOverlay = document.getElementById("mobile-menu-overlay");
+
+function isMobileNav() {
+  return window.innerWidth <= MOBILE_BREAKPOINT;
+}
+
+function getMenuIcon() {
+  return menuToggle ? menuToggle.querySelector("i") : null;
+}
+
+function closeMobileMenu() {
+  if (navMenu) navMenu.classList.remove("active");
+  document.body.classList.remove("menu-open");
+  if (mobileMenuOverlay) mobileMenuOverlay.classList.remove("active");
+
+  const icon = getMenuIcon();
+  if (icon) icon.classList.replace("fa-xmark", "fa-bars");
+
+  document.querySelectorAll(".nav-item-dropdown").forEach(dropdown => {
+    dropdown.classList.remove("open");
+  });
+}
+
+function openMobileMenu() {
+  if (!navMenu) return;
+  navMenu.classList.add("active");
+  document.body.classList.add("menu-open");
+  if (mobileMenuOverlay) mobileMenuOverlay.classList.add("active");
+
+  const icon = getMenuIcon();
+  if (icon) icon.classList.replace("fa-bars", "fa-xmark");
+}
+
+function ensureMobileMenuOverlay() {
+  if (mobileMenuOverlay) return mobileMenuOverlay;
+
+  mobileMenuOverlay = document.createElement("button");
+  mobileMenuOverlay.id = "mobile-menu-overlay";
+  mobileMenuOverlay.className = "mobile-menu-overlay";
+  mobileMenuOverlay.type = "button";
+  mobileMenuOverlay.setAttribute("aria-label", "Menüyü kapat");
+  mobileMenuOverlay.addEventListener("click", closeMobileMenu);
+  document.body.appendChild(mobileMenuOverlay);
+  return mobileMenuOverlay;
+}
+
+ensureMobileMenuOverlay();
+
 if (menuToggle) {
   menuToggle.addEventListener("click", () => {
-    if (navMenu) {
-      navMenu.classList.toggle("active");
-      const icon = menuToggle.querySelector("i");
-      if (navMenu.classList.contains("active")) {
-        icon.classList.replace("fa-bars", "fa-xmark");
-      } else {
-        icon.classList.replace("fa-xmark", "fa-bars");
-      }
+    if (!navMenu) return;
+    if (navMenu.classList.contains("active")) {
+      closeMobileMenu();
+    } else {
+      openMobileMenu();
     }
   });
 }
 
-document.querySelectorAll(".nav-link").forEach(link => {
+document.querySelectorAll(".nav-menu > li:not(.nav-item-dropdown) > .nav-link").forEach(link => {
   link.addEventListener("click", () => {
-    if (navMenu) {
-      navMenu.classList.remove("active");
-      if (menuToggle) {
-        const icon = menuToggle.querySelector("i");
-        if (icon) icon.classList.replace("fa-xmark", "fa-bars");
-      }
-    }
+    if (isMobileNav()) closeMobileMenu();
   });
 });
 
-// Mobile Dropdown Submenus Accordion Toggling
+document.querySelectorAll(".dropdown-menu a").forEach(link => {
+  link.addEventListener("click", () => {
+    if (isMobileNav()) closeMobileMenu();
+  });
+});
+
 document.querySelectorAll(".nav-item-dropdown").forEach(dropdown => {
+  const link = dropdown.querySelector(".nav-link");
   const icon = dropdown.querySelector(".dropdown-icon");
-  if (icon) {
-    icon.addEventListener("click", (e) => {
-      if (window.innerWidth <= 768) {
-        e.preventDefault();
-        e.stopPropagation();
-        
-        // Close other open submenus
-        document.querySelectorAll(".nav-item-dropdown").forEach(other => {
-          if (other !== dropdown) {
-            other.classList.remove("open");
-          }
-        });
-        
-        dropdown.classList.toggle("open");
-      }
+
+  const toggleDropdown = (e) => {
+    if (!isMobileNav()) return;
+    e.preventDefault();
+    e.stopPropagation();
+
+    const isOpen = dropdown.classList.contains("open");
+    document.querySelectorAll(".nav-item-dropdown").forEach(other => {
+      if (other !== dropdown) other.classList.remove("open");
     });
-  }
+    dropdown.classList.toggle("open", !isOpen);
+  };
+
+  if (link) link.addEventListener("click", toggleDropdown);
+  if (icon) icon.addEventListener("click", toggleDropdown);
+});
+
+window.addEventListener("resize", () => {
+  if (!isMobileNav()) closeMobileMenu();
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") closeMobileMenu();
 });
 
 
@@ -1052,6 +1104,8 @@ if (candidateForm) {
 // 14. 3D MOUSE TILT ON CARDS
 // ============================================================
 (function initCardTilt() {
+  if (!window.matchMedia("(hover: hover) and (pointer: fine)").matches) return;
+
   const cards = document.querySelectorAll('.service-card, .sector-card, .mgmt-card, .feature-card');
 
   cards.forEach(card => {
