@@ -528,6 +528,8 @@ function getMenuIcon() {
 
 function closeMobileMenu() {
   if (navMenu) navMenu.classList.remove("active");
+  if (header) header.classList.remove("menu-expanded");
+  if (menuToggle) menuToggle.classList.remove("active");
 
   const icon = getMenuIcon();
   if (icon) icon.classList.replace("fa-xmark", "fa-bars");
@@ -540,6 +542,8 @@ function closeMobileMenu() {
 function openMobileMenu() {
   if (!navMenu) return;
   navMenu.classList.add("active");
+  if (header) header.classList.add("menu-expanded");
+  if (menuToggle) menuToggle.classList.add("active");
 
   const icon = getMenuIcon();
   if (icon) icon.classList.replace("fa-bars", "fa-xmark");

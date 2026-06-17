@@ -65,7 +65,6 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
   max-width: 100%;
-  background-color: var(--text-dark);
 }
 
 body {
@@ -334,10 +333,10 @@ a {
   .dropdown-menu {
     position: static;
     transform: none;
-    background: rgba(255, 255, 255, 0.04);
+    background: var(--bg-secondary);
     border: none;
     box-shadow: none;
-    border-radius: 8px;
+    border-radius: 10px;
     min-width: 100%;
     padding: 0;
     max-height: 0;
@@ -356,29 +355,39 @@ a {
     opacity: 1;
     visibility: visible;
     padding: 6px 0;
-    margin: 4px 12px 8px;
+    margin: 4px 8px 8px;
   }
   
   .nav-item-dropdown.open .dropdown-icon {
     transform: rotate(180deg);
+    color: var(--accent);
   }
 
   .nav-item-dropdown .nav-link {
     justify-content: space-between;
-    padding: 14px 20px;
+    padding: 14px 16px;
+  }
+
+  .dropdown-icon {
+    color: var(--text-muted);
+    font-size: 12px;
+    padding: 6px;
+    border-radius: 6px;
+    background: var(--bg-secondary);
   }
   
   .dropdown-menu a {
     text-align: left;
-    padding: 12px 20px;
+    padding: 11px 16px 11px 28px;
     font-size: 14px;
-    color: rgba(255, 255, 255, 0.75);
+    font-weight: 600;
+    color: var(--text-muted);
   }
 
   .dropdown-menu a:hover {
-    background: rgba(0, 122, 51, 0.25);
-    color: #ffffff;
-    padding-left: 24px;
+    background: var(--bg-mint);
+    color: var(--accent);
+    padding-left: 32px;
   }
 }
 
@@ -1656,9 +1665,8 @@ textarea.form-control {
 .main-footer {
   background-color: var(--text-dark);
   color: #ffffff;
-  padding: 80px 0 calc(32px + env(safe-area-inset-bottom, 0px)) 0;
+  padding: 80px 0 32px 0;
   border-top: 3px solid var(--accent);
-  margin-bottom: 0;
 }
 
 .main-footer h1, .main-footer h2, .main-footer h3, .main-footer h4, .main-footer h5 {
@@ -2146,9 +2154,23 @@ textarea.form-control {
 
   .menu-toggle {
     display: inline-flex;
+    transition: var(--transition-smooth);
   }
 
-  /* Mobile navigation — dropdown inside header, full width */
+  .menu-toggle.active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #ffffff;
+  }
+
+  .main-header.menu-expanded {
+    background: rgba(10, 18, 14, 0.96);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Mobile navigation — clean light panel */
   .nav-container {
     flex-wrap: wrap;
     align-items: center;
@@ -2164,37 +2186,52 @@ textarea.form-control {
     flex-basis: 100%;
     width: 100%;
     position: static;
-    background: rgba(13, 19, 16, 0.98);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 12px;
+    background: #ffffff;
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
     flex-direction: column;
     align-items: stretch;
-    padding: 8px 0;
-    gap: 0;
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
-    max-height: 70dvh;
+    padding: 10px;
+    gap: 4px;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+    max-height: 68dvh;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
-    margin-top: 8px;
+    margin-top: 12px;
   }
 
   .nav-menu.active {
     display: flex;
+    animation: menuSlideIn 0.28s ease;
+  }
+
+  @keyframes menuSlideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
   .nav-menu > li {
     width: 100%;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    border-bottom: none;
   }
 
   .nav-link {
-    color: #e2e8f0;
+    color: var(--text-dark);
     width: 100%;
     text-align: left;
-    padding: 14px 20px;
+    padding: 13px 16px;
     white-space: normal;
-    letter-spacing: 1px;
-    font-size: 13px;
+    letter-spacing: 0;
+    text-transform: none;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 10px;
   }
 
   .nav-link::after {
@@ -2203,8 +2240,8 @@ textarea.form-control {
 
   .nav-link:hover,
   .nav-link.active {
-    background: rgba(255, 255, 255, 0.06);
-    color: #ffffff;
+    background: var(--bg-mint);
+    color: var(--accent);
   }
 
   /* Video Hero */
@@ -2435,7 +2472,7 @@ textarea.form-control {
 
   /* Footer */
   .main-footer {
-    padding: 56px 0 calc(28px + env(safe-area-inset-bottom, 0px));
+    padding: 56px 0 28px;
   }
 
   .footer-grid {
@@ -2461,12 +2498,12 @@ textarea.form-control {
     width: 50px;
     height: 50px;
     font-size: 24px;
-    bottom: calc(20px + env(safe-area-inset-bottom, 0px));
+    bottom: 20px;
     right: 16px;
   }
 
   .back-to-top {
-    bottom: calc(82px + env(safe-area-inset-bottom, 0px));
+    bottom: 82px;
     right: 16px;
     width: 42px;
     height: 42px;
