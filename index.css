@@ -65,7 +65,7 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
   max-width: 100%;
-  background: linear-gradient(to bottom, var(--bg-primary) 50%, var(--text-dark) 50%);
+  background-color: var(--text-dark);
 }
 
 .mobile-menu-overlay {
