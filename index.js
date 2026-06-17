@@ -515,8 +515,9 @@ highlightActiveLink();
 // 5. Responsive mobile menu
 const MOBILE_BREAKPOINT = 768;
 
-document.getElementById("mobile-menu-overlay")?.remove();
+document.querySelectorAll(".mobile-menu-overlay, #mobile-menu-overlay").forEach(el => el.remove());
 document.body.classList.remove("menu-open");
+if (header) header.classList.remove("menu-expanded");
 
 function isMobileNav() {
   return window.innerWidth <= MOBILE_BREAKPOINT;
@@ -528,7 +529,6 @@ function getMenuIcon() {
 
 function closeMobileMenu() {
   if (navMenu) navMenu.classList.remove("active");
-  if (header) header.classList.remove("menu-expanded");
   if (menuToggle) menuToggle.classList.remove("active");
 
   const icon = getMenuIcon();
@@ -542,7 +542,6 @@ function closeMobileMenu() {
 function openMobileMenu() {
   if (!navMenu) return;
   navMenu.classList.add("active");
-  if (header) header.classList.add("menu-expanded");
   if (menuToggle) menuToggle.classList.add("active");
 
   const icon = getMenuIcon();
