@@ -1049,36 +1049,7 @@ if (candidateForm) {
 })();
 
 // ============================================================
-// 14. PAGE TRANSITION FADE
-// ============================================================
-(function initPageTransition() {
-  const overlay = document.getElementById('page-transition');
-  if (!overlay) return;
-
-  // Fade in on page load
-  document.addEventListener('DOMContentLoaded', () => {
-    overlay.style.opacity = '0';
-  });
-
-  // Fade out before navigation
-  document.querySelectorAll('a[href]').forEach(link => {
-    const href = link.getAttribute('href');
-    // Only animate same-origin, non-anchor links
-    if (!href || href.startsWith('#') || href.startsWith('http') || href.startsWith('mailto') || href.startsWith('tel')) return;
-
-    link.addEventListener('click', (e) => {
-      e.preventDefault();
-      overlay.style.opacity = '1';
-      overlay.style.pointerEvents = 'all';
-      setTimeout(() => {
-        window.location.href = href;
-      }, 350);
-    });
-  });
-})();
-
-// ============================================================
-// 15. 3D MOUSE TILT ON CARDS
+// 14. 3D MOUSE TILT ON CARDS
 // ============================================================
 (function initCardTilt() {
   const cards = document.querySelectorAll('.service-card, .sector-card, .mgmt-card, .feature-card');

@@ -1767,21 +1767,6 @@ textarea.form-control {
   width: 52px;
 }
 
-/* Page transition fade */
-.page-transition {
-  position: fixed;
-  inset: 0;
-  background: #0f1c14;
-  z-index: 99999;
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 0.4s ease;
-}
-.page-transition.out {
-  opacity: 1;
-  pointer-events: all;
-}
-
 /* Back-to-top floating button */
 .back-to-top {
   position: fixed;
