@@ -41,6 +41,11 @@ video {
   height: auto;
 }
 
+.hero-video {
+  max-width: none;
+  height: 100%;
+}
+
 /* Scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
@@ -58,6 +63,8 @@ video {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 body {
@@ -2170,7 +2177,7 @@ textarea.form-control {
     display: flex;
     position: fixed;
     top: 0;
-    right: -100%;
+    right: 0;
     width: min(320px, 88vw);
     height: 100dvh;
     height: 100vh;
@@ -2184,11 +2191,14 @@ textarea.form-control {
     z-index: 9998;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
-    transition: right 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateX(100%);
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    visibility: hidden;
   }
 
   .nav-menu.active {
-    right: 0;
+    transform: translateX(0);
+    visibility: visible;
   }
 
   .nav-menu > li {
@@ -2219,6 +2229,7 @@ textarea.form-control {
   /* Video Hero */
   .hero-section { min-height: 100svh; }
   .hero-center-container { min-height: 100svh; padding: 0 16px; }
+  .hero-video { transform: none; }
   .hero-logo-img { height: 72px !important; }
   .hero-logo-text-img { height: 34px !important; max-width: 90vw; }
   .hero-cta-row { flex-direction: column; width: 100%; gap: 12px; max-width: 320px; }
@@ -2241,7 +2252,7 @@ textarea.form-control {
 
   .page-hero-content { padding-top: 0; }
   .page-hero-content h1 { font-size: clamp(24px, 6vw, 32px); }
-  .page-hero-deco { width: 140px; height: 140px; right: -30px; opacity: 0.5; }
+  .page-hero-deco { display: none; }
 
   .hero-content {
     padding: 24px 0 12px;
