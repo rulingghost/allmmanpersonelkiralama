@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Altıntaş Personalmanagement | Startseite</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="index.css?v=7.0">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="main-header" id="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo-container">
+        <img src="assets/logo.png" alt="Altıntaş Logo" class="brand-logo-img">
+      </a>
+      
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html" class="nav-link" id="nav-home-link" data-translate="nav_home">Startseite</a></li>
+        
+        <li class="nav-item-dropdown">
+          <a href="unternehmen.html" class="nav-link" id="nav-about-link">
+            <span data-translate="nav_about">Unternehmen</span>
+            <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="philosophie.html" data-translate="philosophy">Philosophie</a></li>
+            <li><a href="management.html" data-translate="management">Führung</a></li>
+            <li><a href="compliance.html" data-translate="comp_title">Compliance</a></li>
+          </ul>
+        </li>
+        
+        <li class="nav-item-dropdown">
+          <a href="dienstleistungen.html" class="nav-link" id="nav-services-link">
+            <span data-translate="nav_services">Dienstleistungen</span>
+            <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="arbeitnehmerueberlassung.html" data-translate="srv_anue_title">Arbeitnehmerüberlassung</a></li>
+            <li><a href="personalvermittlung.html" data-translate="srv_perm_title">Personalvermittlung</a></li>
+            <li><a href="onsite-management.html" data-translate="srv_onsite_title">On-Site Management</a></li>
+          </ul>
+        </li>
+        
+        <li class="nav-item-dropdown">
+          <a href="branchen.html" class="nav-link" id="nav-sectors-link">
+            <span data-translate="nav_sectors">Branchen</span>
+            <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="lager-logistik.html" data-translate="sect_log_title">Lager & Logistik</a></li>
+            <li><a href="produktion-industrie.html" data-translate="sect_ind_title">Industrie & Produktion</a></li>
+            <li><a href="metall-elektro.html" data-translate="sect_metal_title">Metall & Elektro</a></li>
+            <li><a href="industriedienstleistungen.html" data-translate="sect_srv_title">Reinigungsdienste</a></li>
+          </ul>
+        </li>
+        
+        <li><a href="standorte.html" class="nav-link" id="nav-map-link" data-translate="nav_map">Standorte</a></li>
+        <li><a href="kontakt.html" class="nav-link" id="nav-apply-link" data-translate="nav_apply">Kontakt</a></li>
+      </ul>
+      
+      <div class="nav-actions">
+        <!-- Language Selector -->
+        <div class="lang-selector">
+          <button class="lang-btn" id="lang-btn">
+            <img class="flag-icon" src="https://flagcdn.com/w20/de.png" alt="Deutsch" id="active-flag">
+            <span id="active-lang-text">DE</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="lang-dropdown" id="lang-dropdown">
+            <button class="lang-option selected" data-lang="de">
+              <img class="flag-icon" src="https://flagcdn.com/w20/de.png" alt="Deutsch">
+              Deutsch
+            </button>
+            <button class="lang-option" data-lang="tr">
+              <img class="flag-icon" src="https://flagcdn.com/w20/tr.png" alt="Türkçe">
+              Türkçe
+            </button>
+          </div>
+        </div>
+        
+        <div class="nav-separator"></div>
+        <a href="tel:+491784589604" class="header-phone-btn">+49 178 4589604</a>
+        
+        <button class="menu-toggle" id="menu-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section — Video Background -->
+  <section class="hero hero-section" id="home">
+    <div class="hero-video-wrapper">
+      <video class="hero-video" autoplay muted loop playsinline poster="assets/hero_warehouse.png">
+        <source src="assets/şimi_bu_b_r_web_sitesini_ark_p (1).mp4" type="video/mp4">
+      </video>
+      <div class="hero-video-overlay"></div>
+    </div>
+
+    <div class="container hero-center-container">
+      <div class="hero-content-centered">
+        <img src="assets/logo.png?v=7.0" alt="Altıntaş Logo" class="hero-logo-img">
+        <img src="assets/logo yanı.png?v=7.0" alt="Altıntaş Personalmanagement" class="hero-logo-text-img">
+        <div class="hero-divider-line"></div>
+        <div class="hero-signature" data-translate="hero_signature">Heute. Morgen. Für immer.</div>
+        <div class="hero-cta-row">
+          <a href="unternehmen.html" class="btn btn-ghost" data-translate="about_subtitle">Über Uns</a>
+          <a href="kontakt.html" class="btn btn-hero-primary" data-translate="hero_btn_employer">Personalbedarf melden</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll down hint -->
+    <div class="hero-scroll-hint">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </section>
+
+  <!-- Statistics Panel -->
+  <div class="container stats-bar-wrapper">
+    <div class="stats-bar">
+      <div class="stat-item">
+        <div class="stat-number">100%</div>
+        <div class="stat-label" data-translate="stat_compliance">Tariftreu (iGZ/DGB)</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">20+</div>
+        <div class="stat-label" data-translate="stat_cities">Standorte in DE</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">2.500+</div>
+        <div class="stat-label" data-translate="stat_employees">Mitarbeiter vermittelt</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">24/7</div>
+        <div class="stat-label" data-translate="stat_support">Bereitschafts-Service</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Introduction Overview Section -->
+  <section class="section about-section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <span class="section-subtitle" data-translate="about_subtitle">Über uns</span>
+          <h2 class="section-title" data-translate="about_title">Jahrzehntelange Erfahrung in Logistik &amp; Industrie</h2>
+          <div class="about-accent-bar"></div>
+          <p data-translate="about_desc1">
+            Altıntaş Personalmanagement GmbH steht für vertrauensvolle Personaldienstleistungen. Mit Hauptsitz in Essen (Gladbecker Straße 427) und einer starken Präsenz im Ruhrgebiet unterstützen wir Unternehmen dabei, Personalengpässe flexibel und rechtssicher abzusichern.
+          </p>
+          <p data-translate="about_desc2">
+            Unsere Führungskräfte Hasan Altıntaş und Tuncer Çakmak leiten das Unternehmen mit dem Fokus auf faire Arbeitsbedingungen, tariftreue Bezahlung (iGZ/DGB) und höchste Kundenzufriedenheit.
+          </p>
+          <div class="about-badges">
+            <span class="about-badge"><i class="fa-solid fa-shield-halved"></i> <span data-translate="emp_feat_2">100% Rechtskonform</span></span>
+            <span class="about-badge"><i class="fa-solid fa-bolt"></i> <span data-translate="emp_feat_1">Schnelle Disposition</span></span>
+            <span class="about-badge"><i class="fa-solid fa-handshake"></i> <span data-translate="emp_feat_3">Erfahrenes Fachpersonal</span></span>
+          </div>
+          <a href="unternehmen.html" class="btn btn-primary" data-translate="learn_more">Mehr erfahren</a>
+        </div>
+        <div class="portal-img">
+          <img src="assets/about_consulting.png" alt="Altıntaş Recruiting Team">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Portal Highlight Section -->
+  <section class="section section-bg-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle" data-translate="services_subtitle">Dienstleistungen</span>
+        <h2 class="section-title" data-translate="services_title">Flexible Lösungen für Arbeitgeber & Bewerber</h2>
+        <p class="section-description" data-translate="services_desc">
+          Erfahren Sie, wie wir Unternehmen durch flexible Arbeitnehmerüberlassung unterstützen und Bewerbern zukunftssichere Perspektiven bieten.
+        </p>
+      </div>
+
+      <div class="service-portal-tabs">
+        <button class="tab-btn active" data-tab="employer" data-translate="tab_employer">Für Arbeitgeber</button>
+        <button class="tab-btn" data-tab="candidate" data-translate="tab_candidate">Für Bewerber</button>
+      </div>
+
+      <!-- Employer Tab Content -->
+      <div class="portal-content active" id="tab-employer">
+        <div class="portal-img">
+          <img src="assets/service_logistics.png" alt="Logistics Team">
+        </div>
+        <div class="portal-text">
+          <h3 data-translate="employer_title">Schnell. Rechtssicher. Zuverlässig.</h3>
+          <p data-translate="employer_desc">
+            Vermeiden Sie Produktionsausfälle bei Auftragsspitzen oder Personalmangel. Unsere Zeitarbeitskräfte stehen Ihnen flexibel zur Verfügung.
+          </p>
+          <ul class="service-list">
+            <li class="service-item"><i class="fa-solid fa-check"></i><span data-translate="emp_feat_1">Schnelle Disposition</span></li>
+            <li class="service-item"><i class="fa-solid fa-check"></i><span data-translate="emp_feat_2">100% Rechtskonform</span></li>
+            <li class="service-item"><i class="fa-solid fa-check"></i><span data-translate="emp_feat_3">Erfahrenes Fachpersonal</span></li>
+            <li class="service-item"><i class="fa-solid fa-check"></i><span data-translate="emp_feat_4">Volle Kostenkontrolle</span></li>
+          </ul>
+          <a href="dienstleistungen.html" class="btn btn-primary" data-translate="btn_request_staff">Alle Dienstleistungen</a>
+        </div>
+      </div>
+
+      <!-- Candidate Tab Content -->
+      <div class="portal-content" id="tab-candidate">
+        <div class="portal-img">
+          <img src="assets/service_production.png" alt="Production Team">
+        </div>
+        <div class="portal-text">
+          <h3 data-translate="candidate_title">Faire Bezahlung. Sichere Zukunft.</h3>
+          <p data-translate="candidate_desc">
+            Starten Sie beruflich durch. Wir bieten Ihnen feste Verträge in Industrie- und Logistikbetrieben der Region.
+          </p>
+          <ul class="service-list">
+            <li class="service-item"><i class="fa-solid fa-check"></i><span data-translate="cand_feat_1">Unbefristeter Arbeitsvertrag</span></li>
+            <li class="service-item"><i class="fa-solid fa-check"></i><span data-translate="cand_feat_2">Übertarifliche Bezahlung</span></li>
+            <li class="service-item"><i class="fa-solid fa-check"></i><span data-translate="cand_feat_3">Urlaubs- und Weihnachtsgeld</span></li>
+            <li class="service-item"><i class="fa-solid fa-check"></i><span data-translate="cand_feat_4">Arbeitsschutz & Kleidung</span></li>
+          </ul>
+          <a href="kontakt.html" class="btn btn-primary" data-translate="btn_apply_now">Jetzt bewerben</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner with Cargo Truck -->
+  <section class="section" style="background: linear-gradient(rgba(15, 28, 20, 0.8), rgba(15, 28, 20, 0.8)), url('assets/cargo_truck.png') no-repeat center center; background-size: cover; color: #ffffff; padding: 120px 0; text-align: center;">
+    <div class="container" style="max-width: 800px;">
+      <h2 style="color: #ffffff; font-size: 40px; margin-bottom: 20px;" data-translate="cta_banner_title">Effiziente Logistik & Express-Personalgestellung</h2>
+      <p style="color: #cbd5e1; font-size: 18px; margin-bottom: 40px;" data-translate="cta_banner_desc">Wir verfügen über einen großen Pool qualifizierter Staplerfahrer, Kommissionierer und Logistikhelfer, die sofort einsatzbereit sind.</p>
+      <a href="kontakt.html" class="btn btn-primary" data-translate="btn_request_staff">Personal anfordern</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col" style="grid-column: span 1;">
+          <a href="index.html" class="logo" style="margin-bottom: 20px;">
+            <img src="assets/logo.png" alt="Altıntaş Logo" style="height: 48px; object-fit: contain; background: #fff; padding: 4px; border-radius: 4px;">
+            ALTINTAŞ<span>Personal</span>
+          </a>
+          <p class="footer-info-text" data-translate="footer_brand_desc">
+            Ihr verlässlicher Partner für zeitgemäße Arbeitnehmerüberlassung und Personalmanagement in Deutschland und Europa.
+          </p>
+        </div>
+        
+        <div class="footer-col">
+          <h4 data-translate="footer_services">Dienstleistungen</h4>
+          <ul class="footer-links">
+            <li><a href="dienstleistungen.html" data-translate="nav_services">Personalüberlassung</a></li>
+            <li><a href="branchen.html" data-translate="sect_log_title">Lager & Logistik</a></li>
+            <li><a href="branchen.html" data-translate="sect_ind_title">Produktion & Industrie</a></li>
+            <li><a href="branchen.html" data-translate="sect_srv_title">Reinigungsdienste</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h4 data-translate="footer_quicklinks">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" data-translate="nav_home">Home</a></li>
+            <li><a href="standorte.html" data-translate="nav_map">Standorte</a></li>
+            <li><a href="kontakt.html" data-translate="nav_apply">Kontakt</a></li>
+            <li><a href="unternehmen.html" data-translate="about_subtitle">Über Uns</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h4 data-translate="footer_contact">Kontakt</h4>
+          <ul class="footer-contact">
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Gladbecker Straße 427<br>45329 Essen, DE</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <span>+49 178 4589604</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <span>info@altintas-pm.de</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <div class="footer-copyright">
+          &copy; 2026 Altıntaş Personalmanagement GmbH. <span data-translate="all_rights_reserved">Alle Rechte vorbehalten.</span>
+        </div>
+        <ul class="footer-legal">
+          <li><a href="#impressum" data-translate="impressum">Impressum</a></li>
+          <li><a href="#privacy" data-translate="privacy">Datenschutz</a></li>
+          <li><a href="#cookies" data-translate="cookies">Cookies</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Yüzen WhatsApp İletişim Butonu -->
+  <a href="https://wa.me/491784589604" class="whatsapp-float" target="_blank" aria-label="WhatsApp İletişim">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Nach oben">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- Page Transition Overlay -->
+  <div class="page-transition" id="page-transition"></div>
+
+  <!-- JavaScript Bundle -->
+  <script src="index.js?v=7.0"></script>
+</body>
+</html>
