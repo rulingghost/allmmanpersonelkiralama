@@ -581,7 +581,7 @@ a {
 }
 
 .hero-logo-text-img {
-  height: 52px;
+  height: 72px;
   width: auto;
   object-fit: contain;
   margin-bottom: 20px;
@@ -1677,7 +1677,7 @@ textarea.form-control {
 .main-footer {
   background-color: var(--text-dark);
   color: #ffffff;
-  padding: 80px 0 32px 0;
+  padding: 80px 0 calc(32px + env(safe-area-inset-bottom, 0px)) 0;
   border-top: 3px solid var(--accent);
   margin-top: auto;
 }
@@ -2283,15 +2283,22 @@ textarea.form-control {
     padding: 0 16px;
   }
   .hero-video { transform: none; }
-  .hero-logo-img { height: 72px !important; }
-  .hero-logo-text-img { height: 34px !important; max-width: 90vw; }
+  .hero-logo-img { height: 56px !important; }
+  .hero-logo-text-img { height: 48px !important; max-width: 90vw; }
   .hero-cta-row { flex-direction: column; width: 100%; gap: 12px; max-width: 320px; }
-  .btn-ghost, .btn-hero-primary { width: 100%; text-align: center; justify-content: center; }
+  .btn-ghost, .btn-hero-primary {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    padding: 10px 24px !important;
+    font-size: 13px !important;
+    letter-spacing: 1px !important;
+  }
   .hero-scroll-hint { display: none; }
   .hero-content-centered { padding: 0 12px; }
 
   .hero-signature {
-    font-size: clamp(18px, 5vw, 26px) !important;
+    font-size: 16px !important;
     text-align: center;
   }
 
@@ -2507,7 +2514,7 @@ textarea.form-control {
 
   /* Footer */
   .main-footer {
-    padding: 56px 0 28px;
+    padding: 56px 0 calc(28px + env(safe-area-inset-bottom, 0px));
   }
 
   .footer-grid {
