@@ -604,6 +604,11 @@ function selectLanguage(lang) {
   
   // Translate terms
   translatePage(lang);
+
+  document.documentElement.style.setProperty(
+    "--mobile-menu-label",
+    lang === "tr" ? '"Menü"' : '"Menü"'
+  );
   
   // Close dropdown
   if (langDropdown) langDropdown.classList.remove("active");
@@ -677,7 +682,16 @@ highlightActiveLink();
 // 5. Responsive mobile menu
 const MOBILE_BREAKPOINT = 768;
 
-document.querySelectorAll(".mobile-menu-overlay, #mobile-menu-overlay").forEach(el => el.remove());
+let mobileMenuOverlay = document.getElementById("mobile-menu-overlay");
+if (!mobileMenuOverlay) {
+  mobileMenuOverlay = document.createElement("div");
+  mobileMenuOverlay.id = "mobile-menu-overlay";
+  mobileMenuOverlay.className = "mobile-menu-overlay";
+  mobileMenuOverlay.setAttribute("aria-hidden", "true");
+  document.body.appendChild(mobileMenuOverlay);
+  mobileMenuOverlay.addEventListener("click", () => closeMobileMenu());
+}
+
 document.body.classList.remove("menu-open");
 if (header) header.classList.remove("menu-expanded");
 
@@ -692,6 +706,8 @@ function getMenuIcon() {
 function closeMobileMenu() {
   if (navMenu) navMenu.classList.remove("active");
   if (menuToggle) menuToggle.classList.remove("active");
+  document.body.classList.remove("menu-open");
+  if (mobileMenuOverlay) mobileMenuOverlay.setAttribute("aria-hidden", "true");
 
   const icon = getMenuIcon();
   if (icon) icon.classList.replace("fa-xmark", "fa-bars");
@@ -705,6 +721,8 @@ function openMobileMenu() {
   if (!navMenu) return;
   navMenu.classList.add("active");
   if (menuToggle) menuToggle.classList.add("active");
+  document.body.classList.add("menu-open");
+  if (mobileMenuOverlay) mobileMenuOverlay.setAttribute("aria-hidden", "false");
 
   const icon = getMenuIcon();
   if (icon) icon.classList.replace("fa-bars", "fa-xmark");
@@ -724,25 +742,31 @@ if (menuToggle) {
 
 document.querySelectorAll(".nav-menu a").forEach(link => {
   link.addEventListener("click", () => {
-    if (isMobileNav()) closeMobileMenu();
+    if (!isMobileNav()) return;
+    const isDropdownParent =
+      link.classList.contains("nav-link") &&
+      link.parentElement?.classList.contains("nav-item-dropdown");
+    if (isDropdownParent) return;
+    closeMobileMenu();
   });
 });
 
+function toggleMobileDropdown(dropdown, e) {
+  if (!isMobileNav()) return;
+  e.preventDefault();
+  e.stopPropagation();
+
+  const isOpen = dropdown.classList.contains("open");
+  document.querySelectorAll(".nav-item-dropdown").forEach(other => {
+    if (other !== dropdown) other.classList.remove("open");
+  });
+  dropdown.classList.toggle("open", !isOpen);
+}
+
 document.querySelectorAll(".nav-item-dropdown").forEach(dropdown => {
-  const icon = dropdown.querySelector(".dropdown-icon");
-
-  if (icon) {
-    icon.addEventListener("click", (e) => {
-      if (!isMobileNav()) return;
-      e.preventDefault();
-      e.stopPropagation();
-
-      const isOpen = dropdown.classList.contains("open");
-      document.querySelectorAll(".nav-item-dropdown").forEach(other => {
-        if (other !== dropdown) other.classList.remove("open");
-      });
-      dropdown.classList.toggle("open", !isOpen);
-    });
+  const parentLink = dropdown.querySelector(":scope > .nav-link");
+  if (parentLink) {
+    parentLink.addEventListener("click", (e) => toggleMobileDropdown(dropdown, e));
   }
 });
 
@@ -750,6 +774,7 @@ document.addEventListener("click", (e) => {
   if (!isMobileNav() || !navMenu) return;
   if (!navMenu.classList.contains("active")) return;
   if (navMenu.contains(e.target) || menuToggle.contains(e.target)) return;
+  if (mobileMenuOverlay && mobileMenuOverlay.contains(e.target)) return;
   closeMobileMenu();
 });
 
@@ -840,6 +865,33 @@ const branchesData = {
   }
 };
 
+const branchCoords = {
+  essen: { lat: 51.4564, lng: 7.0103 },
+  duisburg: { lat: 51.4344, lng: 6.7623 },
+  moers: { lat: 51.4514, lng: 6.6406 },
+  frankfurt: { lat: 50.1109, lng: 8.6821 },
+  wiesbaden: { lat: 50.0782, lng: 8.2398 },
+  duesseldorf: { lat: 51.2277, lng: 6.7735 },
+  aschaffenburg: { lat: 49.977, lng: 9.1521 },
+  bocholt: { lat: 51.8388, lng: 6.6153 },
+  dorsten: { lat: 51.6611, lng: 7.0022 },
+  gelsenkirchen: { lat: 51.5177, lng: 7.0857 },
+  gladbeck: { lat: 51.5706, lng: 6.9856 },
+  gronau: { lat: 52.2109, lng: 7.0234 },
+  haltern: { lat: 51.7428, lng: 7.1819 },
+  marl: { lat: 51.6567, lng: 7.0904 },
+  neuss: { lat: 51.198, lng: 6.685 },
+  recklinghausen: { lat: 51.6138, lng: 7.1973 },
+  schermbeck: { lat: 51.6717, lng: 6.8764 },
+  witten: { lat: 51.4436, lng: 7.3306 },
+  wuelfrath: { lat: 51.2833, lng: 7.0333 },
+  bursa: { lat: 40.1885, lng: 29.061 }
+};
+
+function getBranchCoords(branchId) {
+  return branchCoords[branchId] || null;
+}
+
 function getBranchDetails(branchId) {
   if (branchesData[branchId]) {
     return branchesData[branchId];
@@ -854,12 +906,104 @@ function getBranchDetails(branchId) {
   };
 }
 
-// Interactive Map Pins and Syncing
-const mapPins = document.querySelectorAll(".map-pin");
+// Interactive Map — Leaflet + branch list sync
 const branchItems = document.querySelectorAll(".branch-item");
 const filterChips = document.querySelectorAll(".filter-chip");
 const modalOverlay = document.getElementById("branch-modal");
 const modalCloseBtn = document.getElementById("modal-close-btn");
+let locationsMap = null;
+const mapMarkers = {};
+
+function createBranchMarkerIcon(type) {
+  if (typeof L === "undefined") return null;
+  return L.divIcon({
+    className: `leaflet-branch-marker marker-${type}`,
+    html: "<span></span>",
+    iconSize: [20, 20],
+    iconAnchor: [10, 10]
+  });
+}
+
+function setActiveMapBranch(branchId) {
+  document.querySelectorAll(".branch-item").forEach((item) => {
+    item.classList.toggle("active", item.getAttribute("data-branch") === branchId);
+  });
+
+  Object.entries(mapMarkers).forEach(([id, entry]) => {
+    const el = entry.marker.getElement();
+    if (el) el.classList.toggle("active", id === branchId);
+  });
+}
+
+function clearActiveMapBranch() {
+  document.querySelectorAll(".branch-item").forEach((item) => item.classList.remove("active"));
+  Object.values(mapMarkers).forEach((entry) => {
+    const el = entry.marker.getElement();
+    if (el) el.classList.remove("active");
+  });
+}
+
+function initLocationsMap() {
+  const mapEl = document.getElementById("locations-map");
+  if (!mapEl || typeof L === "undefined" || locationsMap) return;
+
+  locationsMap = L.map(mapEl, {
+    scrollWheelZoom: true,
+    zoomControl: true
+  }).setView([51.3, 10.5], 6);
+
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    maxZoom: 18,
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+  }).addTo(locationsMap);
+
+  const markerGroup = [];
+
+  branchItems.forEach((item) => {
+    const branchId = item.getAttribute("data-branch");
+    const type = item.getAttribute("data-type");
+    const coords = getBranchCoords(branchId);
+    if (!coords) return;
+
+    const icon = createBranchMarkerIcon(type);
+    if (!icon) return;
+
+    const data = getBranchDetails(branchId);
+    const marker = L.marker([coords.lat, coords.lng], { icon })
+      .addTo(locationsMap)
+      .bindPopup(`<strong>${data.name}</strong><br>${data.category[currentLanguage] || data.category.de}`)
+      .on("click", () => {
+        setActiveMapBranch(branchId);
+        openBranchModal(branchId);
+      });
+
+    marker.on("mouseover", () => setActiveMapBranch(branchId));
+    marker.on("mouseout", () => clearActiveMapBranch());
+
+    mapMarkers[branchId] = { marker, type };
+    markerGroup.push(marker);
+  });
+
+  if (markerGroup.length > 0) {
+    const bounds = L.featureGroup(markerGroup).getBounds().pad(0.15);
+    locationsMap.fitBounds(bounds, { maxZoom: 7 });
+  }
+
+  requestAnimationFrame(() => locationsMap.invalidateSize());
+  window.addEventListener("resize", () => {
+    if (locationsMap) locationsMap.invalidateSize();
+  });
+}
+
+function setMapMarkerVisibility(branchId, visible) {
+  const entry = mapMarkers[branchId];
+  if (!entry || !locationsMap) return;
+  if (visible) {
+    entry.marker.addTo(locationsMap);
+  } else {
+    locationsMap.removeLayer(entry.marker);
+  }
+}
 
 function openBranchModal(branchId) {
   const data = getBranchDetails(branchId);
@@ -889,48 +1033,25 @@ if (modalOverlay) {
   });
 }
 
-// Click on pins or list items triggers modal popup (Açılabilir pencere)
-if (mapPins.length > 0) {
-  mapPins.forEach(pin => {
-    pin.addEventListener("click", (e) => {
-      const branchId = pin.getAttribute("data-branch");
-      openBranchModal(branchId);
-    });
-    
-    // Hover visual effect
-    pin.addEventListener("mouseenter", () => {
-      pin.classList.add("active");
-      const branchId = pin.getAttribute("data-branch");
-      const item = document.querySelector(`.branch-item[data-branch="${branchId}"]`);
-      if (item) item.classList.add("active");
-    });
-    
-    pin.addEventListener("mouseleave", () => {
-      pin.classList.remove("active");
-      const branchId = pin.getAttribute("data-branch");
-      const item = document.querySelector(`.branch-item[data-branch="${branchId}"]`);
-      if (item) item.classList.remove("active");
-    });
-  });
-}
-
+// Click on list items triggers modal; map markers handled in initLocationsMap
 if (branchItems.length > 0) {
   branchItems.forEach(item => {
     item.addEventListener("click", () => {
       const branchId = item.getAttribute("data-branch");
+      setActiveMapBranch(branchId);
       openBranchModal(branchId);
+      const entry = mapMarkers[branchId];
+      if (entry && locationsMap) {
+        locationsMap.setView(entry.marker.getLatLng(), Math.max(locationsMap.getZoom(), 9), { animate: true });
+      }
     });
     
     item.addEventListener("mouseenter", () => {
-      const branchId = item.getAttribute("data-branch");
-      const pin = document.getElementById(`pin-${branchId}`);
-      if (pin) pin.classList.add("active");
+      setActiveMapBranch(item.getAttribute("data-branch"));
     });
     
     item.addEventListener("mouseleave", () => {
-      const branchId = item.getAttribute("data-branch");
-      const pin = document.getElementById(`pin-${branchId}`);
-      if (pin) pin.classList.remove("active");
+      clearActiveMapBranch();
     });
   });
 }
@@ -945,24 +1066,9 @@ if (filterChips.length > 0) {
       
       branchItems.forEach(item => {
         const type = item.getAttribute("data-type");
-        if (filter === "all" || type === filter) {
-          item.style.display = "flex";
-        } else {
-          item.style.display = "none";
-        }
-      });
-      
-      mapPins.forEach(pin => {
-        const branchId = pin.getAttribute("data-branch");
-        const listItem = document.querySelector(`.branch-item[data-branch="${branchId}"]`);
-        if (listItem) {
-          const type = listItem.getAttribute("data-type");
-          if (filter === "all" || type === filter) {
-            pin.style.display = "block";
-          } else {
-            pin.style.display = "none";
-          }
-        }
+        const visible = filter === "all" || type === filter;
+        item.style.display = visible ? "flex" : "none";
+        setMapMarkerVisibility(item.getAttribute("data-branch"), visible);
       });
       
       const intlWidget = document.getElementById("intl-widget");
@@ -975,6 +1081,10 @@ if (filterChips.length > 0) {
       }
     });
   });
+}
+
+if (document.getElementById("locations-map")) {
+  initLocationsMap();
 }
 
 

@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Altıntaş Personalmanagement | Standorte</title>
+  <title>Alt?nta? Personalmanagement | Standorte</title>
   
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/logo.png">
@@ -12,7 +12,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   
   <!-- CSS Stylesheet -->
-  <link rel="stylesheet" href="index.css?v=10.3">
+  <link rel="stylesheet" href="index.css?v=10.8">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
 </head>
 <body>
 
@@ -20,7 +21,7 @@
   <header class="main-header" id="header">
     <div class="container nav-container">
       <a href="index.html" class="logo-container">
-        <img src="assets/logo.png" alt="Altıntaş Logo" class="brand-logo-img">
+        <img src="assets/logo.png" alt="Alt?nta? Logo" class="brand-logo-img">
       </a>
       
       <ul class="nav-menu" id="nav-menu">
@@ -33,7 +34,7 @@
           </a>
           <ul class="dropdown-menu">
             <li><a href="philosophie.html" data-translate="philosophy">Philosophie</a></li>
-            <li><a href="management.html" data-translate="management">Führung</a></li>
+            <li><a href="management.html" data-translate="management">Fhrung</a></li>
             <li><a href="compliance.html" data-translate="comp_title">Compliance</a></li>
           </ul>
         </li>
@@ -44,7 +45,7 @@
             <i class="fa-solid fa-chevron-down dropdown-icon"></i>
           </a>
           <ul class="dropdown-menu">
-            <li><a href="arbeitnehmerueberlassung.html" data-translate="srv_anue_title">Arbeitnehmerüberlassung</a></li>
+            <li><a href="arbeitnehmerueberlassung.html" data-translate="srv_anue_title">Arbeitnehmerberlassung</a></li>
             <li><a href="personalvermittlung.html" data-translate="srv_perm_title">Personalvermittlung</a></li>
             <li><a href="onsite-management.html" data-translate="srv_onsite_title">On-Site Management</a></li>
           </ul>
@@ -108,7 +109,7 @@
       <div class="hero-content">
         <span class="section-subtitle" data-translate="nav_map">Standorte</span>
         <h1 class="hero-title" data-translate="map_hero_title">Niederlassungen & Reichweite</h1>
-        <p class="hero-description" data-translate="map_hero_desc">Entdecken Sie unsere Standorte in Deutschland und unser internationales Rekrutierungsbüro in Bursa, Türkei.</p>
+        <p class="hero-description" data-translate="map_hero_desc">Entdecken Sie unsere Standorte in Deutschland und unser internationales Rekrutierungsbro in Bursa, Trkei.</p>
       </div>
     </div>
   </section>
@@ -119,115 +120,16 @@
       <div class="map-section-grid">
         <!-- Germany Map -->
         <div class="map-container">
-          <svg class="germany-svg" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
-            <g id="germany-outline">
-              <defs>
-                <pattern id="grid-light-st" width="20" height="20" patternUnits="userSpaceOnUse">
-                  <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(0, 0, 0, 0.02)" stroke-width="0.5"/>
-                </pattern>
-              </defs>
-              <rect width="100%" height="100%" fill="url(#grid-light-st)" />
-              
-              <!-- Germany Path Outline -->
-              <path d="M175,15 L195,22 L215,18 L230,30 L250,22 L260,35 L275,35 L285,55 L310,65 L320,85 L300,110 L315,135 L335,140 L340,165 L360,180 L350,210 L330,225 L345,260 L320,285 L325,320 L310,345 L290,345 L285,370 L295,400 L280,420 L285,465 L270,480 L255,490 L240,490 L230,470 L210,480 L180,480 L170,455 L150,460 L140,440 L120,440 L110,420 L100,430 L80,410 L80,390 L95,375 L85,340 L100,320 L90,300 L110,290 L115,275 L105,255 L85,250 L70,230 L70,210 L65,190 L85,175 L80,155 L90,140 L105,140 L105,115 L125,100 L115,80 L130,55 L160,50 Z" />
-            </g>
-            
-            <g id="map-pins">
-              <!-- Logistics (Navy pins) -->
-              <g class="map-pin" id="pin-frankfurt" data-branch="frankfurt" transform="translate(170, 320)">
-                <circle class="map-pin-pulse" r="6" fill="rgba(26, 79, 122, 0.4)"/>
-                <circle r="6" fill="#1a4f7a" stroke="#fff" stroke-width="1.5"/>
-              </g>
-              <g class="map-pin" id="pin-moers" data-branch="moers" transform="translate(100, 200)">
-                <circle class="map-pin-pulse" r="6" fill="rgba(26, 79, 122, 0.4)"/>
-                <circle r="6" fill="#1a4f7a" stroke="#fff" stroke-width="1.5"/>
-              </g>
-              <g class="map-pin" id="pin-wiesbaden" data-branch="wiesbaden" transform="translate(150, 325)">
-                <circle class="map-pin-pulse" r="6" fill="rgba(26, 79, 122, 0.4)"/>
-                <circle r="6" fill="#1a4f7a" stroke="#fff" stroke-width="1.5"/>
-              </g>
-
-              <!-- National Industry (Blue pins) -->
-              <g class="map-pin" id="pin-essen" data-branch="essen" transform="translate(115, 212)">
-                <circle class="map-pin-pulse" r="6" fill="rgba(37, 99, 171, 0.4)"/>
-                <circle r="5" fill="#2563ab" stroke="#fff" stroke-width="1.5"/>
-              </g>
-              <g class="map-pin" id="pin-duisburg" data-branch="duisburg" transform="translate(100, 210)">
-                <circle class="map-pin-pulse" r="6" fill="rgba(37, 99, 171, 0.4)"/>
-                <circle r="5" fill="#2563ab" stroke="#fff" stroke-width="1.5"/>
-              </g>
-              <g class="map-pin" id="pin-duesseldorf" data-branch="duesseldorf" transform="translate(102, 225)">
-                <circle class="map-pin-pulse" r="6" fill="rgba(37, 99, 171, 0.4)"/>
-                <circle r="5" fill="#2563ab" stroke="#fff" stroke-width="1.5"/>
-              </g>
-              <g class="map-pin" id="pin-aschaffenburg" data-branch="aschaffenburg" transform="translate(185, 330)">
-                <circle class="map-pin-pulse" r="6" fill="rgba(37, 99, 171, 0.4)"/>
-                <circle r="5" fill="#2563ab" stroke="#fff" stroke-width="1.5"/>
-              </g>
-              <g class="map-pin" id="pin-bocholt" data-branch="bocholt" transform="translate(98, 175)">
-                <circle class="map-pin-pulse" r="6" fill="rgba(37, 99, 171, 0.4)"/>
-                <circle r="5" fill="#2563ab" stroke="#fff" stroke-width="1.5"/>
-              </g>
-              <g class="map-pin" id="pin-dorsten" data-branch="dorsten" transform="translate(110, 188)">
-                <circle class="map-pin-pulse" r="6" fill="rgba(37, 99, 171, 0.4)"/>
-                <circle r="5" fill="#2563ab" stroke="#fff" stroke-width="1.5"/>
-              </g>
-              <g class="map-pin" id="pin-gelsenkirchen" data-branch="gelsenkirchen" transform="translate(120, 202)">
-                <circle class="map-pin-pulse" r="6" fill="rgba(37, 99, 171, 0.4)"/>
-                <circle r="5" fill="#2563ab" stroke="#fff" stroke-width="1.5"/>
-              </g>
-              <g class="map-pin" id="pin-gladbeck" data-branch="gladbeck" transform="translate(116, 194)">
-                <circle class="map-pin-pulse" r="6" fill="rgba(37, 99, 171, 0.4)"/>
-                <circle r="5" fill="#2563ab" stroke="#fff" stroke-width="1.5"/>
-              </g>
-              <g class="map-pin" id="pin-gronau" data-branch="gronau" transform="translate(95, 130)">
-                <circle class="map-pin-pulse" r="6" fill="rgba(37, 99, 171, 0.4)"/>
-                <circle r="5" fill="#2563ab" stroke="#fff" stroke-width="1.5"/>
-              </g>
-              <g class="map-pin" id="pin-haltern" data-branch="haltern" transform="translate(124, 170)">
-                <circle class="map-pin-pulse" r="6" fill="rgba(37, 99, 171, 0.4)"/>
-                <circle r="5" fill="#2563ab" stroke="#fff" stroke-width="1.5"/>
-              </g>
-              <g class="map-pin" id="pin-marl" data-branch="marl" transform="translate(122, 182)">
-                <circle class="map-pin-pulse" r="6" fill="rgba(37, 99, 171, 0.4)"/>
-                <circle r="5" fill="#2563ab" stroke="#fff" stroke-width="1.5"/>
-              </g>
-              <g class="map-pin" id="pin-neuss" data-branch="neuss" transform="translate(96, 232)">
-                <circle class="map-pin-pulse" r="6" fill="rgba(37, 99, 171, 0.4)"/>
-                <circle r="5" fill="#2563ab" stroke="#fff" stroke-width="1.5"/>
-              </g>
-              <g class="map-pin" id="pin-recklinghausen" data-branch="recklinghausen" transform="translate(130, 188)">
-                <circle class="map-pin-pulse" r="6" fill="rgba(37, 99, 171, 0.4)"/>
-                <circle r="5" fill="#2563ab" stroke="#fff" stroke-width="1.5"/>
-              </g>
-              <g class="map-pin" id="pin-schermbeck" data-branch="schermbeck" transform="translate(98, 190)">
-                <circle class="map-pin-pulse" r="6" fill="rgba(37, 99, 171, 0.4)"/>
-                <circle r="5" fill="#2563ab" stroke="#fff" stroke-width="1.5"/>
-              </g>
-              <g class="map-pin" id="pin-witten" data-branch="witten" transform="translate(135, 220)">
-                <circle class="map-pin-pulse" r="6" fill="rgba(37, 99, 171, 0.4)"/>
-                <circle r="5" fill="#2563ab" stroke="#fff" stroke-width="1.5"/>
-              </g>
-              <g class="map-pin" id="pin-wuelfrath" data-branch="wuelfrath" transform="translate(116, 230)">
-                <circle class="map-pin-pulse" r="6" fill="rgba(37, 99, 171, 0.4)"/>
-                <circle r="5" fill="#2563ab" stroke="#fff" stroke-width="1.5"/>
-              </g>
-            </g>
-          </svg>
-          
-          <div class="map-tooltip" id="map-tooltip">
-            <h5 id="tooltip-title">Essen</h5>
-            <p id="tooltip-category">Industrie National</p>
-          </div>
+          <div id="locations-map" class="locations-map" aria-label="Standorte Karte"></div>
         </div>
         
         <!-- Sidebar branch controls -->
         <div class="map-details">
           <div class="map-filters">
-            <button class="filter-chip active" data-filter="all" data-translate="filter_all">Tümü</button>
+            <button class="filter-chip active" data-filter="all" data-translate="filter_all">Tm</button>
             <button class="filter-chip" data-filter="logistics" data-translate="filter_logistics">Lager & Logistik</button>
             <button class="filter-chip" data-filter="industrial" data-translate="filter_industrial">Industrie National</button>
-            <button class="filter-chip" data-filter="international" data-translate="filter_international">Uluslararası</button>
+            <button class="filter-chip" data-filter="international" data-translate="filter_international">Uluslararas</button>
           </div>
           
           <div class="branch-list-wrapper">
@@ -272,7 +174,7 @@
               </div>
               <div class="branch-item" data-branch="duesseldorf" data-type="industrial">
                 <div class="branch-info">
-                  <h4>Düsseldorf</h4>
+                  <h4>Dsseldorf</h4>
                   <p>Nordrhein-Westfalen, DE</p>
                 </div>
                 <span class="branch-tag tag-national" data-translate="tag_industrial">Industrie</span>
@@ -363,7 +265,7 @@
               </div>
               <div class="branch-item" data-branch="wuelfrath" data-type="industrial">
                 <div class="branch-info">
-                  <h4>Wülfrath</h4>
+                  <h4>Wlfrath</h4>
                   <p>Nordrhein-Westfalen, DE</p>
                 </div>
                 <span class="branch-tag tag-national" data-translate="tag_industrial">Industrie</span>
@@ -373,7 +275,7 @@
               <div class="branch-item" data-branch="bursa" data-type="international">
                 <div class="branch-info">
                   <h4>Bursa</h4>
-                  <p>Marmara Bölgesi, Türkiye</p>
+                  <p>Marmara Blgesi, Trkiye</p>
                 </div>
                 <span class="branch-tag tag-international" data-translate="tag_international">International</span>
               </div>
@@ -381,9 +283,9 @@
           </div>
           
           <div class="glass-panel intl-widget" id="intl-widget">
-            <h4><i class="fa-solid fa-globe"></i><span data-translate="intl_title">Uluslararası Temsilcilik</span></h4>
+            <h4><i class="fa-solid fa-globe"></i><span data-translate="intl_title">Uluslararas Temsilcilik</span></h4>
             <p style="font-size: 13px; color: var(--text-muted);" data-translate="intl_desc">
-              Bursa (Türkiye) şubemiz aracılığıyla, Almanya'daki sanayi ve lojistik devlerinin nitelikli iş gücü ihtiyaçlarını karşılıyor ve küresel işe alım süreçlerini yönetiyoruz.
+              Bursa (Trkiye) ubemiz araclyla, Almanya'daki sanayi ve lojistik devlerinin nitelikli i gc ihtiyalarn karlyor ve kresel ie alm srelerini ynetiyoruz.
             </p>
           </div>
         </div>
@@ -397,18 +299,18 @@
       <div class="footer-grid">
         <div class="footer-col" style="grid-column: span 1;">
           <a href="index.html" class="logo" style="margin-bottom: 20px;">
-            <img src="assets/logo.png" alt="Altıntaş Logo" style="height: 48px; object-fit: contain; background: #fff; padding: 4px; border-radius: 4px;">
-            ALTINTAŞ<span>Personal</span>
+            <img src="assets/logo.png" alt="Alt?nta? Logo" style="height: 48px; object-fit: contain; background: #fff; padding: 4px; border-radius: 4px;">
+            ALTINTA<span>Personal</span>
           </a>
           <p class="footer-info-text" data-translate="footer_brand_desc">
-            Ihr verlässlicher Partner für zeitgemäße Arbeitnehmerüberlassung und Personalmanagement in Deutschland und Europa.
+            Ihr verlsslicher Partner fr zeitgeme Arbeitnehmerberlassung und Personalmanagement in Deutschland und Europa.
           </p>
         </div>
         
         <div class="footer-col">
           <h4 data-translate="footer_services">Dienstleistungen</h4>
           <ul class="footer-links">
-            <li><a href="dienstleistungen.html" data-translate="nav_services">Personalüberlassung</a></li>
+            <li><a href="dienstleistungen.html" data-translate="nav_services">Personalberlassung</a></li>
             <li><a href="branchen.html" data-translate="sect_log_title">Lager & Logistik</a></li>
             <li><a href="branchen.html" data-translate="sect_ind_title">Produktion & Industrie</a></li>
             <li><a href="branchen.html" data-translate="sect_srv_title">Reinigungsdienste</a></li>
@@ -421,7 +323,7 @@
             <li><a href="index.html" data-translate="nav_home">Home</a></li>
             <li><a href="standorte.html" data-translate="nav_map">Standorte</a></li>
             <li><a href="kontakt.html" data-translate="nav_apply">Kontakt</a></li>
-            <li><a href="unternehmen.html" data-translate="about_subtitle">Über Uns</a></li>
+            <li><a href="unternehmen.html" data-translate="about_subtitle">ber Uns</a></li>
           </ul>
         </div>
         
@@ -430,7 +332,7 @@
           <ul class="footer-contact">
             <li>
               <i class="fa-solid fa-location-dot"></i>
-              <span>Gladbecker Straße 427<br>45329 Essen, DE</span>
+              <span>Gladbecker Strae 427<br>45329 Essen, DE</span>
             </li>
             <li>
               <i class="fa-solid fa-phone"></i>
@@ -446,7 +348,7 @@
       
       <div class="footer-bottom">
         <div class="footer-copyright">
-          &copy; 2026 Altıntaş Personalmanagement GmbH. <span data-translate="all_rights_reserved">Alle Rechte vorbehalten.</span>
+          &copy; 2026 Alt?nta? Personalmanagement GmbH. <span data-translate="all_rights_reserved">Alle Rechte vorbehalten.</span>
         </div>
         <ul class="footer-legal">
           <li><a href="#impressum" data-translate="impressum">Impressum</a></li>
@@ -457,7 +359,7 @@
     </div>
   </footer>
 
-  <!-- GÖSTERİŞLİ AÇILIR PENCERE (Modal Popup) -->
+  <!-- GSTERL AILIR PENCERE (Modal Popup) -->
   <div class="modal-overlay" id="branch-modal">
     <div class="modal-content">
       <button class="modal-close" id="modal-close-btn">&times;</button>
@@ -469,7 +371,7 @@
         <span class="modal-category" id="modal-branch-cat">Zentrale / Industrie - National</span>
         <div class="modal-info-row">
           <i class="fa-solid fa-map-location-dot"></i>
-          <span id="modal-branch-addr">Gladbecker Straße 427, 45329 Essen</span>
+          <span id="modal-branch-addr">Gladbecker Strae 427, 45329 Essen</span>
         </div>
         <div class="modal-info-row">
           <i class="fa-solid fa-phone"></i>
@@ -488,13 +390,14 @@
     </div>
   </div>
 
-  <!-- Yüzen WhatsApp İletişim Butonu -->
-  <a href="https://wa.me/491784589604" class="whatsapp-float" target="_blank" aria-label="WhatsApp İletişim">
+  <!-- Yzen WhatsApp letiim Butonu -->
+  <a href="https://wa.me/491784589604" class="whatsapp-float" target="_blank" aria-label="WhatsApp letiim">
     <i class="fa-brands fa-whatsapp"></i>
   </a>
 
   <!-- JavaScript Bundle -->
-  <script src="index.js?v=9.2"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  <script src="index.js?v=9.5"></script>
 
   <!-- Back to Top Button -->
   <button class="back-to-top" id="backToTop" aria-label="Nach oben">
