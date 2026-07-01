@@ -145,6 +145,7 @@ a {
   justify-content: space-between;
   position: relative;
   gap: 12px;
+  padding: 0;
 }
 
 /* Sleek, Premium Dark Emblem Logo Container */
