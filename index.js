@@ -9,6 +9,7 @@ const translations = {
     nav_services: "Dienstleistungen",
     nav_sectors: "Branchen",
     nav_map: "Standorte",
+    nav_career: "Karriere",
     nav_apply: "Kontakt",
     nav_cta: "Jetzt anfragen",
 
@@ -196,7 +197,88 @@ const translations = {
     // Toast
     toast_employer_success: "Vielen Dank! Ihre Personalanfrage wurde erfolgreich gesendet. Wir kontaktieren Sie in Kürze.",
     toast_candidate_success: "Bewerbung erfolgreich eingegangen! Unser HR-Team wird Ihren Lebenslauf prüfen und sich melden.",
-    toast_fill_fields: "Bitte füllen Sie alle erforderlichen Felder aus."
+    toast_fill_fields: "Bitte füllen Sie alle erforderlichen Felder aus.",
+
+    // Homepage new sections
+    mq_anue: "Arbeitnehmerüberlassung",
+    mq_logistics: "Lager & Logistik",
+    mq_production: "Produktion & Industrie",
+    mq_metal: "Metall & Elektro",
+    mq_compliance: "100% Tariftreu (iGZ/DGB)",
+    mq_onsite: "On-Site Management",
+    mq_ruhr: "Ruhrgebiet & Bundesweit",
+    home_sectors_title: "Spezialisiert auf Ihre Branche",
+    home_sectors_desc: "Von der Lagerlogistik bis zur Schweißtechnik — wir kennen die Anforderungen Ihrer Branche und liefern passgenaues Fachpersonal.",
+    home_metal_short: "Geprüfte Schweißer, CNC-Fachkräfte und Elektroinstallateure — national und international.",
+    srv_anue_short: "Arbeitnehmerüberlassung",
+    srv_anue_short_desc: "Flexible Zeitarbeitskräfte für Produktionsspitzen",
+    srv_perm_short: "Personalvermittlung",
+    srv_perm_short_desc: "Direkte Rekrutierung für Festanstellungen",
+    srv_onsite_short: "On-Site Management",
+    srv_onsite_short_desc: "Persönlicher Koordinator direkt bei Ihnen vor Ort",
+    process_subtitle: "So arbeiten wir",
+    process_title: "In 4 Schritten zum passenden Personal",
+    process_desc: "Vom ersten Gespräch bis zum produktiven Einsatz — unser bewährter Prozess garantiert schnelle und rechtssichere Ergebnisse.",
+    process_step1_title: "Bedarf analysieren",
+    process_step1_desc: "Wir besprechen Ihre Anforderungen, Qualifikationen und den gewünschten Einsatzzeitraum persönlich.",
+    process_step2_title: "Matching & Auswahl",
+    process_step2_desc: "Aus unserem Pool qualifizierter Fachkräfte wählen wir die besten Kandidaten für Ihren Betrieb aus.",
+    process_step3_title: "Schneller Einsatz",
+    process_step3_desc: "Nach Vertragsabschluss stehen die Mitarbeiter innerhalb weniger Tage einsatzbereit bei Ihnen.",
+    process_step4_title: "Laufende Betreuung",
+    process_step4_desc: "Unser Team begleitet den gesamten Einsatz — von der Zeiterfassung bis zur Verlängerung.",
+    why_subtitle: "Warum Altıntaş?",
+    why_title: "Ihr Vorteil mit uns als Partner",
+    why_feat1_title: "100% Rechtssicherheit",
+    why_feat1_desc: "Vollständige Einhaltung des AÜG, iGZ/DGB-Tarifverträge und Equal-Pay-Regelungen — ohne Kompromisse.",
+    why_feat2_title: "Express-Disposition",
+    why_feat2_desc: "Personalengpässe? Wir reagieren innerhalb von 24 Stunden mit qualifizierten Einsatzkräften.",
+    why_feat3_title: "International vernetzt",
+    why_feat3_desc: "20+ Standorte in Deutschland plus Rekrutierungsbüro in Bursa (Türkei) für Fachkräfte weltweit.",
+    why_feat4_title: "Volle Kostenkontrolle",
+    why_feat4_desc: "Transparente Abrechnung nur für geleistete Stunden — alle Nebenkosten liegen bei uns.",
+    why_feat5_title: "Persönliche Betreuung",
+    why_feat5_desc: "Fester Ansprechpartner für jeden Kunden — kein Callcenter, sondern echte Partnerschaft.",
+    why_feat6_title: "Branchenexpertise",
+    why_feat6_desc: "Jahrelange Erfahrung in Logistik, Produktion und Industrie — wir sprechen Ihre Sprache.",
+    testimonial_subtitle: "Stimmen unserer Partner",
+    testimonial_title: "Vertrauen, das sich auszahlt",
+    testimonial_1: "Altıntaş hat uns in der Hochsaison innerhalb von 48 Stunden ein komplettes Logistikteam gestellt. Professionell, zuverlässig und absolut tariftreu.",
+    testimonial_1_name: "Michael K.",
+    testimonial_1_role: "Betriebsleiter, Logistikunternehmen Ruhrgebiet",
+    testimonial_2: "Seit drei Jahren arbeiten wir mit Altıntaş im On-Site-Modell zusammen. Die Betreuung vor Ort ist erstklassig und unsere Produktion läuft reibungslos.",
+    testimonial_2_name: "Sabine L.",
+    testimonial_2_role: "HR-Leiterin, Automobilzulieferer",
+    testimonial_3: "Als Bewerber wurde ich fair behandelt, schnell vermittelt und erhalte übertarifliche Bezahlung. Ich kann Altıntaş nur empfehlen!",
+    testimonial_3_name: "Ahmet Y.",
+    testimonial_3_role: "Staplerfahrer, Essen",
+
+    // Career page
+    career_hero_title: "Starten Sie Ihre Karriere bei Altıntaş",
+    career_hero_desc: "Faire Arbeitsbedingungen, tarifliche Bezahlung und echte Perspektiven in Logistik und Industrie — bundesweit.",
+    career_benefits_sub: "Ihre Vorteile",
+    career_benefits_title: "Warum bei uns arbeiten?",
+    career_benefits_desc: "Als Mitarbeiter von Altıntaş Personalmanagement profitieren Sie von fairen Konditionen und einer persönlichen Betreuung.",
+    career_ben1_desc: "Sichere Anstellung bei Altıntaş — kein befristeter Vertrag, keine Unsicherheit.",
+    career_ben2_desc: "iGZ/DGB-Tarifgehälter plus Branchenzuschläge für Nacht-, Wochenend- und Feiertagsarbeit.",
+    career_ben3_desc: "Zusätzliche finanzielle Vorteile gemäß Tarifvertrag — pünktlich und zuverlässig.",
+    career_ben4_desc: "Persönliche Schutzausrüstung und Arbeitskleidung werden von uns gestellt.",
+    career_ben5_desc: "Viele unserer Mitarbeiter werden nach erfolgreichem Einsatz vom Kundenunternehmen übernommen.",
+    career_ben6_desc: "Staplerschein, Sicherheitsunterweisungen und fachliche Qualifizierungen — wir investieren in Sie.",
+    faq_subtitle: "Häufige Fragen",
+    faq_title: "FAQ — Alles, was Sie wissen müssen",
+    faq_q1: "Wie bewerbe ich mich bei Altıntaş?",
+    faq_a1: "Nutzen Sie unser Online-Bewerbungsformular auf der Kontaktseite. Laden Sie Ihren Lebenslauf hoch und geben Sie Ihren gewünschten Arbeitsbereich an. Unser HR-Team meldet sich innerhalb von 48 Stunden bei Ihnen.",
+    faq_q2: "Welche Qualifikationen werden benötigt?",
+    faq_a2: "Das hängt vom Einsatzbereich ab. Für Logistik helfen ein Staplerschein oder Lagererfahrung. In der Produktion sind Zuverlässigkeit und Teamfähigkeit oft wichtiger als formale Abschlüsse. Wir beraten Sie gerne individuell.",
+    faq_q3: "Wie schnell kann ich eingesetzt werden?",
+    faq_a3: "In der Regel können wir Sie innerhalb von 3–5 Werktagen nach Vertragsabschluss in einem passenden Betrieb einsetzen. Bei dringendem Bedarf geht es auch schneller.",
+    faq_q4: "In welchen Regionen gibt es Einsatzstellen?",
+    faq_a4: "Unser Schwerpunkt liegt im Ruhrgebiet und in NRW, aber wir vermitteln bundesweit an über 20 Standorten in ganz Deutschland.",
+    faq_q5: "Was bedeutet Arbeitnehmerüberlassung für mich?",
+    faq_a5: "Sie haben einen unbefristeten Vertrag bei Altıntaş und arbeiten im Kundenbetrieb. Sie erhalten tarifliche Bezahlung, alle Sozialleistungen und werden von uns betreut — rechtlich abgesichert nach deutschem Arbeitsrecht.",
+    career_cta_title: "Bereit für den nächsten Schritt?",
+    career_cta_desc: "Senden Sie uns Ihre Bewerbung — wir finden den passenden Arbeitsplatz für Sie."
   },
   tr: {
     // Navigation
@@ -205,6 +287,7 @@ const translations = {
     nav_services: "Hizmetler",
     nav_sectors: "Sektörler",
     nav_map: "Lokasyonlar",
+    nav_career: "Kariyer",
     nav_apply: "İletişim",
     nav_cta: "Şimdi Sorun",
 
@@ -392,7 +475,86 @@ const translations = {
     // Success notifications
     toast_employer_success: "Teşekkürler! Personel talebiniz başarıyla gönderildi. En kısa sürede sizinle iletişime geçeceğiz.",
     toast_candidate_success: "Başvurunuz başarıyla alındı! İK ekibimiz özgeçmişinizi değerlendirip sizinle iletişime geçecektir.",
-    toast_fill_fields: "Lütfen gerekli tüm alanları doldurun."
+    toast_fill_fields: "Lütfen gerekli tüm alanları doldurun.",
+
+    // Homepage new sections
+    mq_anue: "Personel Kiralama (ANÜ)",
+    mq_logistics: "Depo & Lojistik",
+    mq_production: "Üretim & Endüstri",
+    mq_metal: "Metal & Elektrik",
+    mq_compliance: "%100 Toplu Sözleşme (iGZ/DGB)",
+    mq_onsite: "Yerinde Yönetim",
+    mq_ruhr: "Ruhr Bölgesi & Almanya Geneli",
+    home_sectors_title: "Sektörünüze Özel Çözümler",
+    home_sectors_desc: "Depo lojistiğinden kaynak teknolojisine — sektörünüzün gereksinimlerini biliyor ve doğru personeli sağlıyoruz.",
+    home_metal_short: "Sertifikalı kaynakçılar, CNC uzmanları ve elektrikçiler — ulusal ve uluslararası.",
+    srv_anue_short: "Personel Kiralama",
+    srv_anue_short_desc: "Üretim zirveleri için esnek geçici personel",
+    srv_perm_short: "Doğrudan İşe Alım",
+    srv_perm_short_desc: "Kalıcı pozisyonlar için doğrudan yerleştirme",
+    srv_onsite_short: "Yerinde Yönetim",
+    srv_onsite_short_desc: "Tesisinizde kişisel koordinatör",
+    process_subtitle: "Nasıl Çalışıyoruz",
+    process_title: "4 Adımda Doğru Personele Ulaşın",
+    process_desc: "İlk görüşmeden üretken göreve kadar — kanıtlanmış sürecimiz hızlı ve yasal güvence sağlar.",
+    process_step1_title: "İhtiyaç Analizi",
+    process_step1_desc: "Gereksinimlerinizi, nitelikleri ve istenen görev süresini birlikte değerlendiriyoruz.",
+    process_step2_title: "Eşleştirme & Seçim",
+    process_step2_desc: "Nitelikli personel havuzumuzdan işletmenize en uygun adayları seçiyoruz.",
+    process_step3_title: "Hızlı Görevlendirme",
+    process_step3_desc: "Sözleşme sonrası personel birkaç gün içinde göreve hazır.",
+    process_step4_title: "Sürekli Destek",
+    process_step4_desc: "Ekibimiz tüm görev süresince yanınızda — mesai takibinden uzatmalara kadar.",
+    why_subtitle: "Neden Altıntaş?",
+    why_title: "Ortak Olarak Avantajlarınız",
+    why_feat1_title: "%100 Yasal Güvence",
+    why_feat1_desc: "AÜG, iGZ/DGB toplu sözleşmeleri ve Equal-Pay kurallarına tam uyum — tavizsiz.",
+    why_feat2_title: "Hızlı Organizasyon",
+    why_feat2_desc: "Personel açığı mı? 24 saat içinde nitelikli ekiplerle yanıt veriyoruz.",
+    why_feat3_title: "Uluslararası Ağ",
+    why_feat3_desc: "Almanya'da 20+ lokasyon ve Bursa (Türkiye) işe alım ofisi ile küresel erişim.",
+    why_feat4_title: "Tam Maliyet Kontrolü",
+    why_feat4_desc: "Sadece çalışılan saatler için şeffaf faturalandırma — tüm yan maliyetler bizde.",
+    why_feat5_title: "Kişisel Danışmanlık",
+    why_feat5_desc: "Her müşteriye sabit danışman — çağrı merkezi değil, gerçek ortaklık.",
+    why_feat6_title: "Sektörel Uzmanlık",
+    why_feat6_desc: "Lojistik, üretim ve endüstride yılların deneyimi — dilinizi konuşuyoruz.",
+    testimonial_subtitle: "Ortaklarımızın Görüşleri",
+    testimonial_title: "Güven, Karşılığını Verir",
+    testimonial_1: "Altıntaş yoğun sezonda 48 saat içinde tam bir lojistik ekibi sağladı. Profesyonel, güvenilir ve tamamen toplu sözleşmeli.",
+    testimonial_1_name: "Michael K.",
+    testimonial_1_role: "Operasyon Müdürü, Ruhr Lojistik Firması",
+    testimonial_2: "Üç yıldır Altıntaş ile yerinde yönetim modelinde çalışıyoruz. Sahadaki destek mükemmel, üretimimiz sorunsuz.",
+    testimonial_2_name: "Sabine L.",
+    testimonial_2_role: "İK Müdürü, Otomotiv Tedarikçisi",
+    testimonial_3: "Aday olarak adil muamele gördüm, hızla yerleştirildim ve tarife üstü maaş alıyorum. Altıntaş'ı kesinlikle tavsiye ederim!",
+    testimonial_3_name: "Ahmet Y.",
+    testimonial_3_role: "Forklift Operatörü, Essen",
+    career_hero_title: "Altıntaş'ta Kariyerinize Başlayın",
+    career_hero_desc: "Adil çalışma koşulları, toplu sözleşmeli ücretler ve lojistik/endüstride gerçek fırsatlar — Almanya genelinde.",
+    career_benefits_sub: "Avantajlarınız",
+    career_benefits_title: "Neden Bizimle Çalışmalısınız?",
+    career_benefits_desc: "Altıntaş Personalmanagement çalışanı olarak adil koşullardan ve kişisel danışmanlıktan yararlanırsınız.",
+    career_ben1_desc: "Altıntaş'ta güvenli istihdam — belirsiz süreli sözleşme yok.",
+    career_ben2_desc: "iGZ/DGB tarife maaşları artı gece, hafta sonu ve tatil ek ödemeleri.",
+    career_ben3_desc: "Toplu sözleşmeye göre ek mali avantajlar — zamanında ve güvenilir.",
+    career_ben4_desc: "Kişisel koruyucu ekipman ve iş kıyafetleri tarafımızdan sağlanır.",
+    career_ben5_desc: "Çalışanlarımızın çoğu başarılı görev sonrası müşteri firmasına geçirilir.",
+    career_ben6_desc: "Forklift ehliyeti, iş güvenliği eğitimleri ve mesleki sertifikalar — size yatırım yapıyoruz.",
+    faq_subtitle: "Sık Sorulan Sorular",
+    faq_title: "SSS — Bilmeniz Gereken Her Şey",
+    faq_q1: "Altıntaş'a nasıl başvurabilirim?",
+    faq_a1: "İletişim sayfasındaki online başvuru formunu kullanın. Özgeçmişinizi yükleyin ve istediğiniz çalışma alanını belirtin. İK ekibimiz 48 saat içinde sizinle iletişime geçer.",
+    faq_q2: "Hangi nitelikler gerekli?",
+    faq_a2: "Görev alanına bağlıdır. Lojistik için forklift ehliyeti veya depo deneyimi yardımcı olur. Üretimde güvenilirlik ve takım çalışması genellikle formal diplomalardan daha önemlidir.",
+    faq_q3: "Ne kadar hızlı göreve başlayabilirim?",
+    faq_a3: "Genellikle sözleşme sonrası 3-5 iş günü içinde uygun bir işletmede görevlendirilirsiniz. Acil durumlarda daha hızlı da olabilir.",
+    faq_q4: "Hangi bölgelerde görev var?",
+    faq_a4: "Odak noktamız Ruhr bölgesi ve NRW, ancak Almanya genelinde 20'den fazla lokasyonda yerleştirme yapıyoruz.",
+    faq_q5: "Personel kiralama benim için ne anlama geliyor?",
+    faq_a5: "Altıntaş'ta süresiz sözleşmeniz var ve müşteri işletmesinde çalışırsınız. Tarifeli maaş, tüm sosyal haklar ve bizim desteğimizle Alman iş hukununa göre korunursunuz.",
+    career_cta_title: "Bir Sonraki Adıma Hazır mısınız?",
+    career_cta_desc: "Başvurunuzu gönderin — sizin için doğru işi bulalım."
   }
 };
 
@@ -828,19 +990,16 @@ if (cvUploadArea && cvInput) {
 
   cvUploadArea.addEventListener("dragover", (e) => {
     e.preventDefault();
-    cvUploadArea.style.borderColor = "var(--accent)";
-    cvUploadArea.style.background = "var(--bg-mint)";
+    cvUploadArea.classList.add("dragover");
   });
 
   cvUploadArea.addEventListener("dragleave", () => {
-    cvUploadArea.style.borderColor = "var(--border-color)";
-    cvUploadArea.style.background = "#ffffff";
+    cvUploadArea.classList.remove("dragover");
   });
 
   cvUploadArea.addEventListener("drop", (e) => {
     e.preventDefault();
-    cvUploadArea.style.borderColor = "var(--border-color)";
-    cvUploadArea.style.background = "#ffffff";
+    cvUploadArea.classList.remove("dragover");
     
     if (e.dataTransfer.files.length > 0) {
       cvInput.files = e.dataTransfer.files;
@@ -972,7 +1131,13 @@ if (employerForm) {
     { sel: '.emp-feature',                anim: 'up',    base: 0,   stagger: 80 },
     { sel: '.cta-banner',                 anim: 'up',    base: 0 },
     { sel: '.footer-col',                 anim: 'up',    base: 0,   stagger: 80 },
-    { sel: '.compliance-grid .feat-item', anim: 'up',    base: 0,   stagger: 80 },
+    { sel: '.bento-card',               anim: 'up',    base: 0,   stagger: 80 },
+    { sel: '.process-step',             anim: 'up',    base: 0,   stagger: 100 },
+    { sel: '.feature-card-v2',          anim: 'up',    base: 0,   stagger: 80 },
+    { sel: '.testimonial-card',         anim: 'scale', base: 0,   stagger: 100 },
+    { sel: '.service-mini-card',        anim: 'up',    base: 0,   stagger: 80 },
+    { sel: '.career-benefit',           anim: 'left',  base: 0,   stagger: 60 },
+    { sel: '.faq-item',                 anim: 'up',    base: 0,   stagger: 60 },
   ];
 
   animTargets.forEach(({ sel, anim, base, stagger }) => {
@@ -1011,8 +1176,18 @@ if (employerForm) {
 (function initCounters() {
   function countUp(el) {
     const raw = el.getAttribute('data-count') || el.textContent.trim();
-    const num = parseFloat(raw.replace(/[^0-9.]/g, ''));
-    const suffix = raw.replace(/[0-9.]/g, '').trim();
+
+    // Keep literal values like 24/7 unchanged
+    if (raw.includes('/')) return;
+
+    // German thousands separator: 2.500+ → 2500+
+    let normalized = raw;
+    if (/^\d{1,3}(\.\d{3})+/.test(raw)) {
+      normalized = raw.replace(/\.(?=\d{3})/g, '');
+    }
+
+    const num = parseFloat(normalized.replace(/[^0-9.]/g, ''));
+    const suffix = normalized.replace(/[0-9.]/g, '').trim();
     if (!num || isNaN(num)) return;
 
     let start = 0;
@@ -1023,7 +1198,8 @@ if (employerForm) {
     const timer = setInterval(() => {
       start += increment;
       if (start >= num) { start = num; clearInterval(timer); }
-      el.textContent = (Number.isInteger(num) ? Math.floor(start) : start.toFixed(1)) + (suffix || '');
+      const display = Number.isInteger(num) ? Math.floor(start) : Math.floor(start);
+      el.textContent = display.toLocaleString('de-DE') + (suffix || '');
     }, step);
   }
 
@@ -1094,9 +1270,7 @@ if (candidateForm) {
 (function initCardTilt() {
   if (!window.matchMedia("(hover: hover) and (pointer: fine)").matches) return;
 
-  const cards = document.querySelectorAll('.service-card, .sector-card, .mgmt-card, .feature-card');
-
-  cards.forEach(card => {
+  document.querySelectorAll('.service-card, .sector-card, .mgmt-card, .feature-card, .bento-card, .feature-card-v2, .testimonial-card, .service-mini-card').forEach(card => {
     card.addEventListener('mousemove', (e) => {
       const rect = card.getBoundingClientRect();
       const x = e.clientX - rect.left;
@@ -1130,5 +1304,19 @@ if (candidateForm) {
 
   document.querySelectorAll('.section-title').forEach(el => {
     observer.observe(el);
+  });
+})();
+
+// ============================================================
+// 17. FAQ ACCORDION
+// ============================================================
+(function initFaqAccordion() {
+  document.querySelectorAll('.faq-question').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    });
   });
 })();
