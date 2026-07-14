@@ -39,6 +39,10 @@ const translations = {
     about_area_metall: "Metall",
     about_area_elektro: "Elektro",
 
+    // Home about descriptions
+    home_about_desc1: "Als erfahrener Personaldienstleister mit Sitz in Essen verbinden wir qualifizierte Fachkräfte mit führenden Unternehmen der Region. Unser Fokus liegt auf schneller, rechtssicherer und passgenauer Personalvermittlung.",
+    home_about_desc2: "Dank unseres tiefen Branchenverständnisses und unseres weitreichenden Netzwerks stellen wir sicher, dass Sie exakt das Personal erhalten, das Ihren operativen Anforderungen entspricht — flexibel und zuverlässig.",
+
     // Learn more
     learn_more: "Mehr erfahren",
 
@@ -359,6 +363,10 @@ const translations = {
     about_area_chemie: "Kimya",
     about_area_metall: "Metal",
     about_area_elektro: "Elektrik",
+
+    // Home about descriptions
+    home_about_desc1: "Essen merkezli deneyimli bir insan kaynakları sağlayıcısı olarak, nitelikli uzmanları bölgenin önde gelen şirketleriyle buluşturuyoruz. Odak noktamız hızlı, yasal güvenceye sahip ve ihtiyaca tam uygun personel teminidir.",
+    home_about_desc2: "Derin sektörel bilgi birikimimiz ve geniş ağımız sayesinde, tam olarak operasyonel gereksinimlerinize yanıt veren personeli esnek ve güvenilir bir şekilde sağlamayı garanti ediyoruz.",
 
     // Learn more
     learn_more: "Daha Fazla Bilgi",
