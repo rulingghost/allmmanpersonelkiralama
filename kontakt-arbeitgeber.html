@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Altintas Personalmanagement | Lager & Logistik</title>
+  <title>Altintas Personalmanagement | Kontakt</title>
   
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/logo.png">
@@ -99,40 +99,95 @@
   </header>
 
   <!-- Page Header banner -->
-  <section class="hero page-hero" style="min-height: 50vh; padding-top: 100px;">
+  <section class="hero page-hero" style="min-height: 45vh; padding-top: 100px;">
     <div class="hero-background-wrapper">
-      <div class="hero-background-image" style="background-image: url('assets/service_logistics.png');"></div>
+      <div class="hero-background-image" style="background-image: url('assets/hr_interview.png');"></div>
       <div class="hero-overlay"></div>
     </div>
     <div class="container">
       <div class="hero-content">
-        <span class="section-subtitle" data-translate="nav_sectors">Branchen</span>
-        <h1 class="hero-title" data-translate="sect_log_title">Lager & Logistik</h1>
-        <p class="hero-description" data-translate="sec_hero_desc">Unsere Personalexperten sind spezialisiert auf die operativen Bereiche Logistik, Produktion und industrielle Services.</p>
+        <span class="section-subtitle" data-translate="nav_apply">Kontakt</span>
+        <h1 class="hero-title" data-translate="form_title">Bewerbung & Anfragen</h1>
+        <p class="hero-description" data-translate="form_desc">Nutzen Sie unsere Online-Formulare für Personalanfragen oder laden Sie als Bewerber Ihren Lebenslauf direkt hoch.</p>
       </div>
     </div>
   </section>
 
-  <!-- Content Section -->
+  <!-- Contact Forms Section -->
   <section class="section">
     <div class="container">
-      <div class="about-grid">
+      <div class="about-grid" style="grid-template-columns: 1fr 1.2fr; gap: 60px;">
         <div class="about-text">
-          <span class="section-subtitle" data-translate="sect_log_title">Lager & Logistik</span>
-          <h2 class="section-title" data-translate="sec_log_h2">Logistik und Distributionszentren</h2>
-          <p data-translate="sec_log_desc1" style="margin-bottom: 20px;">
-            Das Ruhrgebiet und Deutschland sind Drehkreuze des europäischen Warenverkehrs. Altintas Personalmanagement stellt namhaften Logistikdienstleistern erfahrenes Personal zur Verfügung.
+          <span class="section-subtitle" data-translate="nav_contact_emp">Für Arbeitgeber</span>
+          <h2 class="section-title">Schnelle Personalvermittlung</h2>
+          <p>
+            Vermeiden Sie Produktionsausfälle bei Auftragsspitzen oder Personalmangel. Unsere Zeitarbeitskräfte stehen Ihnen flexibel zur Verfügung. Wir kümmern uns um die gesamte Abwicklung.
           </p>
-          <ul class="service-list" style="margin-top: 20px; margin-bottom: 28px;">
-            <li class="service-item"><i class="fa-solid fa-check"></i><span data-translate="sec_log_item1">Staplerfahrer & Hochregalstapler</span></li>
-            <li class="service-item"><i class="fa-solid fa-check"></i><span data-translate="sec_log_item2">Kommissionierer & Picker</span></li>
-            <li class="service-item"><i class="fa-solid fa-check"></i><span data-translate="sec_log_item3">Fachkräfte für Lagerlogistik</span></li>
-            <li class="service-item"><i class="fa-solid fa-check"></i><span data-translate="sec_log_item4">Versandmitarbeiter & Verpacker</span></li>
+          <ul class="service-list" style="margin-top: 30px;">
+            <li class="service-item"><i class="fa-solid fa-check"></i><span>100% Rechtskonform (AÜG)</span></li>
+            <li class="service-item"><i class="fa-solid fa-check"></i><span>Express-Disposition in 24h</span></li>
+            <li class="service-item"><i class="fa-solid fa-check"></i><span>Persönlicher Ansprechpartner vor Ort</span></li>
+            <li class="service-item"><i class="fa-solid fa-check"></i><span>Volle Kostenkontrolle</span></li>
           </ul>
-          <a href="kontakt.html" class="btn btn-primary" data-translate="btn_request_staff">Personal anfordern</a>
+          
+          <div class="contact-info-box" style="margin-top: 40px; padding: 20px; background: var(--bg-card); border-radius: var(--border-radius-md); border-left: 4px solid var(--accent);">
+            <h4 style="margin-bottom: 10px;">Direkter Kontakt</h4>
+            <p style="margin-bottom: 5px;"><i class="fa-solid fa-phone" style="color: var(--accent); margin-right: 10px;"></i> +49 178 4589604</p>
+            <p><i class="fa-solid fa-envelope" style="color: var(--accent); margin-right: 10px;"></i> info@altintas-pm.de</p>
+          </div>
         </div>
-        <div class="portal-img">
-          <img src="assets/service_logistics.png" alt="Lojistik Ekibi">
+        
+        <div class="form-card" style="background: #ffffff; padding: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-radius: 12px; border-top: 4px solid var(--primary);">
+          <h3 data-translate="form_emp_title">Personalanfrage</h3>
+          <p data-translate="form_emp_desc" style="margin-bottom: 30px;">Senden Sie uns Ihre Personalanfrage und wir setzen uns innerhalb von 24 Stunden mit Ihnen in Verbindung.</p>
+          
+          <form id="employer-form" autocomplete="off">
+            <div class="form-group">
+              <label class="form-label" for="emp-company" data-translate="lbl_company">Firmenname *</label>
+              <input type="text" id="emp-company" class="form-control" required placeholder="z.B. Muster GmbH" data-translate="pl_company">
+            </div>
+            
+            <div class="form-group">
+              <label class="form-label" for="emp-name" data-translate="lbl_contact_person">Ansprechpartner *</label>
+              <input type="text" id="emp-name" class="form-control" required placeholder="z.B. Max Mustermann" data-translate="pl_contact">
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="emp-email" data-translate="lbl_email">E-Mail *</label>
+                <input type="email" id="emp-email" class="form-control" required placeholder="name@firma.de" data-translate="pl_email_emp">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="emp-phone" data-translate="lbl_phone">Telefon *</label>
+                <input type="tel" id="emp-phone" class="form-control" required placeholder="+49 (0) 123 4567" data-translate="pl_phone">
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label class="form-label" for="emp-sector" data-translate="lbl_need">Personalbedarf in Sektor *</label>
+              <select id="emp-sector" class="form-control" required>
+                <option value="" disabled selected data-translate="opt_select">Bitte auswählen...</option>
+                <option value="logistics" data-translate="opt_logistics">Lager / Logistik / Versand</option>
+                <option value="production" data-translate="opt_production">Produktion / Industrie</option>
+                <option value="industrial_services" data-translate="opt_cleaning">Industriereinigung & Service</option>
+                <option value="other" data-translate="opt_other">Andere</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label class="form-label" for="emp-message" data-translate="lbl_message">Nachricht / Anforderungen</label>
+              <textarea id="emp-message" class="form-control" placeholder="Beschreiben Sie kurz Ihre Anforderungen..." data-translate="pl_msg_emp" style="min-height: 120px;"></textarea>
+            </div>
+            
+            <label class="checkbox-group">
+              <input type="checkbox" required>
+              <span class="checkbox-label">
+                <span data-translate="agree_privacy">Ich stimme den </span><a href="#privacy" data-translate="privacy_policy">Datenschutzbestimmungen</a> <span data-translate="agree_privacy_2">zu. *</span>
+              </span>
+            </label>
+            
+            <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 20px; padding: 15px;" data-translate="btn_send_request">Personalanfrage senden</button>
+          </form>
         </div>
       </div>
     </div>
@@ -203,6 +258,9 @@
       </div>
     </div>
   </footer>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toast-container"></div>
 
   <!-- Yüzen WhatsApp İletişim Butonu -->
   <a href="https://wa.me/491784589604" class="whatsapp-float" target="_blank" aria-label="WhatsApp İletişim">

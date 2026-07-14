@@ -17,51 +17,71 @@ const translations = {
     hero_badge: "Arbeitnehmerüberlassung & Logistik",
     hero_title: "Personallösungen für Ihr Wachstum",
     hero_title_span: "Qualifizierte",
-    hero_desc: "Altıntaş Personalmanagement GmbH ist Ihr zuverlässiger Partner in Essen und bundesweit. Wir verbinden engagierte Fachkräfte mit führenden Industrie- und Logistikunternehmen.",
+    hero_desc: "Altintas Personalmanagement GmbH ist Ihr zuverlässiger Partner in Essen und bundesweit. Wir verbinden engagierte Fachkräfte mit führenden Industrie- und Logistikunternehmen.",
     hero_btn_employer: "Personalbedarf melden",
     hero_btn_applicant: "Jetzt bewerben",
-    hero_signature: "Heute. Morgen. Für immer.",
+    hero_signature: "Find the One.",
 
     // Stats
-    stat_compliance: "Tariftreu (iGZ/DGB)",
-    stat_cities: "Standorte in DE",
+    stat_compliance: "DGB/GVP - Tarifwerk",
+    stat_cities: "Einsatzorte in DE",
     stat_employees: "Mitarbeiter vermittelt",
-    stat_support: "Bereitschafts-Service",
+    stat_support: "Bereitschaft",
+
+    // About Page new sections
+    about_in_areas: "In den Bereichen:",
+    about_specialized: "Spezialisiert auf Ihre Branchen",
+    about_area_industrie: "Industrie",
+    about_area_logistik: "Logistik",
+    about_area_lager: "Lager",
+    about_area_produktion: "Produktion",
+    about_area_chemie: "Chemie",
+    about_area_metall: "Metall",
+    about_area_elektro: "Elektro",
 
     // Learn more
     learn_more: "Mehr erfahren",
+
+    // Navigation Contact Dropdown
+    nav_contact_emp: "Für Arbeitgeber",
+    nav_contact_cand: "Für Bewerber",
 
     // CTA Banner
     cta_banner_title: "Effiziente Logistik & Express-Personalgestellung",
     cta_banner_desc: "Wir verfügen über einen großen Pool qualifizierter Staplerfahrer, Kommissionierer und Logistikhelfer, die sofort einsatzbereit sind.",
 
     // About Page (unternehmen.html)
-    about_hero_title: "Über Altıntaş Personalmanagement",
+    about_hero_title: "Über Altintas Personalmanagement",
     about_hero_desc: "Erfahren Sie mehr über unsere Werte, unsere geschäftsführenden Inhaber und unseren Anspruch an Qualität und Rechtssicherheit.",
     about_subtitle: "Über uns",
-    about_title: "Jahrzehntelange Erfahrung in Logistik & Industrie",
-    about_desc1: "Altıntaş Personalmanagement GmbH steht für vertrauensvolle Personaldienstleistungen. Mit Hauptsitz in Essen (Gladbecker Straße 427) und einer starken Präsenz im Ruhrgebiet unterstützen wir Unternehmen dabei, Personalengpässe flexibel und rechtssicher abzusichern.",
-    about_desc2: "Unser geschäftsführender Inhaber Hasan Altıntaş leitet das Unternehmen mit dem Fokus auf faire Arbeitsbedingungen, tariftreue Bezahlung (iGZ/DGB) und höchste Kundenzufriedenheit. Ob kurzfristige Einsätze oder dauerhafte Arbeitsvermittlung - wir sind Ihr starker Partner.",
+    about_title: "Jahrzehntelange Erfahrung im Personalverleih und Arbeitnehmerüberlassung (AÜG)",
+    about_desc1: "Altintas Personalmanagement GmbH steht für vertrauensvolle Personaldienstleistungen. Mit Hauptsitz in Essen (Gladbecker Straße 427) und einer starken Präsenz im Ruhrgebiet unterstützen wir Unternehmen dabei, Personalengpässe flexibel und rechtssicher abzusichern.",
+    about_desc2: "Unser geschäftsführender Inhaber Hasan Altintas leitet das Unternehmen mit dem Fokus auf faire Arbeitsbedingungen, tariftreue Bezahlung (DGB/GVP) und höchste Kundenzufriedenheit. Ob kurzfristige Einsätze oder dauerhafte Arbeitsvermittlung - wir sind Ihr starker Partner.",
     about_stat1: "15+ Jahre",
     about_stat1_lbl: "Branchenerfahrung",
     about_stat2_lbl: "Zufriedenheitsquote",
     philosophy: "Philosophie",
     phil_title: "Wertschätzung und Zuverlässigkeit",
     phil_desc1: "Als inhabergeführtes Personaldienstleistungsunternehmen mit tiefen Wurzeln im Herzen von Essen verstehen wir uns als Brückenbauer. Unser täglicher Antrieb ist es, für unsere Bewerber den idealen Arbeitsplatz und für unsere Kundenunternehmen die passenden Fachkräfte zu finden.",
-    phil_desc2: "Wir stehen für faire Arbeitskonditionen nach dem iGZ/DGB-Tarifvertrag, pünktliche Bezahlung und eine persönliche Betreuung auf Augenhöhe. Wir sind überzeugt, dass nachhaltiger wirtschaftlicher Erfolg nur durch zufriedene Mitarbeiter möglich ist.",
+    phil_desc2: "Wir stehen für faire Arbeitskonditionen nach dem DGB/GVP-Tarifwerk, pünktliche Bezahlung und eine persönliche Betreuung auf Augenhöhe. Wir sind überzeugt, dass nachhaltiger wirtschaftlicher Erfolg nur durch zufriedene Mitarbeiter möglich ist.",
     management: "Führung",
     mgmt_title: "Unsere Geschäftsführung",
-    mgmt_desc: "Hasan Altıntaş leitet das Unternehmen mit kaufmännischer Kompetenz und profundem Branchenwissen.",
+    mgmt_desc: "Hasan Altintas leitet das Unternehmen mit kaufmännischer Kompetenz und profundem Branchenwissen.",
     mgmt_pos_1: "Geschäftsführender Gesellschafter",
-    mgmt_bio_1: "Gründer der Altıntaş Personalmanagement. Zuständig für strategische Ausrichtung, Kundenberatung und Expansionsplanung.",
-    mgmt_pos_2: "Geschäftsführer / Prokurist",
-    mgmt_bio_2: "Zuständig für Finanzen, Compliance und das arbeitsrechtliche On-Site Management unserer Kundenbetriebe.",
+    mgmt_bio_1: "Gründer der Altintas Personalmanagement. Zuständig für strategische Ausrichtung, Kundenberatung und Expansionsplanung.",
+    mgmt_bio_2: "Verantwortlich für das Personalmanagement und das Recruiting von neuen Mitarbeitern.",
+    mgmt_bio_3: "Leitet das operative Geschäft und kümmert sich um die Kundenbeziehungen.",
+    mgmt_bio_4: "Zuständig für den digitalen Auftritt, Social-Media-Marketing und Content-Erstellung.",
+    compliance: "Qualität & Sicherheit",
+    mgmt_pos_2: "HR-Manager",
+    mgmt_pos_3: "CCO",
+    mgmt_pos_4: "Social Media",
     comp_title: "Rechtssicherheit nach deutschem Arbeitsrecht",
     comp_desc1: "Als zugelassenes Unternehmen für Arbeitnehmerüberlassung halten wir uns streng an alle gesetzlichen Vorgaben. Die Einhaltung des Arbeitnehmerüberlassungsgesetzes (AÜG), die Erteilung der Erlaubnis der Bundesagentur für Arbeit und die Beachtung der Equal-Pay-Regelungen sind für uns selbstverständlich.",
-    comp_feat_1: "Tarifverträge BAP / iGZ / DGB",
+    comp_feat_1: "Tarifvertrag DGB/GVP - Tarifwerk",
     comp_feat_2: "Erlaubnis zur ANÜ vorhanden",
-    comp_feat_3: "Einhaltung aller ISO/SCP Standards",
-    comp_feat_4: "Laufende Sicherheitsunterweisungen",
+    comp_feat_3: "Einhaltung aller SCC/SCP Standards",
+    comp_feat_4: "Laufende arbeitsmedizinische- und Sicherheitsunterweisungen",
 
     // Services Page (dienstleistungen.html)
     srv_hero_title: "Unsere Personaldienstleistungen",
@@ -69,8 +89,14 @@ const translations = {
     services_subtitle: "Dienstleistungen",
     services_title: "Flexible Lösungen für Arbeitgeber & Bewerber",
     services_desc: "Erfahren Sie, wie wir Unternehmen durch flexible Arbeitnehmerüberlassung unterstützen und Bewerbern zukunftssichere Perspektiven bieten.",
+    srv_werk_title: "Einsatz im Werkvertrag",
+    srv_werk_desc1: "Durch einen Werkvertrag übernehmen wir die eigenverantwortliche Ausführung definierter Prozesse und Gewerke in Ihrem Betrieb. Wir garantieren die vertragsgemäße Erbringung des vereinbarten Werks.",
+    srv_werk_desc2: "Sie profitieren von kalkulierbaren Festpreisen, optimierten Prozessabläufen und entlasten Ihre eigene Verwaltung vollständig von operativen Führungsaufgaben vor Ort.",
     tab_employer: "Für Arbeitgeber",
     tab_candidate: "Für Bewerber",
+    solutions_employer_header: "Flexible Lösungen für Arbeitgeber / Kunde",
+    solutions_candidate_header: "Flexible Lösungen für Arbeitnehmer / Bewerber",
+    partner_title: "Altintas Personalmanagement GmbH Ihr Partner",
     employer_title: "Schnell. Rechtssicher. Zuverlässig.",
     employer_desc: "Vermeiden Sie Produktionsausfälle bei Auftragsspitzen oder Personalmangel. Unsere Zeitarbeitskräfte stehen Ihnen flexibel zur Verfügung. Wir kümmern uns um die gesamte Abwicklung des On-Site-Managements.",
     emp_feat_1: "Schnelle Disposition",
@@ -96,7 +122,7 @@ const translations = {
     srv_perm_desc1: "Wenn Sie langfristig feste Mitarbeiter für Ihr Team suchen, übernehmen wir den gesamten Rekrutierungsprozess für Sie. Wir schalten Stellenanzeigen, führen Bewerbungsgespräche und treffen eine qualifizierte Vorauswahl.",
     srv_perm_desc2: "Sie sparen wertvolle Zeit und Ressourcen in Ihrer Personalabteilung. Wir präsentieren Ihnen ausschließlich Kandidaten, die sowohl fachlich als auch persönlich perfekt zu Ihrem Anforderungsprofil passen.",
     srv_onsite_title: "On-Site Management vor Ort",
-    srv_onsite_desc1: "Bei einem hohen Bedarf an Zeitarbeitnehmern etablieren wir ein Büro direkt in Ihrem Hause. Ein On-Site Manager von Altıntaş koordiniert sämtliche processes der Personalüberlassung vor Ort.",
+    srv_onsite_desc1: "Bei einem hohen Bedarf an Zeitarbeitnehmern etablieren wir ein Büro direkt in Ihrem Hause. Ein On-Site Manager von Altintas koordiniert sämtliche Prozesse der Personalüberlassung vor Ort.",
     srv_onsite_desc2: "Unser Koordinator übernimmt die Einsatzplanung, die Betreuung der Zeitarbeitnehmer, die Zeiterfassung und sorgt für die Einhaltung aller Sicherheitsvorschriften direkt an Ihren Produktionslinien.",
 
     // Sectors Page (branchen.html)
@@ -108,7 +134,7 @@ const translations = {
     sect_log_title: "Lager, Logistik & Versand",
     sect_log_desc: "Kommissionierer, Staplerfahrer, Fachkräfte für Lagerlogistik und Versandmitarbeiter zur Absicherung Ihrer gesamten Lieferkette.",
     sec_log_h2: "Logistik und Distributionszentren",
-    sec_log_desc1: "Das Ruhrgebiet und Deutschland sind Drehkreuze des europäischen Warenverkehrs. Altıntaş Personalmanagement stellt namhaften Logistikdienstleistern erfahrenes Personal zur Verfügung.",
+    sec_log_desc1: "Das Ruhrgebiet und Deutschland sind Drehkreuze des europäischen Warenverkehrs. Altintas Personalmanagement stellt namhaften Logistikdienstleistern erfahrenes Personal zur Verfügung.",
     sec_log_item1: "Staplerfahrer & Hochregalstapler",
     sec_log_item2: "Kommissionierer & Picker",
     sec_log_item3: "Fachkräfte für Lagerlogistik",
@@ -123,7 +149,7 @@ const translations = {
     sec_ind_item4: "Qualitätsprüfer",
     sect_metal_title: "Metall- & Elektroindustrie",
     sec_metal_h2: "Schweißtechnik & Metallbau",
-    sec_metal_desc1: "Fachkräfte in der Schweißtechnik und im Metallbau werden händeringend gesucht. Altıntaş Personalmanagement rekrutiert Facharbeiter national und über unser Partnernetzwerk in Bursa (Türkei) direkt für Ihren Bedarf.",
+    sec_metal_desc1: "Fachkräfte in der Schweißtechnik und im Metallbau werden händeringend gesucht. Altintas Personalmanagement rekrutiert Facharbeiter national und über unser Partnernetzwerk in Bursa (Türkei) direkt für Ihren Bedarf.",
     sec_met_item1: "Geprüfte Schweißer (MIG, MAG, WIG)",
     sec_met_item2: "Schlosser & Metallbauer",
     sec_met_item3: "CNC-Fräser & Dreher",
@@ -140,9 +166,9 @@ const translations = {
     // Locations Page (standorte.html)
     map_hero_title: "Niederlassungen & Reichweite",
     map_hero_desc: "Entdecken Sie unsere Standorte in Deutschland und unser internationales Rekrutierungsbüro in Bursa, Türkei.",
-    map_subtitle: "Erişim Ağımız",
+    map_subtitle: "Unser Netzwerk",
     map_title: "Immer in Ihrer Nähe",
-    map_desc: "Altıntaş Personalmanagement deckt mit zahlreichen Standorten in Deutschland und einer Niederlassung in Bursa (Türkei) alle Kundenwünsche ab.",
+    map_desc: "Altintas Personalmanagement deckt mit zahlreichen Standorten in Deutschland und einer Niederlassung in Bursa (Türkei) alle Kundenwünsche ab.",
     filter_all: "Alle",
     filter_logistics: "Lager & Logistik",
     filter_industrial: "Industrie National",
@@ -150,8 +176,8 @@ const translations = {
     tag_logistics: "Logistik",
     tag_industrial: "Industrie",
     tag_international: "International",
-    intl_title: "Uluslararası Temsilcilik",
-    intl_desc: "Bursa (Türkei) şubemiz aracılığıyla, Almanya'daki sanayi und lojistik devlerinin nitelikli iş gücü ihtiyaçlarını karşılıyor und küresel işe alım süreçlerini yönetiyoruz.",
+    intl_title: "Internationale Vertretung",
+    intl_desc: "Über unsere Niederlassung in Bursa (Türkei) rekrutieren wir qualifizierte Fachkräfte für die deutschen Industrie- und Logistikkonzerne und steuern globale Personalprozesse.",
 
     // Contact Page (kontakt.html)
     form_subtitle: "Kontaktaufnahme",
@@ -183,6 +209,14 @@ const translations = {
     file_formats: "PDF, DOCX (Max. 5MB)",
     lbl_cand_message: "Nachricht / Bewerbungstext",
     btn_send_apply: "Bewerbung abschicken",
+    pl_company: "z.B. Muster GmbH",
+    pl_contact: "z.B. Max Mustermann",
+    pl_email_emp: "name@firma.de",
+    pl_phone: "+49 (0) 123 4567",
+    pl_msg_emp: "Beschreiben Sie kurz Ihre Anforderungen...",
+    pl_cand_name: "z.B. Maria Muster",
+    pl_email_cand: "name@beispiel.de",
+    pl_msg_cand: "Erzählen Sie uns kurz etwas über sich...",
 
     // Footer
     footer_brand_desc: "Ihr verlässlicher Partner für zeitgemäße Arbeitnehmerüberlassung und Personalmanagement in Deutschland und Europa.",
@@ -194,6 +228,15 @@ const translations = {
     privacy: "Datenschutz",
     cookies: "Cookies",
 
+    // Locations filters
+    filter_all: "Alle",
+    filter_industrie: "Industrie / Metall & Stahl",
+    filter_elektro: "Elektro",
+    filter_lager_versand: "Lager / Versand",
+    filter_chemie: "Chemie",
+    filter_produktion: "Produktion",
+    filter_logistik: "Logistik",
+
     // Toast
     toast_employer_success: "Vielen Dank! Ihre Personalanfrage wurde erfolgreich gesendet. Wir kontaktieren Sie in Kürze.",
     toast_candidate_success: "Bewerbung erfolgreich eingegangen! Unser HR-Team wird Ihren Lebenslauf prüfen und sich melden.",
@@ -204,7 +247,7 @@ const translations = {
     mq_logistics: "Lager & Logistik",
     mq_production: "Produktion & Industrie",
     mq_metal: "Metall & Elektro",
-    mq_compliance: "100% Tariftreu (iGZ/DGB)",
+    mq_compliance: "100% Tariftreu (DGB/GVP)",
     mq_onsite: "On-Site Management",
     mq_ruhr: "Ruhrgebiet & Bundesweit",
     home_sectors_title: "Spezialisiert auf Ihre Branche",
@@ -227,10 +270,10 @@ const translations = {
     process_step3_desc: "Nach Vertragsabschluss stehen die Mitarbeiter innerhalb weniger Tage einsatzbereit bei Ihnen.",
     process_step4_title: "Laufende Betreuung",
     process_step4_desc: "Unser Team begleitet den gesamten Einsatz — von der Zeiterfassung bis zur Verlängerung.",
-    why_subtitle: "Warum Altıntaş?",
+    why_subtitle: "Warum Altintas?",
     why_title: "Ihr Vorteil mit uns als Partner",
     why_feat1_title: "100% Rechtssicherheit",
-    why_feat1_desc: "Vollständige Einhaltung des AÜG, iGZ/DGB-Tarifverträge und Equal-Pay-Regelungen — ohne Kompromisse.",
+    why_feat1_desc: "Vollständige Einhaltung des AÜG, DGB/GVP-Tarifwerke und Equal-Pay-Regelungen — ohne Kompromisse.",
     why_feat2_title: "Express-Disposition",
     why_feat2_desc: "Personalengpässe? Wir reagieren innerhalb von 24 Stunden mit qualifizierten Einsatzkräften.",
     why_feat3_title: "International vernetzt",
@@ -243,31 +286,31 @@ const translations = {
     why_feat6_desc: "Jahrelange Erfahrung in Logistik, Produktion und Industrie — wir sprechen Ihre Sprache.",
     testimonial_subtitle: "Stimmen unserer Partner",
     testimonial_title: "Vertrauen, das sich auszahlt",
-    testimonial_1: "Altıntaş hat uns in der Hochsaison innerhalb von 48 Stunden ein komplettes Logistikteam gestellt. Professionell, zuverlässig und absolut tariftreu.",
+    testimonial_1: "Altintas hat uns in der Hochsaison innerhalb von 48 Stunden ein komplettes Logistikteam gestellt. Professionell, zuverlässig und absolut tariftreu.",
     testimonial_1_name: "Michael K.",
     testimonial_1_role: "Betriebsleiter, Logistikunternehmen Ruhrgebiet",
-    testimonial_2: "Seit drei Jahren arbeiten wir mit Altıntaş im On-Site-Modell zusammen. Die Betreuung vor Ort ist erstklassig und unsere Produktion läuft reibungslos.",
+    testimonial_2: "Seit drei Jahren arbeiten wir mit Altintas im On-Site-Modell zusammen. Die Betreuung vor Ort ist erstklassig und unsere Produktion läuft reibungslos.",
     testimonial_2_name: "Sabine L.",
     testimonial_2_role: "HR-Leiterin, Automobilzulieferer",
-    testimonial_3: "Als Bewerber wurde ich fair behandelt, schnell vermittelt und erhalte übertarifliche Bezahlung. Ich kann Altıntaş nur empfehlen!",
+    testimonial_3: "Als Bewerber wurde ich fair behandelt, schnell vermittelt und erhalte übertarifliche Bezahlung. Ich kann Altintas nur empfehlen!",
     testimonial_3_name: "Ahmet Y.",
     testimonial_3_role: "Staplerfahrer, Essen",
 
     // Career page
-    career_hero_title: "Starten Sie Ihre Karriere bei Altıntaş",
+    career_hero_title: "Starten Sie Ihre Karriere bei Altintas",
     career_hero_desc: "Faire Arbeitsbedingungen, tarifliche Bezahlung und echte Perspektiven in Logistik und Industrie — bundesweit.",
     career_benefits_sub: "Ihre Vorteile",
     career_benefits_title: "Warum bei uns arbeiten?",
-    career_benefits_desc: "Als Mitarbeiter von Altıntaş Personalmanagement profitieren Sie von fairen Konditionen und einer persönlichen Betreuung.",
-    career_ben1_desc: "Sichere Anstellung bei Altıntaş — kein befristeter Vertrag, keine Unsicherheit.",
-    career_ben2_desc: "iGZ/DGB-Tarifgehälter plus Branchenzuschläge für Nacht-, Wochenend- und Feiertagsarbeit.",
+    career_benefits_desc: "Als Mitarbeiter von Altintas Personalmanagement profitieren Sie von fairen Konditionen und einer persönlichen Betreuung.",
+    career_ben1_desc: "Sichere Anstellung bei Altintas — kein befristeter Vertrag, keine Unsicherheit.",
+    career_ben2_desc: "Tarifvertrag DGB/GVP - Tarifwerk + Fahrgeld + tägliche Spesen (VMA) + einsatzbezogene Leistungszulage.",
     career_ben3_desc: "Zusätzliche finanzielle Vorteile gemäß Tarifvertrag — pünktlich und zuverlässig.",
     career_ben4_desc: "Persönliche Schutzausrüstung und Arbeitskleidung werden von uns gestellt.",
     career_ben5_desc: "Viele unserer Mitarbeiter werden nach erfolgreichem Einsatz vom Kundenunternehmen übernommen.",
     career_ben6_desc: "Staplerschein, Sicherheitsunterweisungen und fachliche Qualifizierungen — wir investieren in Sie.",
     faq_subtitle: "Häufige Fragen",
     faq_title: "FAQ — Alles, was Sie wissen müssen",
-    faq_q1: "Wie bewerbe ich mich bei Altıntaş?",
+    faq_q1: "Wie bewerbe ich mich bei Altintas?",
     faq_a1: "Nutzen Sie unser Online-Bewerbungsformular auf der Kontaktseite. Laden Sie Ihren Lebenslauf hoch und geben Sie Ihren gewünschten Arbeitsbereich an. Unser HR-Team meldet sich innerhalb von 48 Stunden bei Ihnen.",
     faq_q2: "Welche Qualifikationen werden benötigt?",
     faq_a2: "Das hängt vom Einsatzbereich ab. Für Logistik helfen ein Staplerschein oder Lagererfahrung. In der Produktion sind Zuverlässigkeit und Teamfähigkeit oft wichtiger als formale Abschlüsse. Wir beraten Sie gerne individuell.",
@@ -276,7 +319,7 @@ const translations = {
     faq_q4: "In welchen Regionen gibt es Einsatzstellen?",
     faq_a4: "Unser Schwerpunkt liegt im Ruhrgebiet und in NRW, aber wir vermitteln bundesweit an über 20 Standorten in ganz Deutschland.",
     faq_q5: "Was bedeutet Arbeitnehmerüberlassung für mich?",
-    faq_a5: "Sie haben einen unbefristeten Vertrag bei Altıntaş und arbeiten im Kundenbetrieb. Sie erhalten tarifliche Bezahlung, alle Sozialleistungen und werden von uns betreut — rechtlich abgesichert nach deutschem Arbeitsrecht.",
+    faq_a5: "Sie haben einen unbefristeten Vertrag bei Altintas und arbeiten im Kundenbetrieb. Sie erhalten tarifliche Bezahlung, alle Sozialleistungen und werden von uns betreut — rechtlich abgesichert nach deutschem Arbeitsrecht.",
     career_cta_title: "Bereit für den nächsten Schritt?",
     career_cta_desc: "Senden Sie uns Ihre Bewerbung — wir finden den passenden Arbeitsplatz für Sie."
   },
@@ -298,16 +341,31 @@ const translations = {
     hero_desc: "Altıntaş Personalmanagement GmbH, Essen'de ve ülke genelinde güvenilir ortağınızdır. Nitelikli uzmanları önde gelen lojistik ve sanayi kuruluşlarıyla buluşturuyoruz.",
     hero_btn_employer: "Personel İhtiyacı Bildir",
     hero_btn_applicant: "Hemen Başvur",
-    hero_signature: "Bugün. Yarın. Her Zaman.",
+    hero_signature: "Find the One.",
 
     // Stats
-    stat_compliance: "Toplu Sözleşme Güvencesi",
-    stat_cities: "Almanya Genelinde Şubeler",
+    stat_compliance: "DGB/GVP Toplu İş Sözleşmesi",
+    stat_cities: "Almanya Genelinde Görev Noktaları",
     stat_employees: "Yerleştirilen Personel",
-    stat_support: "7/24 Kesintisiz Destek",
+    stat_support: "7/24 Ulaşılabilirlik",
+
+    // About Page new sections
+    about_in_areas: "Faaliyet Sektörlerimiz:",
+    about_specialized: "Sektörlerinize Özel Çözümler",
+    about_area_industrie: "Sanayi",
+    about_area_logistik: "Lojistik",
+    about_area_lager: "Depolama",
+    about_area_produktion: "Üretim",
+    about_area_chemie: "Kimya",
+    about_area_metall: "Metal",
+    about_area_elektro: "Elektrik",
 
     // Learn more
     learn_more: "Daha Fazla Bilgi",
+
+    // Navigation Contact Dropdown
+    nav_contact_emp: "İşverenler İçin",
+    nav_contact_cand: "İş Arayanlar İçin",
 
     // CTA Banner
     cta_banner_title: "Etkin Lojistik ve Hızlı Personel Desteği",
@@ -317,29 +375,34 @@ const translations = {
     about_hero_title: "Altıntaş Personalmanagement Hakkında",
     about_hero_desc: "Değerlerimiz, yöneticilerimiz ve yüksek kalite ve yasal uygunluk standartlarımız hakkında daha fazla bilgi edinin.",
     about_subtitle: "Hakkımızda",
-    about_title: "Lojistik & Endüstride Yılların Deneyimi",
+    about_title: "Personel Temini ve Geçici İş İlişkisinde (AÜG) Onlarca Yıllık Deneyim",
     about_desc1: "Altıntaş Personalmanagement GmbH, güvenilir personel hizmetlerini temsil eder. Essen (Gladbecker Straße 427) merkezli ve Ruhr bölgesindeki güçlü yapımızla şirketlerin personel açıklarını esnek ve yasal güvenceyle kapatmalarına destek oluyoruz.",
-    about_desc2: "Yöneticimiz Hasan Altıntaş firmamızı adil çalışma koşulları, toplu sözleşmeli ücretlendirme (iGZ/DGB) ve maksimum müşteri memnuniyeti odağında yönetmektedir. Kısa vadeli iş gücünden kalıcı istihdama kadar yanınızdayız.",
+    about_desc2: "Yöneticimiz Hasan Altıntaş firmamızı adil çalışma koşulları, toplu sözleşmeli ücretlendirme (DGB/GVP) ve maksimum müşteri memnuniyeti odağında yönetmektedir. Kısa vadeli iş gücünden kalıcı istihdama kadar yanınızdayız.",
     about_stat1: "15+ Yıl",
     about_stat1_lbl: "Sektörel Deneyim",
     about_stat2_lbl: "Memnuniyet Oranı",
     philosophy: "Felsefemiz",
     phil_title: "Değer Vermek ve Güvenilirlik",
     phil_desc1: "Essen'in kalbinde derin köklere sahip yönetici ortaklı bir insan kaynakları firması olarak kendimizi bir köprü olarak görüyoruz. Günlük motivasyonumuz, adaylarımız için ideal işi ve ortak şirketlerimiz için en doğru nitelikli personeli bulmaktır.",
-    phil_desc2: "iGZ/DGB toplu iş sözleşmesine uygun adil çalışma koşullarını, zamanında maaş ödemelerini ve karşılıklı güvene dayalı kişisel danışmanlığı savunuyoruz. Sürdürülebilir ekonomik başarının ancak memnun çalışanlarla mümkün olduğuna inanıyoruz.",
+    phil_desc2: "DGB/GVP toplu iş sözleşmesine uygun adil çalışma koşullarını, zamanında maaş ödemelerini ve karşılıklı güvene dayalı kişisel danışmanlığı savunuyoruz. Sürdürülebilir ekonomik başarının ancak memnun çalışanlarla mümkün olduğuna inanıyoruz.",
     management: "Yönetim",
     mgmt_title: "Yönetim Kurulumuz",
     mgmt_desc: "Hasan Altıntaş firmamızı ticari yetkinlik ve derin sektörel birikim ile yönetmektedir.",
     mgmt_pos_1: "Kurucu / Yönetici Ortak",
     mgmt_bio_1: "Altıntaş Personalmanagement'ın kurucusu. Stratejik yönelim, müşteri danışmanlığı ve büyüme planlamasından sorumludur.",
-    mgmt_pos_2: "Genel Müdür / Ticari Temsilci",
-    mgmt_bio_2: "Finans, yasal uyumluluk ve müşteri tesislerimizdeki çalışma hukuku odaklı On-Site yönetim süreçlerinden sorumludur.",
+    mgmt_bio_2: "Personel yönetimi ve yeni çalışanların işe alımından sorumludur.",
+    mgmt_bio_3: "Operasyonel süreçleri yönetir ve müşteri ilişkileriyle ilgilenir.",
+    mgmt_bio_4: "Dijital varlık, sosyal medya pazarlaması ve içerik üretiminden sorumludur.",
+    compliance: "Kalite & Güvenlik",
+    mgmt_pos_2: "İK Müdürü (HR-Manager)",
+    mgmt_pos_3: "CCO",
+    mgmt_pos_4: "Sosyal Medya Sorumlusu",
     comp_title: "Alman İş Hukukuna Uygun Güvence",
     comp_desc1: "Lisanslı bir geçici istihdam kuruluşu olarak, tüm yasal düzenlemelere harfiyen uymaktayız. Geçici İstihdam Yasası (AÜG) gereklilikleri, Federal İş Ajansı izinleri ve Equal-Pay (Eşit Ücret) prensiplerine uygunluk bizim için esastır.",
-    comp_feat_1: "BAP / iGZ / DGB Toplu Sözleşmeleri",
+    comp_feat_1: "DGB/GVP Toplu İş Sözleşmesi - Tarifwerk",
     comp_feat_2: "ANÜ Personel Kiralama İzni",
-    comp_feat_3: "Tüm ISO/SCP Standartlarına Uyum",
-    comp_feat_4: "Düzenli İş Güvenliği Eğitimleri",
+    comp_feat_3: "Tüm SCC/SCP Standartlarına Uyum",
+    comp_feat_4: "Düzenli İş Sağlığı ve Güvenliği (İSG) Eğitimleri",
 
     // Services Page (dienstleistungen.html)
     srv_hero_title: "İnsan Kaynakları Hizmetlerimiz",
@@ -347,8 +410,14 @@ const translations = {
     services_subtitle: "Hizmetlerimiz",
     services_title: "İşverenler ve Adaylar İçin Esnek Çözümler",
     services_desc: "Şirketleri esnek personel kiralama süreçleriyle nasıl desteklediğimizi ve adaylara nasıl güvenli bir gelecek sunduğumuzu inceleyin.",
+    srv_werk_title: "Werkvertrag (Eser/Hizmet Sözleşmesi)",
+    srv_werk_desc1: "Werkvertrag (Hizmet/Eser Sözleşmesi) kapsamında, işletmenizdeki belirli süreçlerin yönetimini ve sorumluluğunu tamamen üstleniyor, sözleşmeye uygun teslimat garantisi sunuyoruz.",
+    srv_werk_desc2: "Öngörülebilir sabit fiyatlar ve optimize edilmiş süreçler sayesinde yönetimsel yükünüzü azaltırken operasyonel kontrolü bize devrederek verimliliği artırırsınız.",
     tab_employer: "İşverenler İçin",
     tab_candidate: "İş Arayanlar İçin",
+    solutions_employer_header: "İşverenler / Müşteriler İçin Esnek Çözümler",
+    solutions_candidate_header: "Çalışanlar / Adaylar İçin Esnek Çözümler",
+    partner_title: "Altıntaş Personalmanagement GmbH Sizin Ortağınız",
     employer_title: "Hızlı. Hukuken Güvenli. Sorumluluk Sahibi.",
     employer_desc: "Sipariş yoğunlukları, hastalık izinleri veya mevsimsel dalgalanmalar operasyonel kapasitenizi zorlayabilir. Profesyonel personel kiralama (ANÜ) hizmetimizle, uzun vadeli risk almadan verimliliğinizi koruyun.",
     emp_feat_1: "Hızlı Organizasyon",
@@ -361,7 +430,7 @@ const translations = {
     candidate_title: "Adil Ücretlendirme. Güvenli Gelecek.",
     candidate_desc: "Kariyerinizde yeni bir sayfa açın. Bölgenin prestijli lojistik ve sanayi tesislerinde uzun vadeli iş olanakları sunuyoruz. Toplu sözleşmeli dolgun maaş ve yükselme şansından yararlanın.",
     cand_feat_1: "Süresiz İş Sözleşmesi",
-    cand_feat_2: "Tarife Üstü Ücretler",
+    cand_feat_2: "Tarif Üstü Ücretler",
     cand_feat_3: "Yıllık İzin ve Bayram İkramiyeleri",
     cand_feat_4: "İş Güvenliği & Kıyafet Desteği",
     cand_feat_5: "Kadroya Alınma Fırsatları",
@@ -417,7 +486,7 @@ const translations = {
 
     // Locations Page (standorte.html)
     map_hero_title: "Şubelerimiz ve Erişim Ağımız",
-    map_hero_desc: "Almanya'daki şube ağımızı ve Türkiye (Bursa) merkezli uluslararası işe alım ofisimizi keşfedin.",
+    map_hero_desc: "Almanya'daki şube ağımızı ve Türkiye (Bursa) merkezli uluslararası işe alım ofisi ağımızı keşfedin.",
     map_subtitle: "Erişim Ağımız",
     map_title: "Size Her Zaman Yakınız",
     map_desc: "Altıntaş Personalmanagement, Almanya genelindeki çok sayıda lokasyonu ve Bursa (Türkiye) temsilciliği ile tüm talepleri karşılar.",
@@ -461,6 +530,14 @@ const translations = {
     file_formats: "PDF, DOCX (Maks. 5MB)",
     lbl_cand_message: "Mesaj / Ön Yazı",
     btn_send_apply: "Başvuruyu Gönder",
+    pl_company: "Örn. Örnek A.Ş.",
+    pl_contact: "Örn. Ahmet Yılmaz",
+    pl_email_emp: "isim@sirket.com",
+    pl_phone: "+90 555 123 4567",
+    pl_msg_emp: "Lütfen taleplerinizi kısaca açıklayın...",
+    pl_cand_name: "Örn. Ayşe Yılmaz",
+    pl_email_cand: "isim@ornek.com",
+    pl_msg_cand: "Bize kısaca kendinizden bahsedin...",
 
     // Footer
     footer_brand_desc: "Almanya ve Avrupa genelinde modern personel kiralama ve insan kaynakları yönetimi alanında güvenilir ortağınız.",
@@ -472,6 +549,15 @@ const translations = {
     privacy: "Veri Koruma",
     cookies: "Çerez Politikası",
 
+    // Locations filters
+    filter_all: "Tümü",
+    filter_industrie: "Sanayi / Metal ve Çelik",
+    filter_elektro: "Elektrik/Elektro",
+    filter_lager_versand: "Depo / Sevkiyat",
+    filter_chemie: "Kimya",
+    filter_produktion: "Üretim",
+    filter_logistik: "Lojistik",
+
     // Success notifications
     toast_employer_success: "Teşekkürler! Personel talebiniz başarıyla gönderildi. En kısa sürede sizinle iletişime geçeceğiz.",
     toast_candidate_success: "Başvurunuz başarıyla alındı! İK ekibimiz özgeçmişinizi değerlendirip sizinle iletişime geçecektir.",
@@ -482,7 +568,7 @@ const translations = {
     mq_logistics: "Depo & Lojistik",
     mq_production: "Üretim & Endüstri",
     mq_metal: "Metal & Elektrik",
-    mq_compliance: "%100 Toplu Sözleşme (iGZ/DGB)",
+    mq_compliance: "%100 Toplu Sözleşme (DGB/GVP)",
     mq_onsite: "Yerinde Yönetim",
     mq_ruhr: "Ruhr Bölgesi & Almanya Geneli",
     home_sectors_title: "Sektörünüze Özel Çözümler",
@@ -508,7 +594,7 @@ const translations = {
     why_subtitle: "Neden Altıntaş?",
     why_title: "Ortak Olarak Avantajlarınız",
     why_feat1_title: "%100 Yasal Güvence",
-    why_feat1_desc: "AÜG, iGZ/DGB toplu sözleşmeleri ve Equal-Pay kurallarına tam uyum — tavizsiz.",
+    why_feat1_desc: "AÜG, DGB/GVP toplu sözleşmeleri ve Equal-Pay kurallarına tam uyum — tavizsiz.",
     why_feat2_title: "Hızlı Organizasyon",
     why_feat2_desc: "Personel açığı mı? 24 saat içinde nitelikli ekiplerle yanıt veriyoruz.",
     why_feat3_title: "Uluslararası Ağ",
@@ -526,7 +612,7 @@ const translations = {
     testimonial_1_role: "Operasyon Müdürü, Ruhr Lojistik Firması",
     testimonial_2: "Üç yıldır Altıntaş ile yerinde yönetim modelinde çalışıyoruz. Sahadaki destek mükemmel, üretimimiz sorunsuz.",
     testimonial_2_name: "Sabine L.",
-    testimonial_2_role: "İK Müdürü, Otomotiv Tedarikçisi",
+    testimonial_2_role: "İK Yöneticisi, Otomotiv Tedarikçisi",
     testimonial_3: "Aday olarak adil muamele gördüm, hızla yerleştirildim ve tarife üstü maaş alıyorum. Altıntaş'ı kesinlikle tavsiye ederim!",
     testimonial_3_name: "Ahmet Y.",
     testimonial_3_role: "Forklift Operatörü, Essen",
@@ -536,7 +622,7 @@ const translations = {
     career_benefits_title: "Neden Bizimle Çalışmalısınız?",
     career_benefits_desc: "Altıntaş Personalmanagement çalışanı olarak adil koşullardan ve kişisel danışmanlıktan yararlanırsınız.",
     career_ben1_desc: "Altıntaş'ta güvenli istihdam — belirsiz süreli sözleşme yok.",
-    career_ben2_desc: "iGZ/DGB tarife maaşları artı gece, hafta sonu ve tatil ek ödemeleri.",
+    career_ben2_desc: "DGB/GVP Toplu İş Sözleşmesi + Yol Ücreti (Fahrgeld) + Günlük Harcırah (VMA) + Göreve Bağlı Performans Primi (einsatzbezogene Leistungszulage).",
     career_ben3_desc: "Toplu sözleşmeye göre ek mali avantajlar — zamanında ve güvenilir.",
     career_ben4_desc: "Kişisel koruyucu ekipman ve iş kıyafetleri tarafımızdan sağlanır.",
     career_ben5_desc: "Çalışanlarımızın çoğu başarılı görev sonrası müşteri firmasına geçirilir.",
@@ -659,7 +745,7 @@ function highlightActiveLink() {
   } else if (currentPath === "standorte.html") {
     const link = document.getElementById("nav-map-link");
     if (link) link.classList.add("active");
-  } else if (currentPath === "kontakt.html") {
+  } else if (["kontakt.html", "kontakt-arbeitgeber.html", "kontakt-bewerber.html"].includes(currentPath)) {
     const link = document.getElementById("nav-apply-link");
     if (link) link.classList.add("active");
   }
@@ -809,59 +895,80 @@ tabButtons.forEach(btn => {
 const branchesData = {
   essen: {
     name: "Essen (Hauptsitz)",
-    category: { de: "Hauptsitz / Industrie - National", tr: "Merkez Ofis / Ulusal Endüstri" },
+    category: { de: "Chemie", tr: "Kimya" },
     address: "Gladbecker Straße 427, 45329 Essen",
     phone: "+49 178 4589604",
     email: "essen@altintas-pm.de"
   },
   duisburg: {
     name: "Duisburg",
-    category: { de: "Industrie - National", tr: "Ulusal Endüstri" },
+    category: { de: "Industrie / Metall & Stahl", tr: "Sanayi / Metal ve Çelik" },
     address: "Franzstraße 9, 47166 Duisburg",
     phone: "+49 203 45676040",
     email: "duisburg@altintas-pm.de"
   },
   moers: {
     name: "Moers",
-    category: { de: "Lager, Logistik & Produktion", tr: "Depo, Lojistik & Üretim" },
+    category: { de: "Produktion", tr: "Üretim" },
     address: "Homberger Straße 12, 47441 Moers",
     phone: "+49 178 4589604",
     email: "moers@altintas-pm.de"
   },
   frankfurt: {
     name: "Frankfurt am Main",
-    category: { de: "Lager, Logistik & Produktion", tr: "Depo, Lojistik & Üretim" },
+    category: { de: "Logistik", tr: "Lojistik" },
     address: "Kaiserstraße 18, 60311 Frankfurt am Main",
     phone: "+49 178 4589604",
     email: "frankfurt@altintas-pm.de"
   },
   wiesbaden: {
     name: "Wiesbaden",
-    category: { de: "Lager, Logistik & Produktion", tr: "Depo, Lojistik & Üretim" },
+    category: { de: "Produktion", tr: "Üretim" },
     address: "Bahnhofstraße 22, 65185 Wiesbaden",
     phone: "+49 178 4589604",
     email: "wiesbaden@altintas-pm.de"
   },
   duesseldorf: {
     name: "Düsseldorf",
-    category: { de: "Industrie - National", tr: "Ulusal Endüstri" },
+    category: { de: "Industrie / Metall & Stahl", tr: "Sanayi / Metal ve Çelik" },
     address: "Königsallee 60, 40212 Düsseldorf",
     phone: "+49 178 4589604",
     email: "duesseldorf@altintas-pm.de"
   },
   aschaffenburg: {
     name: "Aschaffenburg",
-    category: { de: "Industrie - National", tr: "Ulusal Endüstri" },
+    category: { de: "Industrie / Metall & Stahl", tr: "Sanayi / Metal ve Çelik" },
     address: "Luitpoldstraße 4, 63741 Aschaffenburg",
     phone: "+49 178 4589604",
     email: "aschaffenburg@altintas-pm.de"
   },
   bursa: {
     name: "Bursa (Türkiye)",
-    category: { de: "Industrie - International", tr: "Uluslararası Endüstri" },
+    category: { de: "Industrie / Metall & Stahl", tr: "Sanayi / Metal ve Çelik" },
     address: "Kükürtlü Caddesi No:14, Osmangazi, Bursa, Türkiye",
     phone: "+90 224 233 44 55",
     email: "bursa@altintas-pm.de"
+  },
+  marl: {
+    name: "Marl",
+    category: { de: "Chemie", tr: "Kimya" },
+    address: "Zechenstraße 5, 45772 Marl",
+    phone: "+49 178 4589604",
+    email: "marl@altintas-pm.de"
+  },
+  krefeld: {
+    name: "Krefeld",
+    category: { de: "Chemie", tr: "Kimya" },
+    address: "Kölner Straße 55, 47805 Krefeld",
+    phone: "+49 178 4589604",
+    email: "krefeld@altintas-pm.de"
+  },
+  rotterdam: {
+    name: "Rotterdam (NL)",
+    category: { de: "Lager / Versand", tr: "Depo / Sevkiyat" },
+    address: "Wilhelminakade 1, 3072 AP Rotterdam, Netherlands",
+    phone: "+49 178 4589604",
+    email: "rotterdam@altintas-pm.de"
   }
 };
 
@@ -885,7 +992,9 @@ const branchCoords = {
   schermbeck: { lat: 51.6717, lng: 6.8764 },
   witten: { lat: 51.4436, lng: 7.3306 },
   wuelfrath: { lat: 51.2833, lng: 7.0333 },
-  bursa: { lat: 40.1885, lng: 29.061 }
+  bursa: { lat: 40.1885, lng: 29.061 },
+  krefeld: { lat: 51.3388, lng: 6.5853 },
+  rotterdam: { lat: 51.9244, lng: 4.4777 }
 };
 
 function getBranchCoords(branchId) {
@@ -1073,7 +1182,7 @@ if (filterChips.length > 0) {
       
       const intlWidget = document.getElementById("intl-widget");
       if (intlWidget) {
-        if (filter === "all" || filter === "international") {
+        if (filter === "all" || filter === "industrie") {
           intlWidget.style.display = "block";
         } else {
           intlWidget.style.display = "none";

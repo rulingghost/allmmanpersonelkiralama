@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Altintas Personalmanagement | Lager & Logistik</title>
+  <title>Altintas Personalmanagement | Kontakt</title>
   
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/logo.png">
@@ -99,40 +99,101 @@
   </header>
 
   <!-- Page Header banner -->
-  <section class="hero page-hero" style="min-height: 50vh; padding-top: 100px;">
+  <section class="hero page-hero" style="min-height: 45vh; padding-top: 100px;">
     <div class="hero-background-wrapper">
-      <div class="hero-background-image" style="background-image: url('assets/service_logistics.png');"></div>
+      <div class="hero-background-image" style="background-image: url('assets/hr_interview.png');"></div>
       <div class="hero-overlay"></div>
     </div>
     <div class="container">
       <div class="hero-content">
-        <span class="section-subtitle" data-translate="nav_sectors">Branchen</span>
-        <h1 class="hero-title" data-translate="sect_log_title">Lager & Logistik</h1>
-        <p class="hero-description" data-translate="sec_hero_desc">Unsere Personalexperten sind spezialisiert auf die operativen Bereiche Logistik, Produktion und industrielle Services.</p>
+        <span class="section-subtitle" data-translate="nav_apply">Kontakt</span>
+        <h1 class="hero-title" data-translate="form_title">Bewerbung & Anfragen</h1>
+        <p class="hero-description" data-translate="form_desc">Nutzen Sie unsere Online-Formulare für Personalanfragen oder laden Sie als Bewerber Ihren Lebenslauf direkt hoch.</p>
       </div>
     </div>
   </section>
 
-  <!-- Content Section -->
+  <!-- Contact Forms Section -->
   <section class="section">
     <div class="container">
-      <div class="about-grid">
-        <div class="about-text">
-          <span class="section-subtitle" data-translate="sect_log_title">Lager & Logistik</span>
-          <h2 class="section-title" data-translate="sec_log_h2">Logistik und Distributionszentren</h2>
-          <p data-translate="sec_log_desc1" style="margin-bottom: 20px;">
-            Das Ruhrgebiet und Deutschland sind Drehkreuze des europäischen Warenverkehrs. Altintas Personalmanagement stellt namhaften Logistikdienstleistern erfahrenes Personal zur Verfügung.
-          </p>
-          <ul class="service-list" style="margin-top: 20px; margin-bottom: 28px;">
-            <li class="service-item"><i class="fa-solid fa-check"></i><span data-translate="sec_log_item1">Staplerfahrer & Hochregalstapler</span></li>
-            <li class="service-item"><i class="fa-solid fa-check"></i><span data-translate="sec_log_item2">Kommissionierer & Picker</span></li>
-            <li class="service-item"><i class="fa-solid fa-check"></i><span data-translate="sec_log_item3">Fachkräfte für Lagerlogistik</span></li>
-            <li class="service-item"><i class="fa-solid fa-check"></i><span data-translate="sec_log_item4">Versandmitarbeiter & Verpacker</span></li>
-          </ul>
-          <a href="kontakt.html" class="btn btn-primary" data-translate="btn_request_staff">Personal anfordern</a>
+      <div class="about-grid" style="grid-template-columns: 1.2fr 1fr; gap: 60px;">
+        <div class="form-card" style="background: #ffffff; padding: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-radius: 12px; border-top: 4px solid var(--primary);">
+          <h3 data-translate="form_cand_title">Hinterlassen Sie Ihren Lebenslauf</h3>
+          <p data-translate="form_cand_desc" style="margin-bottom: 30px;">Bewerben Sie sich initiativ oder auf unsere Sektoren. Wir kontaktieren Sie bezglich passender offener Stellen.</p>
+          
+          <form id="candidate-form" autocomplete="off">
+            <div class="form-group">
+              <label class="form-label" for="cand-name" data-translate="lbl_fullname">Name, Vorname *</label>
+              <input type="text" id="cand-name" class="form-control" required placeholder="z.B. Maria Muster" data-translate="pl_cand_name">
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="cand-email" data-translate="lbl_email">E-Mail *</label>
+                <input type="email" id="cand-email" class="form-control" required placeholder="name@beispiel.de" data-translate="pl_email_cand">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="cand-phone" data-translate="lbl_phone">Telefon *</label>
+                <input type="tel" id="cand-phone" class="form-control" required placeholder="+49 (0) 123 4567" data-translate="pl_phone">
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label class="form-label" for="cand-sector" data-translate="lbl_pref_sector">Gewnschter Arbeitsbereich *</label>
+              <select id="cand-sector" class="form-control" required>
+                <option value="" disabled selected data-translate="opt_select">Bitte auswhlen...</option>
+                <option value="logistics" data-translate="opt_logistics">Lager / Logistik / Versand</option>
+                <option value="production" data-translate="opt_production">Produktion / Industrie</option>
+                <option value="industrial_services" data-translate="opt_cleaning">Industriereinigung & Service</option>
+                <option value="other" data-translate="opt_other">Andere</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label class="form-label" data-translate="lbl_cv">Lebenslauf / Dokumente</label>
+              <div class="file-upload-btn" id="cv-upload-area">
+                <i class="fa-solid fa-cloud-arrow-up"></i>
+                <span data-translate="file_upload_text">Datei hier ablegen oder klicken zum Hochladen</span>
+                <span style="font-size: 11px; margin-top: 4px;" data-translate="file_formats">PDF, DOCX (Max. 5MB)</span>
+                <input type="file" id="cand-cv" style="display: none;" accept=".pdf,.doc,.docx">
+              </div>
+              <div id="file-name-display" style="font-size: 13px; color: var(--accent); margin-top: 8px; font-weight: 700; display: none;"></div>
+            </div>
+            
+            <div class="form-group">
+              <label class="form-label" for="cand-message" data-translate="lbl_cand_message">Nachricht / Bewerbungstext</label>
+              <textarea id="cand-message" class="form-control" placeholder="Erzählen Sie uns kurz etwas über sich..." data-translate="pl_msg_cand" style="min-height: 120px;"></textarea>
+            </div>
+            
+            <label class="checkbox-group">
+              <input type="checkbox" required>
+              <span class="checkbox-label">
+                <span data-translate="agree_privacy">Ich stimme den </span><a href="#privacy" data-translate="privacy_policy">Datenschutzbestimmungen</a> <span data-translate="agree_privacy_2">zu. *</span>
+              </span>
+            </label>
+            
+            <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 20px; padding: 15px;" data-translate="btn_send_apply">Bewerbung abschicken</button>
+          </form>
         </div>
-        <div class="portal-img">
-          <img src="assets/service_logistics.png" alt="Lojistik Ekibi">
+
+        <div class="about-text" style="padding-left: 20px;">
+          <span class="section-subtitle" data-translate="nav_contact_cand">Für Bewerber</span>
+          <h2 class="section-title">Dein Weg zu uns</h2>
+          <p>
+            Starte Deine Karriere bei Altıntaş Personalmanagement. Wir bieten Dir sichere Arbeitsplätze in Logistik und Industrie – mit fairer Bezahlung und besten Perspektiven.
+          </p>
+          <ul class="service-list" style="margin-top: 30px;">
+            <li class="service-item"><i class="fa-solid fa-check"></i><span>Unbefristeter Arbeitsvertrag</span></li>
+            <li class="service-item"><i class="fa-solid fa-check"></i><span>Tarifgehalt (DGB/GVP)</span></li>
+            <li class="service-item"><i class="fa-solid fa-check"></i><span>Urlaubs- und Weihnachtsgeld</span></li>
+            <li class="service-item"><i class="fa-solid fa-check"></i><span>Kostenlose Arbeitskleidung</span></li>
+          </ul>
+          
+          <div class="contact-info-box" style="margin-top: 40px; padding: 20px; background: var(--bg-card); border-radius: var(--border-radius-md); border-left: 4px solid var(--accent);">
+            <h4 style="margin-bottom: 10px;">Bewerber-Hotline</h4>
+            <p style="margin-bottom: 5px;"><i class="fa-brands fa-whatsapp" style="color: var(--accent); margin-right: 10px;"></i> +49 178 4589604</p>
+            <p><i class="fa-solid fa-envelope" style="color: var(--accent); margin-right: 10px;"></i> info@altintas-pm.de</p>
+          </div>
         </div>
       </div>
     </div>
@@ -203,6 +264,9 @@
       </div>
     </div>
   </footer>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toast-container"></div>
 
   <!-- Yüzen WhatsApp İletişim Butonu -->
   <a href="https://wa.me/491784589604" class="whatsapp-float" target="_blank" aria-label="WhatsApp İletişim">
