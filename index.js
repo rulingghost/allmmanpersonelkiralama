@@ -1,4 +1,4 @@
-/* index.js - Comprehensive Error-Proof script for Altıntaş Personalmanagement */
+/* index.js - Comprehensive Error-Proof script for Altintas Personalmanagement */
 
 // 1. Full Multi-Page Translations Dictionary
 const translations = {
@@ -71,15 +71,15 @@ const translations = {
     management: "Führung",
     mgmt_title: "Unsere Geschäftsführung",
     mgmt_desc: "Hasan Altintas leitet das Unternehmen mit kaufmännischer Kompetenz und profundem Branchenwissen.",
-    mgmt_pos_1: "Geschäftsführender Gesellschafter",
-    mgmt_bio_1: "Gründer der Altintas Personalmanagement. Zuständig für strategische Ausrichtung, Kundenberatung und Expansionsplanung.",
-    mgmt_bio_2: "Verantwortlich für das Personalmanagement und das Recruiting von neuen Mitarbeitern.",
-    mgmt_bio_3: "Leitet das operative Geschäft und kümmert sich um die Kundenbeziehungen.",
-    mgmt_bio_4: "Zuständig für den digitalen Auftritt, Social-Media-Marketing und Content-Erstellung.",
+    mgmt_pos_1: "CEO",
+    mgmt_bio_1: "Bestimmt die Vision des Unternehmens, trifft strategische Entscheidungen und leitet alle operativen Abläufe.",
+    mgmt_bio_2: "Leitet die Rekrutierungsprozesse und koordiniert die HR-Abläufe.",
+    mgmt_bio_3: "Leitet die Unternehmenskommunikation, das Markenmanagement, die Medienbeziehungen und die PR-Aktivitäten des Unternehmens.",
+    mgmt_bio_4: "Verwaltet die Social-Media-Accounts des Unternehmens und koordiniert die digitalen Content-Prozesse.",
     compliance: "Qualität & Sicherheit",
     mgmt_pos_2: "HR-Manager",
-    mgmt_pos_3: "CCO",
-    mgmt_pos_4: "Social Media",
+    mgmt_pos_3: "Direktor für Unternehmenskommunikation",
+    mgmt_pos_4: "Social Media Manager",
     comp_title: "Rechtssicherheit nach deutschem Arbeitsrecht",
     comp_desc1: "Als zugelassenes Unternehmen für Arbeitnehmerüberlassung halten wir uns streng an alle gesetzlichen Vorgaben. Die Einhaltung des Arbeitnehmerüberlassungsgesetzes (AÜG), die Erteilung der Erlaubnis der Bundesagentur für Arbeit und die Beachtung der Equal-Pay-Regelungen sind für uns selbstverständlich.",
     comp_feat_1: "Tarifvertrag DGB/GVP - Tarifwerk",
@@ -292,13 +292,13 @@ const translations = {
     testimonial_title: "Vertrauen, das sich auszahlt",
     testimonial_1: "Altintas hat uns in der Hochsaison innerhalb von 48 Stunden ein komplettes Logistikteam gestellt. Professionell, zuverlässig und absolut tariftreu.",
     testimonial_1_name: "Michael K.",
-    testimonial_1_role: "Betriebsleiter, Logistikunternehmen Ruhrgebiet",
+    testimonial_1_role: "",
     testimonial_2: "Seit drei Jahren arbeiten wir mit Altintas im On-Site-Modell zusammen. Die Betreuung vor Ort ist erstklassig und unsere Produktion läuft reibungslos.",
     testimonial_2_name: "Sabine L.",
-    testimonial_2_role: "HR-Leiterin, Automobilzulieferer",
+    testimonial_2_role: "",
     testimonial_3: "Als Bewerber wurde ich fair behandelt, schnell vermittelt und erhalte übertarifliche Bezahlung. Ich kann Altintas nur empfehlen!",
     testimonial_3_name: "Ahmet Y.",
-    testimonial_3_role: "Staplerfahrer, Essen",
+    testimonial_3_role: "",
 
     // Career page
     career_hero_title: "Starten Sie Ihre Karriere bei Altintas",
@@ -342,7 +342,7 @@ const translations = {
     hero_badge: "Personel Kiralama & Lojistik",
     hero_title: "Büyümeniz İçin Nitelikli Personel Çözümleri",
     hero_title_span: "Nitelikli",
-    hero_desc: "Altıntaş Personalmanagement GmbH, Essen'de ve ülke genelinde güvenilir ortağınızdır. Nitelikli uzmanları önde gelen lojistik ve sanayi kuruluşlarıyla buluşturuyoruz.",
+    hero_desc: "Altintas Personalmanagement GmbH, Essen'de ve ülke genelinde güvenilir ortağınızdır. Nitelikli uzmanları önde gelen lojistik ve sanayi kuruluşlarıyla buluşturuyoruz.",
     hero_btn_employer: "Personel İhtiyacı Bildir",
     hero_btn_applicant: "Hemen Başvur",
     hero_signature: "Find the One.",
@@ -380,12 +380,12 @@ const translations = {
     cta_banner_desc: "Hemen işe başlamaya hazır, büyük bir forklift operatörü, sipariş hazırlama elemanı ve lojistik yardımcısı kadrosuna sahibiz.",
 
     // About Page (unternehmen.html)
-    about_hero_title: "Altıntaş Personalmanagement Hakkında",
+    about_hero_title: "Altintas Personalmanagement Hakkında",
     about_hero_desc: "Değerlerimiz, yöneticilerimiz ve yüksek kalite ve yasal uygunluk standartlarımız hakkında daha fazla bilgi edinin.",
     about_subtitle: "Hakkımızda",
     about_title: "Personel Temini ve Geçici İş İlişkisinde (AÜG) Onlarca Yıllık Deneyim",
-    about_desc1: "Altıntaş Personalmanagement GmbH, güvenilir personel hizmetlerini temsil eder. Essen (Gladbecker Straße 427) merkezli ve Ruhr bölgesindeki güçlü yapımızla şirketlerin personel açıklarını esnek ve yasal güvenceyle kapatmalarına destek oluyoruz.",
-    about_desc2: "Yöneticimiz Hasan Altıntaş firmamızı adil çalışma koşulları, toplu sözleşmeli ücretlendirme (DGB/GVP) ve maksimum müşteri memnuniyeti odağında yönetmektedir. Kısa vadeli iş gücünden kalıcı istihdama kadar yanınızdayız.",
+    about_desc1: "Altintas Personalmanagement GmbH, güvenilir personel hizmetlerini temsil eder. Essen (Gladbecker Straße 427) merkezli ve Ruhr bölgesindeki güçlü yapımızla şirketlerin personel açıklarını esnek ve yasal güvenceyle kapatmalarına destek oluyoruz.",
+    about_desc2: "Yöneticimiz Hasan Altintas firmamızı adil çalışma koşulları, toplu sözleşmeli ücretlendirme (DGB/GVP) ve maksimum müşteri memnuniyeti odağında yönetmektedir. Kısa vadeli iş gücünden kalıcı istihdama kadar yanınızdayız.",
     about_stat1: "15+ Yıl",
     about_stat1_lbl: "Sektörel Deneyim",
     about_stat2_lbl: "Memnuniyet Oranı",
@@ -395,15 +395,15 @@ const translations = {
     phil_desc2: "DGB/GVP toplu iş sözleşmesine uygun adil çalışma koşullarını, zamanında maaş ödemelerini ve karşılıklı güvene dayalı kişisel danışmanlığı savunuyoruz. Sürdürülebilir ekonomik başarının ancak memnun çalışanlarla mümkün olduğuna inanıyoruz.",
     management: "Yönetim",
     mgmt_title: "Yönetim Kurulumuz",
-    mgmt_desc: "Hasan Altıntaş firmamızı ticari yetkinlik ve derin sektörel birikim ile yönetmektedir.",
-    mgmt_pos_1: "Kurucu / Yönetici Ortak",
-    mgmt_bio_1: "Altıntaş Personalmanagement'ın kurucusu. Stratejik yönelim, müşteri danışmanlığı ve büyüme planlamasından sorumludur.",
-    mgmt_bio_2: "Personel yönetimi ve yeni çalışanların işe alımından sorumludur.",
-    mgmt_bio_3: "Operasyonel süreçleri yönetir ve müşteri ilişkileriyle ilgilenir.",
-    mgmt_bio_4: "Dijital varlık, sosyal medya pazarlaması ve içerik üretiminden sorumludur.",
+    mgmt_desc: "Hasan Altintas firmamızı ticari yetkinlik ve derin sektörel birikim ile yönetmektedir.",
+    mgmt_pos_1: "CEO",
+    mgmt_bio_1: "Şirketin vizyonunu belirler, stratejik kararları alır ve tüm operasyonlara liderlik eder.",
+    mgmt_bio_2: "İşe alım süreçlerini yönetir ve insan kaynakları operasyonlarını koordine eder.",
+    mgmt_bio_3: "Şirketin kurumsal iletişim, marka yönetimi, medya ilişkileri ve kurumsal tanıtım faaliyetlerini yönetir.",
+    mgmt_bio_4: "Şirketin sosyal medya hesaplarını yönetir ve dijital içerik süreçlerini koordine eder.",
     compliance: "Kalite & Güvenlik",
-    mgmt_pos_2: "İK Müdürü (HR-Manager)",
-    mgmt_pos_3: "CCO",
+    mgmt_pos_2: "İnsan Kaynakları Müdürü",
+    mgmt_pos_3: "Kurumsal İletişim Direktörü",
     mgmt_pos_4: "Sosyal Medya Sorumlusu",
     comp_title: "Alman İş Hukukuna Uygun Güvence",
     comp_desc1: "Lisanslı bir geçici istihdam kuruluşu olarak, tüm yasal düzenlemelere harfiyen uymaktayız. Geçici İstihdam Yasası (AÜG) gereklilikleri, Federal İş Ajansı izinleri ve Equal-Pay (Eşit Ücret) prensiplerine uygunluk bizim için esastır.",
@@ -425,7 +425,7 @@ const translations = {
     tab_candidate: "İş Arayanlar İçin",
     solutions_employer_header: "İşverenler / Müşteriler İçin Esnek Çözümler",
     solutions_candidate_header: "Çalışanlar / Adaylar İçin Esnek Çözümler",
-    partner_title: "Altıntaş Personalmanagement GmbH Sizin Ortağınız",
+    partner_title: "Altintas Personalmanagement GmbH Sizin Ortağınız",
     employer_title: "Hızlı. Hukuken Güvenli. Sorumluluk Sahibi.",
     employer_desc: "Sipariş yoğunlukları, hastalık izinleri veya mevsimsel dalgalanmalar operasyonel kapasitenizi zorlayabilir. Profesyonel personel kiralama (ANÜ) hizmetimizle, uzun vadeli risk almadan verimliliğinizi koruyun.",
     emp_feat_1: "Hızlı Organizasyon",
@@ -451,7 +451,7 @@ const translations = {
     srv_perm_desc1: "Ekiplerinize doğrudan katılması hedeflenen uzun vadeli kadrolar için tüm aday arama ve mülakat süreçlerini üstleniyoruz. İlan çıkılması, ön elemelerin yapılması süreçlerini yönetiyoruz.",
     srv_perm_desc2: "İnsan kaynakları departmanınızın zaman ve kaynak tasarrufu yapmasını sağlıyoruz. Size yalnızca teknik ve kültürel kriterlerinize tam uyum sağlayan adayları raporluyoruz.",
     srv_onsite_title: "Yerinde (On-Site) Yönetim Hizmetleri",
-    srv_onsite_desc1: "Büyük ölçekli geçici personel ihtiyaçlarınızda, fabrikanızın veya deponuzun içinde doğrudan bir Altıntaş temsilciliği kuruyoruz. Özel On-Site yöneticimiz süreçleri yerinde yönetiyor.",
+    srv_onsite_desc1: "Büyük ölçekli geçici personel ihtiyaçlarınızda, fabrikanızın veya deponuzun içinde doğrudan bir Altintas temsilciliği kuruyoruz. Özel On-Site yöneticimiz süreçleri yerinde yönetiyor.",
     srv_onsite_desc2: "Temsilcimiz; vardiya planlamasını, çalışan oryantasyonunu, mesai takibini ve iş güvenliği kurallarının uygulanmasını doğrudan üretim sahasında denetler.",
 
     // Sectors Page (branchen.html)
@@ -463,7 +463,7 @@ const translations = {
     sect_log_title: "Depo, Lojistik & Sevk",
     sect_log_desc: "Tüm tedarik zincirinizi güvence altına almak için sipariş hazırlama elemanları, forklift operatörleri ve sevk görevlileri.",
     sec_log_h2: "Lojistik ve Dağıtım Merkezleri",
-    sec_log_desc1: "Ruhr Havzası ve tüm Almanya, Avrupa lojistik ağının merkezidir. Altıntaş Personalmanagement, tanınmış lojistik devlerine deneyimli ekipler sağlamaktadır.",
+    sec_log_desc1: "Ruhr Havzası ve tüm Almanya, Avrupa lojistik ağının merkezidir. Altintas Personalmanagement, tanınmış lojistik devlerine deneyimli ekipler sağlamaktadır.",
     sec_log_item1: "Forklift ve Dar Alan İstifleme Operatörleri",
     sec_log_item2: "Sipariş Hazırlama (Picker) Elemanları",
     sec_log_item3: "Lojistik Yönetimi Uzmanları",
@@ -478,7 +478,7 @@ const translations = {
     sec_ind_item4: "Kalite Kontrol Uzmanları",
     sect_metal_title: "Metal ve Elektrik Sanayisi",
     sec_metal_h2: "Kaynak Teknolojileri ve Metal Yapı",
-    sec_metal_desc1: "Kaynak teknolojileri ve metal yapı alanlarında uzman bulmak zordur. Altıntaş Personalmanagement hem Almanya genelinde hem de Bursa (Türkiye) ağımız üzerinden hızlıca kaynakçı temin eder.",
+    sec_metal_desc1: "Kaynak teknolojileri ve metal yapı alanlarında uzman bulmak zordur. Altintas Personalmanagement hem Almanya genelinde hem de Bursa (Türkiye) ağımız üzerinden hızlıca kaynakçı temin eder.",
     sec_met_item1: "Sertifikalı Kaynakçılar (MIG, MAG, WIG)",
     sec_met_item2: "Metal Konstrüksiyon İşçileri / Çilingirler",
     sec_met_item3: "CNC Torna ve Freze Operatörleri",
@@ -497,7 +497,7 @@ const translations = {
     map_hero_desc: "Almanya'daki şube ağımızı ve Türkiye (Bursa) merkezli uluslararası işe alım ofisi ağımızı keşfedin.",
     map_subtitle: "Erişim Ağımız",
     map_title: "Size Her Zaman Yakınız",
-    map_desc: "Altıntaş Personalmanagement, Almanya genelindeki çok sayıda lokasyonu ve Bursa (Türkiye) temsilciliği ile tüm talepleri karşılar.",
+    map_desc: "Altintas Personalmanagement, Almanya genelindeki çok sayıda lokasyonu ve Bursa (Türkiye) temsilciliği ile tüm talepleri karşılar.",
     filter_all: "Tümü",
     filter_logistics: "Depo & Lojistik",
     filter_industrial: "Endüstriyel (Ulusal)",
@@ -599,7 +599,7 @@ const translations = {
     process_step3_desc: "Sözleşme sonrası personel birkaç gün içinde göreve hazır.",
     process_step4_title: "Sürekli Destek",
     process_step4_desc: "Ekibimiz tüm görev süresince yanınızda — mesai takibinden uzatmalara kadar.",
-    why_subtitle: "Neden Altıntaş?",
+    why_subtitle: "Neden Altintas?",
     why_title: "Ortak Olarak Avantajlarınız",
     why_feat1_title: "%100 Yasal Güvence",
     why_feat1_desc: "AÜG, DGB/GVP toplu sözleşmeleri ve Equal-Pay kurallarına tam uyum — tavizsiz.",
@@ -615,21 +615,21 @@ const translations = {
     why_feat6_desc: "Lojistik, üretim ve endüstride yılların deneyimi — dilinizi konuşuyoruz.",
     testimonial_subtitle: "Ortaklarımızın Görüşleri",
     testimonial_title: "Güven, Karşılığını Verir",
-    testimonial_1: "Altıntaş yoğun sezonda 48 saat içinde tam bir lojistik ekibi sağladı. Profesyonel, güvenilir ve tamamen toplu sözleşmeli.",
+    testimonial_1: "Altintas yoğun sezonda 48 saat içinde tam bir lojistik ekibi sağladı. Profesyonel, güvenilir ve tamamen toplu sözleşmeli.",
     testimonial_1_name: "Michael K.",
-    testimonial_1_role: "Operasyon Müdürü, Ruhr Lojistik Firması",
-    testimonial_2: "Üç yıldır Altıntaş ile yerinde yönetim modelinde çalışıyoruz. Sahadaki destek mükemmel, üretimimiz sorunsuz.",
+    testimonial_1_role: "",
+    testimonial_2: "Üç yıldır Altintas ile yerinde yönetim modelinde çalışıyoruz. Sahadaki destek mükemmel, üretimimiz sorunsuz.",
     testimonial_2_name: "Sabine L.",
-    testimonial_2_role: "İK Yöneticisi, Otomotiv Tedarikçisi",
-    testimonial_3: "Aday olarak adil muamele gördüm, hızla yerleştirildim ve tarife üstü maaş alıyorum. Altıntaş'ı kesinlikle tavsiye ederim!",
+    testimonial_2_role: "",
+    testimonial_3: "Aday olarak adil muamele gördüm, hızla yerleştirildim ve tarife üstü maaş alıyorum. Altintas'ı kesinlikle tavsiye ederim!",
     testimonial_3_name: "Ahmet Y.",
-    testimonial_3_role: "Forklift Operatörü, Essen",
-    career_hero_title: "Altıntaş'ta Kariyerinize Başlayın",
+    testimonial_3_role: "",
+    career_hero_title: "Altintas'ta Kariyerinize Başlayın",
     career_hero_desc: "Adil çalışma koşulları, toplu sözleşmeli ücretler ve lojistik/endüstride gerçek fırsatlar — Almanya genelinde.",
     career_benefits_sub: "Avantajlarınız",
     career_benefits_title: "Neden Bizimle Çalışmalısınız?",
-    career_benefits_desc: "Altıntaş Personalmanagement çalışanı olarak adil koşullardan ve kişisel danışmanlıktan yararlanırsınız.",
-    career_ben1_desc: "Altıntaş'ta güvenli istihdam — belirsiz süreli sözleşme yok.",
+    career_benefits_desc: "Altintas Personalmanagement çalışanı olarak adil koşullardan ve kişisel danışmanlıktan yararlanırsınız.",
+    career_ben1_desc: "Altintas'ta güvenli istihdam — belirsiz süreli sözleşme yok.",
     career_ben2_desc: "DGB/GVP Toplu İş Sözleşmesi + Yol Ücreti (Fahrgeld) + Günlük Harcırah (VMA) + Göreve Bağlı Performans Primi (einsatzbezogene Leistungszulage).",
     career_ben3_desc: "Toplu sözleşmeye göre ek mali avantajlar — zamanında ve güvenilir.",
     career_ben4_desc: "Kişisel koruyucu ekipman ve iş kıyafetleri tarafımızdan sağlanır.",
@@ -637,7 +637,7 @@ const translations = {
     career_ben6_desc: "Forklift ehliyeti, iş güvenliği eğitimleri ve mesleki sertifikalar — size yatırım yapıyoruz.",
     faq_subtitle: "Sık Sorulan Sorular",
     faq_title: "SSS — Bilmeniz Gereken Her Şey",
-    faq_q1: "Altıntaş'a nasıl başvurabilirim?",
+    faq_q1: "Altintas'a nasıl başvurabilirim?",
     faq_a1: "İletişim sayfasındaki online başvuru formunu kullanın. Özgeçmişinizi yükleyin ve istediğiniz çalışma alanını belirtin. İK ekibimiz 48 saat içinde sizinle iletişime geçer.",
     faq_q2: "Hangi nitelikler gerekli?",
     faq_a2: "Görev alanına bağlıdır. Lojistik için forklift ehliyeti veya depo deneyimi yardımcı olur. Üretimde güvenilirlik ve takım çalışması genellikle formal diplomalardan daha önemlidir.",
@@ -646,7 +646,7 @@ const translations = {
     faq_q4: "Hangi bölgelerde görev var?",
     faq_a4: "Odak noktamız Ruhr bölgesi ve NRW, ancak Almanya genelinde 20'den fazla lokasyonda yerleştirme yapıyoruz.",
     faq_q5: "Personel kiralama benim için ne anlama geliyor?",
-    faq_a5: "Altıntaş'ta süresiz sözleşmeniz var ve müşteri işletmesinde çalışırsınız. Tarifeli maaş, tüm sosyal haklar ve bizim desteğimizle Alman iş hukununa göre korunursunuz.",
+    faq_a5: "Altintas'ta süresiz sözleşmeniz var ve müşteri işletmesinde çalışırsınız. Tarifeli maaş, tüm sosyal haklar ve bizim desteğimizle Alman iş hukununa göre korunursunuz.",
     career_cta_title: "Bir Sonraki Adıma Hazır mısınız?",
     career_cta_desc: "Başvurunuzu gönderin — sizin için doğru işi bulalım."
   }
@@ -680,7 +680,7 @@ function translatePage(lang) {
   
   // Set html document properties
   document.documentElement.lang = lang;
-  document.title = lang === "tr" ? "Altıntaş Personalmanagement | İK Hizmetleri & Personel Kiralama" : "Altıntaş Personalmanagement | Arbeitnehmerüberlassung & Personaldienstleistungen";
+  document.title = lang === "tr" ? "Altintas Personalmanagement | İK Hizmetleri & Personel Kiralama" : "Altintas Personalmanagement | Arbeitnehmerüberlassung & Personaldienstleistungen";
 }
 
 function selectLanguage(lang) {
@@ -1545,5 +1545,13 @@ if (candidateForm) {
       document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
       if (!isOpen) item.classList.add('open');
     });
+  });
+})();
+
+// Hero Video Grid — ensure all 4 videos autoplay
+(function initHeroVideoGrid() {
+  document.querySelectorAll('.hero-grid-cell video').forEach(vid => {
+    vid.muted = true;
+    vid.play().catch(() => {});
   });
 })();

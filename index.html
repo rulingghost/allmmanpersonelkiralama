@@ -20,7 +20,7 @@
   <header class="main-header" id="header">
     <div class="container nav-container">
       <a href="index.html" class="logo-container">
-        <img src="assets/logo.png" alt="Altıntaş Logo" class="brand-logo-img">
+        <img src="assets/logo.png" alt="Altintas Logo" class="brand-logo-img">
       </a>
       
       <ul class="nav-menu" id="nav-menu">
@@ -56,10 +56,10 @@
             <i class="fa-solid fa-chevron-down dropdown-icon"></i>
           </a>
           <ul class="dropdown-menu">
-            <li><a href="lager-logistik.html" data-translate="sect_log_title">Lager & Logistik</a></li>
-            <li><a href="produktion-industrie.html" data-translate="sect_ind_title">Industrie & Produktion</a></li>
-            <li><a href="metall-elektro.html" data-translate="sect_metal_title">Metall & Elektro</a></li>
             <li><a href="industriedienstleistungen.html" data-translate="sect_srv_title">Reinigungsdienste</a></li>
+            <li><a href="produktion-industrie.html" data-translate="sect_ind_title">Industrie & Produktion</a></li>
+            <li><a href="lager-logistik.html" data-translate="sect_log_title">Lager & Logistik</a></li>
+            <li><a href="metall-elektro.html" data-translate="sect_metal_title">Metall & Elektro</a></li>
           </ul>
         </li>
         
@@ -107,18 +107,38 @@
     </div>
   </header>
 
-  <!-- Hero Section  Video Background -->
+  <!-- Hero Section — 4-Video Mosaic Grid -->
   <section class="hero hero-section" id="home">
-    <div class="hero-video-wrapper">
-      <video class="hero-video" autoplay muted loop playsinline poster="assets/hero_warehouse.png">
-        <source src="assets/hero-bg-video.mp4" type="video/mp4">
-      </video>
-      <div class="hero-video-overlay"></div>
+    <!-- 2x2 Video Grid Background -->
+    <div class="hero-video-grid">
+      <div class="hero-grid-cell">
+        <video autoplay muted loop playsinline>
+          <source src="assets/hero-video-1.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="hero-grid-cell">
+        <video autoplay muted loop playsinline>
+          <source src="assets/hero-video-2.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="hero-grid-cell">
+        <video autoplay muted loop playsinline>
+          <source src="assets/hero-video-3.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="hero-grid-cell">
+        <video autoplay muted loop playsinline>
+          <source src="assets/hero-video-4.mp4" type="video/mp4">
+        </video>
+      </div>
+      <!-- Dark overlay for readability -->
+      <div class="hero-grid-overlay"></div>
     </div>
 
+    <!-- Content on top -->
     <div class="container hero-center-container">
       <div class="hero-content-centered">
-        <img src="assets/logo.png?v=7.0" alt="Altıntaş Logo" class="hero-logo-img">
+        <img src="assets/logo.png?v=7.0" alt="Altintas Logo" class="hero-logo-img">
         <img src="assets/logo-text.png?v=7.1" alt="Altintas Personalmanagement" class="hero-logo-text-img">
         <div class="hero-divider-line"></div>
         <div class="hero-signature" data-translate="hero_signature">Heute. Morgen. Für immer.</div>
@@ -258,7 +278,7 @@
           </div>
         </a>
         <a href="metall-elektro.html" class="bento-card bento-card-featured">
-          <div class="bento-card-bg" style="background-image: url('assets/hero_warehouse.png');"></div>
+          <div class="bento-card-bg" style="background-image: url('assets/metal_welding.png');"></div>
           <div class="bento-card-overlay"></div>
           <div class="bento-card-content">
             <div class="bento-icon"><i class="fa-solid fa-fire-flame-curved"></i></div>
@@ -272,7 +292,7 @@
           </div>
         </a>
         <a href="industriedienstleistungen.html" class="bento-card bento-card-featured">
-          <div class="bento-card-bg" style="background-image: url('assets/about_consulting.png');"></div>
+          <div class="bento-card-bg" style="background-image: url('assets/industrial_cleaning.png');"></div>
           <div class="bento-card-overlay"></div>
           <div class="bento-card-content">
             <div class="bento-icon"><i class="fa-solid fa-broom"></i></div>
@@ -308,7 +328,7 @@
             <div class="solution-arrow"><i class="fa-solid fa-arrow-down-long"></i></div>
           </div>
           <div class="portal-img">
-            <img src="assets/service_logistics.png" alt="Logistics Team">
+            <img src="assets/legal_consulting.png" alt="Employer Solutions">
           </div>
           <div class="portal-text">
             <h3 data-translate="employer_title">Schnell. Rechtssicher. Zuverlässig.</h3>
@@ -392,6 +412,14 @@
           <div class="process-num">01</div>
           <h4 data-translate="process_step1_title">Bedarf analysieren</h4>
           <p data-translate="process_step1_desc">Wir besprechen Ihre Anforderungen, Qualifikationen und den gewünschten Einsatzzeitraum persönlich.</p>
+          <div class="footer-social" style="display: flex; gap: 12px; margin-top: 16px;">
+            <a href="https://www.facebook.com/share/1dHbBDmsqr/?mibextid=wwXIfr" target="_blank" style="width: 36px; height: 36px; border-radius: 50%; background: rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center; color: #fff; font-size: 16px; transition: background 0.3s;">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/apmgmbh?igsh=YW5jMGw2Ynloazdr" target="_blank" style="width: 36px; height: 36px; border-radius: 50%; background: rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center; color: #fff; font-size: 16px; transition: background 0.3s;">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
         </div>
         <div class="process-step">
           <div class="process-num">02</div>
@@ -522,8 +550,8 @@
       <div class="footer-grid">
         <div class="footer-col" style="grid-column: span 1;">
           <a href="index.html" class="logo" style="margin-bottom: 20px;">
-            <img src="assets/logo.png" alt="Altıntaş Logo" style="height: 48px; object-fit: contain;">
-            ALTINTAŞ<span>Personal</span>
+            <img src="assets/logo.png" alt="Altintas Logo" style="height: 48px; object-fit: contain;">
+            ALTINTAS<br><span>Personal</span>
           </a>
           <p class="footer-info-text" data-translate="footer_brand_desc">
             Ihr verlässlicher Partner für zeitgemäße Arbeitnehmerüberlassung und Personalmanagement in Deutschland und Europa.
@@ -556,7 +584,7 @@
           <ul class="footer-contact">
             <li>
               <i class="fa-solid fa-location-dot"></i>
-              <span>Gladbecker Straße 427<br>45329 Essen, DE</span>
+              <span>Gladbecker Straße 427<br>45329 Essen</span>
             </li>
             <li>
               <i class="fa-solid fa-phone"></i>
