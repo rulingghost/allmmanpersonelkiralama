@@ -223,6 +223,7 @@ const translations = {
     pl_msg_cand: "Erzählen Sie uns kurz etwas über sich...",
 
     // Footer
+    footer_brand_sub: "Personalmanagement",
     footer_brand_desc: "Ihr verlässlicher Partner für zeitgemäße Arbeitnehmerüberlassung und Personalmanagement in Deutschland und Europa.",
     footer_services: "Dienstleistungen",
     footer_quicklinks: "Navigation",
@@ -548,6 +549,7 @@ const translations = {
     pl_msg_cand: "Bize kısaca kendinizden bahsedin...",
 
     // Footer
+    footer_brand_sub: "Personel Yönetimi",
     footer_brand_desc: "Almanya ve Avrupa genelinde modern personel kiralama ve insan kaynakları yönetimi alanında güvenilir ortağınız.",
     footer_services: "Hizmetler",
     footer_quicklinks: "Gezinti",
