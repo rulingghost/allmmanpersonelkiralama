@@ -58,7 +58,7 @@ const translations = {
     about_hero_title: "Über Altintas Personalmanagement",
     about_hero_desc: "Erfahren Sie mehr über unsere Werte, unsere geschäftsführenden Inhaber und unseren Anspruch an Qualität und Rechtssicherheit.",
     about_subtitle: "Über uns",
-    about_title: "Jahrzehntelange Erfahrung im Personalverleih und Arbeitnehmerüberlassung (AÜG)",
+    about_title: "Jahrzehntelange Erfahrung im Personalverleih nach Arbeitnehmerüberlassung (AÜG)",
     about_desc1: "Altintas Personalmanagement GmbH steht für vertrauensvolle Personaldienstleistungen. Mit Hauptsitz in Essen (Gladbecker Straße 427) und einer starken Präsenz im Ruhrgebiet unterstützen wir Unternehmen dabei, Personalengpässe flexibel und rechtssicher abzusichern.",
     about_desc2: "Unser geschäftsführender Inhaber Hasan Altintas leitet das Unternehmen mit dem Fokus auf faire Arbeitsbedingungen, tariftreue Bezahlung (DGB/GVP) und höchste Kundenzufriedenheit. Ob kurzfristige Einsätze oder dauerhafte Arbeitsvermittlung - wir sind Ihr starker Partner.",
     about_stat1: "15+ Jahre",
@@ -68,7 +68,7 @@ const translations = {
     phil_title: "Wertschätzung und Zuverlässigkeit",
     phil_desc1: "Als inhabergeführtes Personaldienstleistungsunternehmen mit tiefen Wurzeln im Herzen von Essen verstehen wir uns als Brückenbauer. Unser täglicher Antrieb ist es, für unsere Bewerber den idealen Arbeitsplatz und für unsere Kundenunternehmen die passenden Fachkräfte zu finden.",
     phil_desc2: "Wir stehen für faire Arbeitskonditionen nach dem DGB/GVP-Tarifwerk, pünktliche Bezahlung und eine persönliche Betreuung auf Augenhöhe. Wir sind überzeugt, dass nachhaltiger wirtschaftlicher Erfolg nur durch zufriedene Mitarbeiter möglich ist.",
-    management: "Führung",
+    management: "Team",
     mgmt_title: "Unsere Geschäftsführung",
     mgmt_desc: "Hasan Altintas leitet das Unternehmen mit kaufmännischer Kompetenz und profundem Branchenwissen.",
     mgmt_pos_1: "CEO",
@@ -80,7 +80,8 @@ const translations = {
     mgmt_pos_2: "HR-Manager",
     mgmt_pos_3: "Direktor für Unternehmenskommunikation",
     mgmt_pos_4: "Social Media Manager",
-    comp_title: "Rechtssicherheit nach deutschem Arbeitsrecht",
+    nav_comp: "Compliance",
+    comp_title: "Compliance nach deutschem Arbeitsrecht",
     comp_desc1: "Als zugelassenes Unternehmen für Arbeitnehmerüberlassung halten wir uns streng an alle gesetzlichen Vorgaben. Die Einhaltung des Arbeitnehmerüberlassungsgesetzes (AÜG), die Erteilung der Erlaubnis der Bundesagentur für Arbeit und die Beachtung der Equal-Pay-Regelungen sind für uns selbstverständlich.",
     comp_feat_1: "Tarifvertrag DGB/GVP - Tarifwerk",
     comp_feat_2: "Erlaubnis zur ANÜ vorhanden",
@@ -394,7 +395,7 @@ const translations = {
     phil_title: "Değer Vermek ve Güvenilirlik",
     phil_desc1: "Essen'in kalbinde derin köklere sahip yönetici ortaklı bir insan kaynakları firması olarak kendimizi bir köprü olarak görüyoruz. Günlük motivasyonumuz, adaylarımız için ideal işi ve ortak şirketlerimiz için en doğru nitelikli personeli bulmaktır.",
     phil_desc2: "DGB/GVP toplu iş sözleşmesine uygun adil çalışma koşullarını, zamanında maaş ödemelerini ve karşılıklı güvene dayalı kişisel danışmanlığı savunuyoruz. Sürdürülebilir ekonomik başarının ancak memnun çalışanlarla mümkün olduğuna inanıyoruz.",
-    management: "Yönetim",
+    management: "Ekibimiz",
     mgmt_title: "Yönetim Kurulumuz",
     mgmt_desc: "Hasan Altintas firmamızı ticari yetkinlik ve derin sektörel birikim ile yönetmektedir.",
     mgmt_pos_1: "CEO",
@@ -406,7 +407,8 @@ const translations = {
     mgmt_pos_2: "İnsan Kaynakları Müdürü",
     mgmt_pos_3: "Kurumsal İletişim Direktörü",
     mgmt_pos_4: "Sosyal Medya Sorumlusu",
-    comp_title: "Alman İş Hukukuna Uygun Güvence",
+    nav_comp: "Uyum (Compliance)",
+    comp_title: "Alman İş Hukukuna Uygunluk (Compliance)",
     comp_desc1: "Lisanslı bir geçici istihdam kuruluşu olarak, tüm yasal düzenlemelere harfiyen uymaktayız. Geçici İstihdam Yasası (AÜG) gereklilikleri, Federal İş Ajansı izinleri ve Equal-Pay (Eşit Ücret) prensiplerine uygunluk bizim için esastır.",
     comp_feat_1: "DGB/GVP Toplu İş Sözleşmesi - Tarifwerk",
     comp_feat_2: "ANÜ Personel Kiralama İzni",
@@ -979,6 +981,34 @@ const branchesData = {
     address: "Wilhelminakade 1, 3072 AP Rotterdam, Netherlands",
     phone: "+49 178 4589604",
     email: "rotterdam@altintas-pm.de"
+  },
+  mgladbach: {
+    name: "M.Gladbach",
+    category: { de: "Industrie / Lager & Elektro", tr: "Sanayi / Depo & Elektrik" },
+    address: "Bismarckstraße 34, 41061 Mönchengladbach",
+    phone: "+49 178 4589604",
+    email: "mgladbach@altintas-pm.de"
+  },
+  koeln: {
+    name: "Köln",
+    category: { de: "Elektro / Produktion & Logistik", tr: "Elektrik / Üretim & Lojistik" },
+    address: "Hohe Straße 110, 50667 Köln",
+    phone: "+49 178 4589604",
+    email: "koeln@altintas-pm.de"
+  },
+  dortmund: {
+    name: "Dortmund",
+    category: { de: "Logistik & Elektro", tr: "Lojistik & Elektrik" },
+    address: "Westenhellweg 45, 44137 Dortmund",
+    phone: "+49 178 4589604",
+    email: "dortmund@altintas-pm.de"
+  },
+  leverkusen: {
+    name: "Leverkusen",
+    category: { de: "Chemie & Produktion", tr: "Kimya & Üretim" },
+    address: "Friedrich-Ebert-Platz 1, 51373 Leverkusen",
+    phone: "+49 178 4589604",
+    email: "leverkusen@altintas-pm.de"
   }
 };
 
@@ -989,6 +1019,10 @@ const branchCoords = {
   frankfurt: { lat: 50.1109, lng: 8.6821 },
   wiesbaden: { lat: 50.0782, lng: 8.2398 },
   duesseldorf: { lat: 51.2277, lng: 6.7735 },
+  koeln: { lat: 50.9375, lng: 6.9603 },
+  mgladbach: { lat: 51.1912, lng: 6.4436 },
+  dortmund: { lat: 51.5136, lng: 7.4653 },
+  leverkusen: { lat: 51.0459, lng: 6.9865 },
   aschaffenburg: { lat: 49.977, lng: 9.1521 },
   bocholt: { lat: 51.8388, lng: 6.6153 },
   dorsten: { lat: 51.6611, lng: 7.0022 },
@@ -1008,20 +1042,37 @@ const branchCoords = {
 };
 
 function getBranchCoords(branchId) {
-  return branchCoords[branchId] || null;
+  if (!branchId) return null;
+  const baseId = branchId.split('-')[0];
+  return branchCoords[branchId] || branchCoords[baseId] || null;
 }
 
 function getBranchDetails(branchId) {
-  if (branchesData[branchId]) {
-    return branchesData[branchId];
-  }
-  const capitalized = branchId.charAt(0).toUpperCase() + branchId.slice(1);
+  if (!branchId) return null;
+  if (branchesData[branchId]) return branchesData[branchId];
+  const baseId = branchId.split('-')[0];
+  if (branchesData[baseId]) return branchesData[baseId];
+
+  const cityNames = {
+    duesseldorf: "Düsseldorf",
+    koeln: "Köln",
+    mgladbach: "M.Gladbach",
+    dortmund: "Dortmund",
+    leverkusen: "Leverkusen",
+    duisburg: "Duisburg",
+    essen: "Essen",
+    frankfurt: "Frankfurt am Main",
+    rotterdam: "Rotterdam",
+    bursa: "Bursa"
+  };
+
+  const name = cityNames[baseId] || (baseId.charAt(0).toUpperCase() + baseId.slice(1));
   return {
-    name: capitalized,
-    category: { de: "Industrie - National", tr: "Ulusal Endüstri" },
-    address: `Musterstraße 10, ${capitalized}, Deutschland`,
+    name: name,
+    category: { de: "Industrie & Logistik", tr: "Sanayi & Lojistik" },
+    address: `Niederlassung ${name}, Deutschland`,
     phone: "+49 178 4589604",
-    email: `${branchId}@altintas-pm.de`
+    email: `${baseId}@altintas-pm.de`
   };
 }
 
@@ -1088,12 +1139,15 @@ function initLocationsMap() {
     if (!icon) return;
 
     const data = getBranchDetails(branchId);
+    const tagEl = item.querySelector(".branch-tag");
+    const catText = tagEl ? tagEl.innerText : null;
+
     const marker = L.marker([coords.lat, coords.lng], { icon })
       .addTo(locationsMap)
-      .bindPopup(`<strong>${data.name}</strong><br>${data.category[currentLanguage] || data.category.de}`)
+      .bindPopup(`<strong>${data.name}</strong><br>${catText || (data.category[currentLanguage] || data.category.de)}`)
       .on("click", () => {
         setActiveMapBranch(branchId);
-        openBranchModal(branchId);
+        openBranchModal(branchId, catText);
       });
 
     marker.on("mouseover", () => setActiveMapBranch(branchId));
@@ -1124,11 +1178,12 @@ function setMapMarkerVisibility(branchId, visible) {
   }
 }
 
-function openBranchModal(branchId) {
+function openBranchModal(branchId, customCategoryText) {
   const data = getBranchDetails(branchId);
+  if (!data) return;
   
   document.getElementById("modal-branch-name").innerText = data.name;
-  document.getElementById("modal-branch-cat").innerText = data.category[currentLanguage];
+  document.getElementById("modal-branch-cat").innerText = customCategoryText || (data.category[currentLanguage] || data.category.de);
   document.getElementById("modal-branch-addr").innerText = data.address;
   document.getElementById("modal-branch-phone").innerText = data.phone;
   document.getElementById("modal-branch-email").innerText = data.email;
@@ -1157,8 +1212,10 @@ if (branchItems.length > 0) {
   branchItems.forEach(item => {
     item.addEventListener("click", () => {
       const branchId = item.getAttribute("data-branch");
+      const tagEl = item.querySelector(".branch-tag");
+      const catText = tagEl ? tagEl.innerText : null;
       setActiveMapBranch(branchId);
-      openBranchModal(branchId);
+      openBranchModal(branchId, catText);
       const entry = mapMarkers[branchId];
       if (entry && locationsMap) {
         locationsMap.setView(entry.marker.getLatLng(), Math.max(locationsMap.getZoom(), 9), { animate: true });
