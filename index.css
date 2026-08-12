@@ -4670,7 +4670,6 @@ textarea.form-control {
 }
 
 /* --- Featured Executive Leader Card (Hasan Altintas) & Team Grid --- */
-/* --- Featured Executive Leader Card (Hasan Altintas) & Team Grid --- */
 .team-leader-card {
   background: linear-gradient(145deg, #ffffff 0%, #fcf9f4 100%);
   border: 1.5px solid rgba(194, 120, 58, 0.28);
@@ -4678,7 +4677,7 @@ textarea.form-control {
   padding: 44px 52px;
   margin-bottom: 44px;
   display: grid;
-  grid-template-columns: 210px 1fr;
+  grid-template-columns: 190px 1fr;
   gap: 40px;
   align-items: center;
   box-shadow: 0 20px 50px rgba(12, 21, 38, 0.07), 0 4px 16px rgba(194, 120, 58, 0.08);
@@ -4705,25 +4704,26 @@ textarea.form-control {
 
 .team-leader-avatar {
   width: 190px;
-  height: 190px;
-  border-radius: 50%;
+  aspect-ratio: 572 / 924;
+  border-radius: 18px;
   overflow: hidden;
-  border: 4px solid #ffffff;
-  box-shadow: 0 0 0 3.5px var(--accent-gold), 0 12px 32px rgba(194, 120, 58, 0.25);
+  border: 3.5px solid #ffffff;
+  box-shadow: 0 0 0 3px var(--accent-gold), 0 12px 30px rgba(194, 120, 58, 0.22);
   margin: 0 auto;
   flex-shrink: 0;
+  background-color: #0c1526;
 }
 
 .team-leader-avatar img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 25%; /* Lowers image so Hasan Altintas's face is centered perfectly in circle */
+  object-position: center center;
   transition: transform 0.5s ease;
 }
 
 .team-leader-card:hover .team-leader-avatar img {
-  transform: scale(1.06);
+  transform: scale(1.04);
 }
 
 .team-leader-info {
@@ -4864,7 +4864,11 @@ textarea.form-control {
     grid-template-columns: 1fr;
     text-align: center;
     padding: 32px 24px;
-    gap: 20px;
+    gap: 24px;
+  }
+  .team-leader-avatar {
+    width: 100%;
+    max-width: 200px;
   }
   .team-leader-info {
     align-items: center;
