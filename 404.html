@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Altintas Personalmanagement | On-Site Management</title>
+  <title>404 - Seite nicht gefunden | Altintas Personalmanagement</title>
   
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/logo.png">
@@ -13,6 +13,38 @@
   
   <!-- CSS Stylesheet -->
   <link rel="stylesheet" href="index.css?v=10.7">
+  
+  <style>
+    .error-hero {
+      min-height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 120px 20px 60px;
+      background: radial-gradient(circle at center, rgba(218, 165, 32, 0.08) 0%, transparent 70%);
+    }
+    .error-code {
+      font-size: clamp(5rem, 12vw, 9rem);
+      font-weight: 900;
+      background: linear-gradient(135deg, #d4af37 0%, #f3e5ab 50%, #aa7c11 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      line-height: 1;
+      margin-bottom: 20px;
+    }
+    .error-title {
+      font-size: clamp(1.5rem, 3vw, 2.2rem);
+      color: #ffffff;
+      margin-bottom: 16px;
+    }
+    .error-desc {
+      color: rgba(255, 255, 255, 0.7);
+      max-width: 540px;
+      margin: 0 auto 32px;
+      line-height: 1.6;
+    }
+  </style>
 </head>
 <body>
 
@@ -58,90 +90,35 @@
           <ul class="dropdown-menu">
             <li><a href="produktion-industrie.html" data-translate="sect_ind_title">Industrie & Produktion</a></li>
             <li><a href="lager-logistik.html" data-translate="sect_log_title">Lager & Logistik</a></li>
-            <li><a href="metall-elektro.html" data-translate="sect_metal_title">Metall & Elektro</a></li>
+            <li><a href="metall-elektro.html" data-translate="sect_met_title">Metall & Elektro</a></li>
           </ul>
         </li>
         
         <li><a href="standorte.html" class="nav-link" id="nav-map-link" data-translate="nav_map">Standorte</a></li>
         <li><a href="karriere.html" class="nav-link" id="nav-career-link" data-translate="nav_career">Karriere</a></li>
-                <li class="nav-item-dropdown">
-          <a href="kontakt.html" class="nav-link" id="nav-apply-link">
-            <span data-translate="nav_apply">Kontakt</span>
-            <i class="fa-solid fa-chevron-down dropdown-icon"></i>
-          </a>
-          <ul class="dropdown-menu">
-            <li><a href="kontakt-bewerber.html" data-translate="nav_contact_cand">Für Bewerber</a></li>
-            <li><a href="kontakt-arbeitgeber.html" data-translate="nav_contact_emp">Für Arbeitgeber</a></li>
-          </ul>
-        </li>
+        <li><a href="kontakt.html" class="nav-link" id="nav-apply-link" data-translate="nav_apply">Kontakt</a></li>
       </ul>
       
       <div class="nav-actions">
-        <!-- Language Selector -->
-        <div class="lang-selector">
-          <button class="lang-btn" id="lang-btn">
-            <img class="flag-icon" src="https://flagcdn.com/w20/de.png" alt="Deutsch" id="active-flag">
-            <span id="active-lang-text">DE</span>
-            <i class="fa-solid fa-chevron-down"></i>
-          </button>
-          <div class="lang-dropdown" id="lang-dropdown">
-            <button class="lang-option selected" data-lang="de">
-              <img class="flag-icon" src="https://flagcdn.com/w20/de.png" alt="Deutsch">
-              Deutsch
-            </button>
-            <button class="lang-option" data-lang="tr">
-              <img class="flag-icon" src="https://flagcdn.com/w20/tr.png" alt="Türkçe">
-              Türkçe
-            </button>
-          </div>
-        </div>
-        
-        <div class="nav-separator"></div>
-        <a href="tel:+491784589604" class="header-phone-btn">+49 178 4589604</a>
-        
-        <button class="menu-toggle" id="menu-toggle">
-          <i class="fa-solid fa-bars"></i>
-        </button>
+        <a href="kontakt.html" class="btn btn-primary nav-cta" data-translate="nav_cta">Jetzt anfragen</a>
       </div>
     </div>
   </header>
 
-  <!-- Page Header banner -->
-  <section class="hero page-hero" style="min-height: 50vh; padding-top: 100px;">
-    <div class="hero-background-wrapper">
-      <div class="hero-background-image" style="background-image: url('assets/office_support.png');"></div>
-      <div class="hero-overlay"></div>
-    </div>
+  <!-- 404 Main Section -->
+  <main class="error-hero">
     <div class="container">
-      <div class="hero-content">
-        <span class="section-subtitle" data-translate="nav_services">Dienstleistungen</span>
-        <h1 class="hero-title" data-translate="srv_onsite_title">On-Site Management vor Ort</h1>
-        <p class="hero-description" data-translate="srv_hero_desc">Erfahren Sie, wie wir Sie als strategischer Partner flexibel und effizient in allen Personalbereichen entlasten.</p>
-      </div>
+      <div class="error-code">404</div>
+      <h1 class="error-title">Seite nicht gefunden / Page Not Found</h1>
+      <p class="error-desc">
+        Die von Ihnen gesuchte Seite existiert leider nicht oder wurde verschoben.<br>
+        Aradığınız sayfa bulunamadı veya taşınmış olabilir.
+      </p>
+      <a href="index.html" class="btn btn-primary btn-lg">
+        <i class="fa-solid fa-house"></i> Zurück zur Startseite
+      </a>
     </div>
-  </section>
-
-  <!-- Content Section -->
-  <section class="section">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-text">
-          <span class="section-subtitle" data-translate="nav_services">On-Site Management</span>
-          <h2 class="section-title" data-translate="srv_onsite_title">On-Site Management vor Ort</h2>
-          <p data-translate="srv_onsite_desc1" style="margin-bottom: 20px;">
-            Bei einem hohen Bedarf an Zeitarbeitnehmern etablieren wir ein Büro direkt in Ihrem Hause. Ein On-Site Manager von Altintas koordiniert sämtliche Prozesse der Personalüberlassung vor Ort.
-          </p>
-          <p data-translate="srv_onsite_desc2" style="margin-bottom: 28px;">
-            Unser Koordinator übernimmt die Einsatzplanung, die Betreuung der Zeitarbeitnehmer, die Zeiterfassung und sorgt für die Einhaltung aller Sicherheitsvorschriften direkt an Ihren Produktionslinien.
-          </p>
-          <a href="kontakt.html" class="btn btn-primary" data-translate="nav_cta">Beratung anfordern</a>
-        </div>
-        <div class="portal-img">
-          <img src="assets/office_support.png" alt="Onsite Ynetim">
-        </div>
-      </div>
-    </div>
-  </section>
+  </main>
 
   <!-- Footer -->
   <footer class="main-footer">
@@ -155,14 +132,6 @@
           <p class="footer-info-text" data-translate="footer_brand_desc">
             Ihr verlässlicher Partner für zeitgemäße Arbeitnehmerüberlassung und Personalmanagement in Deutschland und Europa.
           </p>
-          <div class="footer-social" style="display: flex; gap: 12px; margin-top: 16px;">
-            <a href="https://www.facebook.com/share/1dHbBDmsqr/?mibextid=wwXIfr" target="_blank" style="width: 36px; height: 36px; border-radius: 50%; background: rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center; color: #fff; font-size: 16px; transition: background 0.3s;">
-              <i class="fa-brands fa-facebook-f"></i>
-            </a>
-            <a href="https://www.instagram.com/apmgmbh?igsh=YW5jMGw2Ynloazdr" target="_blank" style="width: 36px; height: 36px; border-radius: 50%; background: rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center; color: #fff; font-size: 16px; transition: background 0.3s;">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-          </div>
         </div>
         
         <div class="footer-col">
@@ -171,7 +140,6 @@
             <li><a href="dienstleistungen.html" data-translate="nav_services">Personalüberlassung</a></li>
             <li><a href="branchen.html" data-translate="sect_log_title">Lager & Logistik</a></li>
             <li><a href="branchen.html" data-translate="sect_ind_title">Produktion & Industrie</a></li>
-            <li><a href="branchen.html" data-translate="sect_srv_title">Reinigungsdienste</a></li>
           </ul>
         </div>
         
@@ -180,6 +148,7 @@
           <ul class="footer-links">
             <li><a href="index.html" data-translate="nav_home">Home</a></li>
             <li><a href="standorte.html" data-translate="nav_map">Standorte</a></li>
+            <li><a href="karriere.html" data-translate="nav_career">Karriere</a></li>
             <li><a href="kontakt.html" data-translate="nav_apply">Kontakt</a></li>
             <li><a href="unternehmen.html" data-translate="about_subtitle">Über uns</a></li>
           </ul>
@@ -208,28 +177,11 @@
         <div class="footer-copyright">
           &copy; 2026 Altintas Personalmanagement GmbH. <span data-translate="all_rights_reserved">Alle Rechte vorbehalten.</span>
         </div>
-        <ul class="footer-legal">
-          <li><a href="#impressum" data-translate="impressum">Impressum</a></li>
-          <li><a href="#privacy" data-translate="privacy">Datenschutz</a></li>
-          <li><a href="#cookies" data-translate="cookies">Cookies</a></li>
-        </ul>
       </div>
     </div>
   </footer>
 
-  <!-- Yüzen WhatsApp İletişim Butonu -->
-  <a href="https://wa.me/491784589604" class="whatsapp-float" target="_blank" aria-label="WhatsApp İletişim">
-    <i class="fa-brands fa-whatsapp"></i>
-  </a>
-
   <!-- JavaScript Bundle -->
-  <script src="index.js?v=9.4"></script>
-
-  <!-- Back to Top Button -->
-  <button class="back-to-top" id="backToTop" aria-label="Nach oben">
-    <i class="fa-solid fa-chevron-up"></i>
-  </button>
-
-
+  <script src="index.js?v=9.6"></script>
 </body>
 </html>

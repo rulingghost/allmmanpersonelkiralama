@@ -1,0 +1,19 @@
+{
+  "name": "altintas-personalmanagement",
+  "version": "1.0.0",
+  "description": "Altıntaş Personalmanagement GmbH - Kurumsal Web Sitesi",
+  "private": true,
+  "scripts": {
+    "dev": "npx serve .",
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "altintas",
+    "personalmanagement",
+    "arbeitnehmerueberlassung",
+    "logistik",
+    "personaldienstleistungen"
+  ],
+  "author": "Altıntaş Personalmanagement GmbH",
+  "license": "ISC"
+}

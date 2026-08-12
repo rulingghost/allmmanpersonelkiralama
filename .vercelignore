@@ -1,0 +1,9 @@
+.git
+.gitignore
+.vercel
+node_modules
+*.log
+scratch/
+scripts/
+.DS_Store
+Thumbs.db

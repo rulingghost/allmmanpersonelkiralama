@@ -28,6 +28,12 @@ const translations = {
     stat_employees: "Mitarbeiter vermittelt",
     stat_support: "Bereitschaft",
 
+    // 4 Service Feature Cards
+    services_card_1: "KLASSISCHE ARBEITNEHMERÜBERLASSUNG (ANÜ)",
+    services_card_2: "EINSATZ IM WERKVERTRAG",
+    services_card_3: "DIREKTE PERSONALVERMITTLUNG",
+    services_card_4: "ON-SITE MANAGEMENT VOR ORT",
+
     // About Page new sections
     about_in_areas: "In den Bereichen:",
     about_specialized: "Spezialisiert auf Ihre Branchen",
@@ -72,7 +78,7 @@ const translations = {
     mgmt_title: "Unsere Geschäftsführung",
     mgmt_desc: "Hasan Altintas leitet das Unternehmen mit kaufmännischer Kompetenz und profundem Branchenwissen.",
     mgmt_pos_1: "CEO",
-    mgmt_bio_1: "Bestimmt die Vision des Unternehmens, trifft strategische Entscheidungen und leitet alle operativen Abläufe.",
+    mgmt_bio_1: "Gründer und geschäftsführender Inhaber der Altintas Personalmanagement GmbH. Mit jahrzehntelanger Branchenerfahrung leitet er die strategische Unternehmensentwicklung, den kontinuierlichen Ausbau des bundesweiten Niederlassungsnetzes und garantiert höchste Standards bei Arbeitssicherheit, DGB/GVP-Tariftreue und Kundenzufriedenheit.",
     mgmt_bio_2: "Leitet die Rekrutierungsprozesse und koordiniert die HR-Abläufe.",
     mgmt_bio_3: "Leitet die Unternehmenskommunikation, das Markenmanagement, die Medienbeziehungen und die PR-Aktivitäten des Unternehmens.",
     mgmt_bio_4: "Verwaltet die Social-Media-Accounts des Unternehmens und koordiniert die digitalen Content-Prozesse.",
@@ -137,7 +143,7 @@ const translations = {
     sectors_title: "Spezialisiert auf Ihre Branche",
     sectors_desc: "Mit fachlichem Verständnis stellen wir schnell die passenden Mitarbeiter für Ihre betrieblichen Anforderungen.",
     sect_log_title: "Lager, Logistik & Versand",
-    sect_log_desc: "Kommissionierer, Staplerfahrer, Fachkräfte für Lagerlogistik und Versandmitarbeiter zur Absicherung Ihrer gesamten Lieferkette.",
+    sect_log_desc: "Effiziente Logistiklösungen & qualifiziertes Personal für Lager, Versand und Supply Chain. Wir sichern Ihre Lieferkette rund um die Uhr.",
     sec_log_h2: "Logistik und Distributionszentren",
     sec_log_desc1: "Das Ruhrgebiet und Deutschland sind Drehkreuze des europäischen Warenverkehrs. Altintas Personalmanagement stellt namhaften Logistikdienstleistern erfahrenes Personal zur Verfügung.",
     sec_log_item1: "Staplerfahrer & Hochregalstapler",
@@ -145,7 +151,7 @@ const translations = {
     sec_log_item3: "Fachkräfte für Lagerlogistik",
     sec_log_item4: "Versandmitarbeiter & Verpacker",
     sect_ind_title: "Industrie & Produktion",
-    sect_ind_desc: "Erfahrene Produktionshelfer, Maschinenbediener, Metallbauer und Facharbeiter für anspruchsvolle Produktionsstraßen.",
+    sect_ind_desc: "Präzise Personallösungen für industrielle Fertigung, Maschinenbedienung und Fließbandproduktion mit höchstem Qualitätsanspruch.",
     sec_ind_h2: "Industrielle Produktion und Montage",
     sec_ind_desc1: "Vom Automobilzulieferer bis zur Chemiebranche - wir decken das gesamte Spektrum ab. Wir vermitteln geschulte Produktionshelfer und spezialisierte Facharbeiter direkt an Ihre Produktionslinien.",
     sec_ind_item1: "Produktions- und Montagehelfer",
@@ -153,6 +159,7 @@ const translations = {
     sec_ind_item3: "Industriemechaniker",
     sec_ind_item4: "Qualitätsprüfer",
     sect_metal_title: "Metall- & Elektroindustrie",
+    home_metal_short: "Zertifizierte Schweißer (MIG/MAG/WIG), CNC-Experten und Elektroinstallateure. Maßgeschneiderte Fachkräfte für anspruchsvolle Industrieprojekte im In- und Ausland.",
     sec_metal_h2: "Schweißtechnik & Metallbau",
     sec_metal_desc1: "Fachkräfte in der Schweißtechnik und im Metallbau werden händeringend gesucht. Altintas Personalmanagement rekrutiert Facharbeiter national und über unser Partnernetzwerk in Bursa (Türkei) direkt für Ihren Bedarf.",
     sec_met_item1: "Geprüfte Schweißer (MIG, MAG, WIG)",
@@ -355,6 +362,12 @@ const translations = {
     stat_employees: "Yerleştirilen Personel",
     stat_support: "7/24 Ulaşılabilirlik",
 
+    // 4 Service Feature Cards
+    services_card_1: "KLASİK GEÇİCİ İŞ İLİŞKİSİ (ANÜ)",
+    services_card_2: "ESER SÖZLEŞMESİ KAPSAMINDA ÇALIŞMA",
+    services_card_3: "DOĞRUDAN PERSONEL TEDARİKİ",
+    services_card_4: "SAHADA YERİNDE YÖNETİM (ON-SITE)",
+
     // About Page new sections
     about_in_areas: "Faaliyet Sektörlerimiz:",
     about_specialized: "Sektörlerinize Özel Çözümler",
@@ -399,7 +412,7 @@ const translations = {
     mgmt_title: "Yönetim Kurulumuz",
     mgmt_desc: "Hasan Altintas firmamızı ticari yetkinlik ve derin sektörel birikim ile yönetmektedir.",
     mgmt_pos_1: "CEO",
-    mgmt_bio_1: "Şirketin vizyonunu belirler, stratejik kararları alır ve tüm operasyonlara liderlik eder.",
+    mgmt_bio_1: "Altintas Personalmanagement GmbH'nin kurucusu ve yönetici ortağı. Sektördeki onlarca yıllık tecrübesiyle şirketin stratejik büyümesine, Almanya genelindeki şube ağının genişletilmesine liderlik etmekte ve iş güvenliği, DGB/GVP toplu iş sözleşmesi standartları ve müşteri memnuniyetinde en yüksek kaliteyi garanti etmektedir.",
     mgmt_bio_2: "İşe alım süreçlerini yönetir ve insan kaynakları operasyonlarını koordine eder.",
     mgmt_bio_3: "Şirketin kurumsal iletişim, marka yönetimi, medya ilişkileri ve kurumsal tanıtım faaliyetlerini yönetir.",
     mgmt_bio_4: "Şirketin sosyal medya hesaplarını yönetir ve dijital içerik süreçlerini koordine eder.",
@@ -464,7 +477,7 @@ const translations = {
     sectors_title: "Sektörünüze Özel Çözümler",
     sectors_desc: "Sektörel yetkinliğimiz sayesinde operasyonel gereksinimlerinize en uygun personeli hızla sağlıyoruz.",
     sect_log_title: "Depo, Lojistik & Sevk",
-    sect_log_desc: "Tüm tedarik zincirinizi güvence altına almak için sipariş hazırlama elemanları, forklift operatörleri ve sevk görevlileri.",
+    sect_log_desc: "Depo, sevkiyat ve tedarik zinciriniz için hızlı, nitelikli personel çözümleri ve kesintisiz operasyon desteği.",
     sec_log_h2: "Lojistik ve Dağıtım Merkezleri",
     sec_log_desc1: "Ruhr Havzası ve tüm Almanya, Avrupa lojistik ağının merkezidir. Altintas Personalmanagement, tanınmış lojistik devlerine deneyimli ekipler sağlamaktadır.",
     sec_log_item1: "Forklift ve Dar Alan İstifleme Operatörleri",
@@ -472,11 +485,15 @@ const translations = {
     sec_log_item3: "Lojistik Yönetimi Uzmanları",
     sec_log_item4: "Paketleme ve Sevkiyat Görevlileri",
     sect_ind_title: "Endüstri & Üretim",
-    sect_ind_desc: "Zorlu üretim hatları için deneyimli üretim yardımcıları, makine operatörleri, metal işçileri ve kalifiye ustalar.",
+    sect_ind_desc: "Endüstriyel üretim hatları, makine kullanımı ve fabrika operasyonları için tecrübeli uzman kadro.",
     sec_ind_h2: "Endüstriyel Üretim ve Montaj",
     sec_ind_desc1: "Otomotiv yan sanayinden kimya tesislerine kadar geniş bir yelpazede hizmet sunuyoruz. Eğitimli üretim elemanlarını ve teknik uzmanları üretim hatlarınıza yönlendiriyoruz.",
     sec_ind_item1: "Üretim ve Montaj Elemanları",
     sec_ind_item2: "Makine ve Tesis Operatörleri",
+    sec_ind_item3: "Endüstriyel Mekanikerler",
+    sec_ind_item4: "Kalite Kontrol Uzmanları",
+    sect_metal_title: "Metal ve Elektrik Sanayisi",
+    home_metal_short: "Sertifikalı kaynakçılar, CNC uzmanları ve elektrik tesisatçıları. Ulusal ve uluslararası sanayi projeleriniz için özel teknik personel.",
     sec_ind_item3: "Endüstriyel Mekanikerler",
     sec_ind_item4: "Kalite Kontrol Uzmanları",
     sect_metal_title: "Metal ve Elektrik Sanayisi",
@@ -751,7 +768,7 @@ function highlightActiveLink() {
   } else if (["dienstleistungen.html", "arbeitnehmerueberlassung.html", "personalvermittlung.html", "onsite-management.html"].includes(currentPath)) {
     const link = document.getElementById("nav-services-link");
     if (link) link.classList.add("active");
-  } else if (["branchen.html", "lager-logistik.html", "produktion-industrie.html", "metall-elektro.html", "industriedienstleistungen.html"].includes(currentPath)) {
+  } else if (["branchen.html", "lager-logistik.html", "produktion-industrie.html", "metall-elektro.html"].includes(currentPath)) {
     const link = document.getElementById("nav-sectors-link");
     if (link) link.classList.add("active");
   } else if (currentPath === "standorte.html") {
