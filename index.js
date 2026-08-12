@@ -102,7 +102,7 @@ const translations = {
     solutions_employer_header: "Flexible Lösungen für Arbeitgeber / Kunde",
     solutions_candidate_header: "Flexible Lösungen für Arbeitnehmer / Bewerber",
     partner_title: "Altintas Personalmanagement GmbH Ihr Partner",
-    employer_title: "Schnell. Rechtssicher. Zuverlässig.",
+    employer_title: "Schnell, Rechtssicher, Zuverlässig.",
     employer_desc: "Vermeiden Sie Produktionsausfälle bei Auftragsspitzen oder Personalmangel. Unsere Zeitarbeitskräfte stehen Ihnen flexibel zur Verfügung. Wir kümmern uns um die gesamte Abwicklung des On-Site-Managements.",
     emp_feat_1: "Schnelle Disposition",
     emp_feat_2: "100% Rechtskonform",
@@ -111,7 +111,7 @@ const translations = {
     emp_feat_5: "Branchenzuschläge",
     emp_feat_6: "Persönlicher Ansprechpartner",
     btn_request_staff: "Personalbedarf melden",
-    candidate_title: "Faire Bezahlung. Sichere Zukunft.",
+    candidate_title: "Faire Bezahlung, Sichere Zukunft.",
     candidate_desc: "Starten Sie beruflich durch. Wir bieten Ihnen feste Verträge in Industrie- und Logistikbetrieben der Region. Profitieren Sie von Tarifgehältern und guten Aufstiegsmöglichkeiten.",
     cand_feat_1: "Unbefristeter Arbeitsvertrag",
     cand_feat_2: "Übertarifliche Bezahlung",
@@ -224,7 +224,7 @@ const translations = {
     pl_msg_cand: "Erzählen Sie uns kurz etwas über sich...",
 
     // Footer
-    footer_brand_sub: "Personalmanagement",
+    footer_brand_sub: "Personalmanagement GmbH",
     footer_brand_desc: "Ihr verlässlicher Partner für zeitgemäße Arbeitnehmerüberlassung und Personalmanagement in Deutschland und Europa.",
     footer_services: "Dienstleistungen",
     footer_quicklinks: "Navigation",
@@ -429,7 +429,7 @@ const translations = {
     solutions_employer_header: "İşverenler / Müşteriler İçin Esnek Çözümler",
     solutions_candidate_header: "Çalışanlar / Adaylar İçin Esnek Çözümler",
     partner_title: "Altintas Personalmanagement GmbH Sizin Ortağınız",
-    employer_title: "Hızlı. Hukuken Güvenli. Sorumluluk Sahibi.",
+    employer_title: "Hızlı, Hukuken Güvenli, Sorumluluk Sahibi.",
     employer_desc: "Sipariş yoğunlukları, hastalık izinleri veya mevsimsel dalgalanmalar operasyonel kapasitenizi zorlayabilir. Profesyonel personel kiralama (ANÜ) hizmetimizle, uzun vadeli risk almadan verimliliğinizi koruyun.",
     emp_feat_1: "Hızlı Organizasyon",
     emp_feat_2: "%100 Mevzuata Uygunluk",
@@ -438,7 +438,7 @@ const translations = {
     emp_feat_5: "Sektörel Ek Ödemeler",
     emp_feat_6: "Kişisel Danışman Desteği",
     btn_request_staff: "Personel İhtiyacı Bildir",
-    candidate_title: "Adil Ücretlendirme. Güvenli Gelecek.",
+    candidate_title: "Adil Ücretlendirme, Güvenli Gelecek.",
     candidate_desc: "Kariyerinizde yeni bir sayfa açın. Bölgenin prestijli lojistik ve sanayi tesislerinde uzun vadeli iş olanakları sunuyoruz. Toplu sözleşmeli dolgun maaş ve yükselme şansından yararlanın.",
     cand_feat_1: "Süresiz İş Sözleşmesi",
     cand_feat_2: "Tarif Üstü Ücretler",
@@ -551,7 +551,7 @@ const translations = {
     pl_msg_cand: "Bize kısaca kendinizden bahsedin...",
 
     // Footer
-    footer_brand_sub: "Personel Yönetimi",
+    footer_brand_sub: "Personel Yönetimi GmbH",
     footer_brand_desc: "Almanya ve Avrupa genelinde modern personel kiralama ve insan kaynakları yönetimi alanında güvenilir ortağınız.",
     footer_services: "Hizmetler",
     footer_quicklinks: "Gezinti",
