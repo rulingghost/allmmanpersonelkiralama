@@ -4316,35 +4316,33 @@ textarea.form-control {
 
 @media (min-width: 992px) {
   .bento-grid {
-    grid-template-columns: 1.15fr 0.85fr !important;
-    grid-template-rows: 215px 215px !important;
+    grid-template-columns: 1fr 1fr !important;
+    grid-template-rows: auto auto !important;
     gap: 24px !important;
   }
 
   .bento-card-left-top {
     grid-column: 1 !important;
     grid-row: 1 !important;
-    height: 215px !important;
-    min-height: 215px !important;
-    max-height: 215px !important;
-    padding: 20px 28px !important;
+    min-height: 250px !important;
+    height: auto !important;
+    padding: 28px 32px !important;
   }
 
   .bento-card-left-bottom {
     grid-column: 1 !important;
     grid-row: 2 !important;
-    height: 215px !important;
-    min-height: 215px !important;
-    max-height: 215px !important;
-    padding: 20px 28px !important;
+    min-height: 250px !important;
+    height: auto !important;
+    padding: 28px 32px !important;
   }
 
   .bento-card-tall {
     grid-column: 2 !important;
     grid-row: 1 / span 2 !important;
-    height: 454px !important;
-    min-height: 454px !important;
-    padding: 32px 36px !important;
+    height: 100% !important;
+    min-height: 524px !important;
+    padding: 36px !important;
   }
 }
 
@@ -4366,29 +4364,29 @@ textarea.form-control {
 
 .bento-card-left-top p,
 .bento-card-left-bottom p {
-  font-size: 13.5px;
-  line-height: 1.5;
-  margin-bottom: 8px;
+  font-size: 14px;
+  line-height: 1.55;
+  margin-bottom: 14px;
 }
 
 .bento-card-left-top .bento-icon,
 .bento-card-left-bottom .bento-icon {
-  width: 36px;
-  height: 36px;
-  font-size: 16px;
-  margin-bottom: 8px;
+  width: 44px;
+  height: 44px;
+  font-size: 19px;
+  margin-bottom: 12px;
 }
 
 .bento-card-left-top h3,
 .bento-card-left-bottom h3 {
-  font-size: 19px;
-  margin-bottom: 4px;
+  font-size: 21px;
+  margin-bottom: 8px;
 }
 
 .bento-card-left-top .bento-card-stats,
 .bento-card-left-bottom .bento-card-stats {
-  padding-top: 8px;
-  margin-bottom: 6px;
+  padding-top: 12px;
+  margin-bottom: 12px;
 }
 
 .bento-card:hover {
