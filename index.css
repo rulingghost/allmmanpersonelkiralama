@@ -4584,18 +4584,26 @@ textarea.form-control {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   gap: 8px;
   border-bottom: 1px solid var(--bg-secondary);
   padding-bottom: 20px;
   margin-bottom: 10px;
+  min-height: 95px;
 }
 
 .solution-header h3 {
-  font-size: 20px;
+  font-size: 19px;
   color: var(--accent);
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  line-height: 1.35;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  text-align: center;
 }
 
 .solution-arrow {
@@ -4615,6 +4623,7 @@ textarea.form-control {
   aspect-ratio: 16/10;
   border-radius: var(--border-radius-md);
   box-shadow: 0 8px 24px rgba(12, 21, 38, 0.08);
+  object-fit: cover;
 }
 
 .solution-card .portal-text {
@@ -4622,12 +4631,14 @@ textarea.form-control {
   flex-direction: column;
   gap: 16px;
   height: 100%;
+  flex: 1;
 }
 
 .solution-card .portal-text h3 {
   font-size: 24px;
   color: var(--text-dark);
   font-weight: 800;
+  min-height: 32px;
 }
 
 .solution-card .portal-text p {
@@ -4635,12 +4646,14 @@ textarea.form-control {
   font-size: 15px;
   line-height: 1.65;
   margin-bottom: 8px;
+  min-height: 75px;
 }
 
 .solution-card .service-list {
   grid-template-columns: 1fr;
   gap: 12px;
   margin-bottom: 12px;
+  flex: 1;
 }
 
 .solution-card .btn {
